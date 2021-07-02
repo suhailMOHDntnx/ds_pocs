@@ -1,0 +1,12 @@
+WITH hbas as (select * from tartarus.HBA_LSI), first_hba as (SELECT ppn FROM hbas LIMIT 1)
+  select
+    CASE
+
+      /* Checking if ppn is within SUPPORTED_HBA */
+      WHEN (select ppn from first_hba) not in ('a', 'b', 'c')
+      THEN (select map['score', '100', 'message', 'LSI firmware revision 0x' || ppn] from first_hba)
+
+
+
+    END
+

@@ -1,0 +1,1 @@
+select * from tartarus.HBA_LSI

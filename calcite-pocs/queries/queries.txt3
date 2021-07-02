@@ -1,0 +1,38 @@
+WITH
+     /**********************************************************************************
+      MOCKED DATA:
+        This includes data from ~/ncc/config/node_config.json
+        which was not converted as part of the POC as it was not supported by tartarus
+     ***********************************************************************************/
+     node_config as (
+       select 'NX-1020' as model
+     )
+     hba_firmware_config as (
+       select array['SAS3008', 'SAS3108', 'SAS2008', 'SAS3808', 'SAS3816'] as supported_hba
+              '0a000700' as min_supported_fw
+     ),
+     lsi_hba_blacklist_versions as (
+       select 'NX' as node_model,
+              array['10000100',''] as blacklisted_versions
+     ),
+     /*********************************************************************************/
+     hbas as (select * from tartarus.HBA_LSI),
+     blacklisted_hbas_versions_for_node as (
+       select blacklisted_versions FROM lsi_hba_blacklist_versions WHERE
+       POSITION(node_model IN (select model from node_config)) = 0
+     )
+  select
+
+    /* Unsupported case */
+    CASE ppn not in (select supported_hba from hba_firmware_config)
+    THEN map['score', '100', 'message', 'The current HBA model' || ppn || 'not supported for this check']
+
+    /* failure case */
+    CASE firmware < (select min_supported_fw from hba_firmware_config)
+    THEN map['score', '24', 'message', 'LSI firmware revision 0x' || firmware || 'is less than minimum .....']
+
+    /* warning case */
+    CASE firmware in (blacklisted_hbas_versions_for_node.versions)
+    THEN map['score', '74', 'message', 'LSI firmware revision 0x' || firmware || 'is blacklisted .....']
+
+    END

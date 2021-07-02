@@ -1,0 +1,50 @@
+WITH
+
+     /********************** MOCK TABLES ****************************************************
+     * Certain information from ~/ncc/config/node_config.json was required by the check
+     * This information was mocked since we only implemented data collectors for tartarus
+     **************************************************************************************/
+     node_config as (
+       select 'NX-1020' as model
+     ),
+
+     hba_firmware_config as (
+       select array['SAS3008', 'SAS3108', 'SAS2008', 'SAS3808', 'SAS3816'] as supported_hba,
+              '10.0.0.0' as min_supported_fw
+     ),
+
+     lsi_hba_blacklist_versions as (
+       select 'NX' as node_model,
+              array['10000100',''] as blacklisted_versions
+     ),
+
+     /******************** END OF MOCK TABLE ************************************************/
+
+     blacklisted_hbas_versions_for_node as (
+       select blacklisted_versions FROM lsi_hba_blacklist_versions WHERE
+       POSITION(node_model IN (select model from node_config)) = 0
+     ),
+
+     hbas as (select * from tartarus.HBA_LSI)
+     
+  SELECT
+
+    CASE
+    /* Unsupported case */
+    WHEN ppn not in (select * FROM UNNEST(select supported_hba from hba_firmware_config))
+    THEN map['score', '100', 'message', 'The current HBA model' || ppn || 'not supported for this check']
+
+    /* failure case */
+    WHEN firmware < (select min_supported_fw from hba_firmware_config)
+    THEN map['score', '24', 'message', 'LSI firmware revision 0x' || firmware || 'is less than minimum .....']
+
+    /* warning case */
+    WHEN firmware in (select * FROM UNNEST(select blacklisted_versions FROM blacklisted_hbas_versions_for_node))
+    THEN map['score', '74', 'message', 'LSI firmware revision 0x' || firmware || 'is blacklisted .....']
+
+    ELSE
+    map['score', '100', 'message', 'Everythings fine!']
+
+    END AS health_score_details
+
+   FROM hbas
