@@ -1,0 +1,4 @@
+SELECT node.serviceVmExternalIp, node.cassandraTokenId
+FROM zeusConfig.nodeList node
+WHERE node.cassandraTokenId IS NOT NULL
+  AND CHAR_LENGTH(node.cassandraTokenId) < 60

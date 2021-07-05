@@ -1,0 +1,8 @@
+WITH tokenToIp AS (
+  SELECT SUBSTRING(node.cassandraTokenId, 0, 8) token, node.serviceVmExternalIp ip
+  FROM zeusConfig.nodeList node
+  WHERE node.cassandraTokenId IS NOT NULL
+)
+SELECT token, COLLECT(ip)
+FROM tokenToIp
+GROUP BY token HAVING COUNT(ip) > 1

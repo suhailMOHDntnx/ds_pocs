@@ -415,7 +415,13 @@ class DBTablePrinter {
 
                         // Use generic SQL type name instead of the actual value
                         // for column types BLOB, BINARY etc.
-                        value = rs.getObject(i+1).toString();
+
+                        // Objects can be null.
+                        if (rs.getObject(i+1) == null){
+                          value = "NULL";
+                        } else {
+                          value = rs.getObject(i+1).toString();
+                        }
 
                     } else {
                         value = rs.getString(i+1) == null ? "NULL" : rs.getString(i+1);

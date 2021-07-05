@@ -1,0 +1,2 @@
+SELECT MAX(container.params.replicationFactor)
+FROM zeusConfig.containerList container

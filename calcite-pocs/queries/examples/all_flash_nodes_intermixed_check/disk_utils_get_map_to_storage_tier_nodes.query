@@ -1,0 +1,4 @@
+SELECT node.serviceVmExternalIp as ip, COLLECT(DISTINCT disk.storageTier) as storageTierSet
+FROM zeusConfig.nodeList node, zeusConfig.diskList disk
+WHERE disk.serviceVmId = node.serviceVmId
+GROUP BY node.serviceVmExternalIp

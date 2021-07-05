@@ -1,0 +1,32 @@
+WITH ipTostorageTierSet AS (
+  SELECT node.serviceVmExternalIp as ip, COLLECT(DISTINCT disk.storageTier) as storageTierSet
+  FROM zeusConfig.nodeList node, zeusConfig.diskList disk
+  WHERE disk.serviceVmId = node.serviceVmId
+  GROUP BY node.serviceVmExternalIp
+),
+storageTypeToIp AS (
+  SELECT
+  CASE
+    WHEN CARDINALITY(storageTierSet) = 1 AND 'SSD-SATA' MEMBER OF storageTierSet
+      THEN 'AllFlash'
+    WHEN CARDINALITY(storageTierSet) = 1 AND 'SSD-PCIe' MEMBER OF storageTierSet
+      THEN 'AllNVMe'
+    WHEN CARDINALITY(storageTierSet) = 2 AND 'SSD-PCIe' MEMBER OF storageTierSet
+        AND 'SSD-SATA' MEMBER OF storageTierSet
+      THEN 'AllNVMe'
+    WHEN CARDINALITY(storageTierSet) = 2 AND 'SSD-SATA' MEMBER OF storageTierSet
+        AND 'DAS-SATA' MEMBER OF storageTierSet
+      THEN 'Hybrid'
+    WHEN CARDINALITY(storageTierSet) = 2 AND 'SSD-PCIe' MEMBER OF storageTierSet
+        AND 'DAS-SATA' MEMBER OF storageTierSet
+      THEN 'MixedNVMe'
+    WHEN CARDINALITY(storageTierSet) = 3 AND 'SSD-SATA' MEMBER OF storageTierSet
+        AND 'DAS-SATA' MEMBER OF storageTierSet
+        AND 'SSD-PCIe' MEMBER OF storageTierSet
+      THEN 'MixedHybrid'
+  END as storageType, ip
+  FROM ipTostorageTierSet
+)
+SELECT storageType, COLLECT(ip)
+FROM storageTypeToIp
+GROUP BY storageType

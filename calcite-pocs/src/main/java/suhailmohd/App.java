@@ -14,8 +14,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
-public class App 
+public class App
 {
 
     public static void printRSS() {
@@ -39,6 +41,13 @@ public class App
         SchemaPlus rootSchema = calciteConnection.getRootSchema();
         Schema schema = new TartarusSchema();
         rootSchema.add("tartarus", schema);
+
+        GsonBuilder builder = new GsonBuilder();
+        Gson gson = builder.create();
+        String s = new String(Files.readAllBytes(Paths.get("/home/nutanix/ncc/bin/zeus_config.dat")));
+        GenZeusConfig z = gson.fromJson(s, GenZeusConfig.class);
+        // System.out.println(gson.toJson(z));
+        rootSchema.add("zeusConfig", new ReflectiveSchema(z));
 
         String[] queries = getQuery(args[0]);
         Statement statement = calciteConnection.createStatement();
@@ -68,8 +77,8 @@ public class App
         try
         {
             all = new String ( Files.readAllBytes( Paths.get(filePath) ) );
-        } 
-        catch (IOException e) 
+        }
+        catch (IOException e)
         {
             e.printStackTrace();
         }

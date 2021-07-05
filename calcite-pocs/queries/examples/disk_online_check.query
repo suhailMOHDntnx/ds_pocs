@@ -1,0 +1,11 @@
+SELECT node.serviceVmExternalIp, offlineDiskMountPath
+FROM zeusConfig.nodeList as node, UNNEST(node.offlineDiskMountPaths) as T(offlineDiskMountPath)
+
+UNION
+
+SELECT node.serviceVmExternalIp, disk.mountPath
+FROM zeusConfig.nodeList as node, zeusConfig.diskList as disk
+WHERE
+  disk.serviceVmId IS NULL
+AND
+  node.serviceVmId = disk.lastServiceVmId

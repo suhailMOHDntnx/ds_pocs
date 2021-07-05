@@ -1,0 +1,1486 @@
+logical_timestamp: 36286
+internal_subnet: "192.168.5.0/255.255.255.128"
+external_subnet: "10.48.192.0/255.255.248.0"
+storage_tier_list {
+  storage_tier_name: "SSD-PCIe"
+  random_io_priority: 9
+  sequential_io_priority: 9
+  storage_type: kPcieSSD
+}
+storage_tier_list {
+  storage_tier_name: "SSD-SATA"
+  random_io_priority: 8
+  sequential_io_priority: 8
+  storage_type: kSataSSD
+}
+storage_tier_list {
+  storage_tier_name: "DAS-SATA"
+  random_io_priority: 7
+  sequential_io_priority: 7
+  storage_type: kHDD
+}
+disk_list {
+  disk_id: 80
+  service_vm_id: 15
+  mount_path: "/home/nutanix/data/stargate-storage/disks/S31JNX0H500534"
+  disk_size: 215337994240
+  statfs_disk_size: 326799667200
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 73646853120
+  disk_serial_id: "S31JNX0H500534"
+  disk_uuid: "ec24354f-82c4-427b-a4d1-114c381a8f08"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "40a156e4-a032-4815-ab52-876e0cc676d5"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+disk_list {
+  disk_id: 76
+  last_service_vm_id: 15
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X6ZYSW"
+  disk_size: 1786976741171
+  statfs_disk_size: 1948843421696
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1X6ZYSW"
+  disk_uuid: "fa99c942-ad7f-4e10-ab17-aba969896237"
+  curator_disk_reservation_bytes: 64424509440
+  last_node_uuid: "40a156e4-a032-4815-ab52-876e0cc676d5"
+}
+disk_list {
+  disk_id: 77
+  service_vm_id: 15
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X6ZY12"
+  disk_size: 1786976741171
+  statfs_disk_size: 1948843421696
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1X6ZY12"
+  disk_uuid: "1d0fc49d-047f-4df6-bf07-8a2e6b36ca41"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "40a156e4-a032-4815-ab52-876e0cc676d5"
+}
+disk_list {
+  disk_id: 81
+  service_vm_id: 18
+  mount_path: "/home/nutanix/data/stargate-storage/disks/S31JNX0H500455"
+  disk_size: 215337994240
+  statfs_disk_size: 326799667200
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 73646853120
+  disk_serial_id: "S31JNX0H500455"
+  disk_uuid: "b3ddc76e-4ac9-4ef9-adcd-a03cd124be5a"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "c6aad814-e56f-472f-9778-4ab26686fc8f"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+disk_list {
+  disk_id: 78
+  service_vm_id: 18
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X74C0R"
+  disk_size: 1786976741171
+  statfs_disk_size: 1948843421696
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1X74C0R"
+  disk_uuid: "64d4bad5-b0cd-4c93-9860-59e7f65e4843"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "c6aad814-e56f-472f-9778-4ab26686fc8f"
+}
+disk_list {
+  disk_id: 79
+  service_vm_id: 18
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X70DQ4"
+  disk_size: 1812424382178
+  statfs_disk_size: 1948843421696
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1X70DQ4"
+  disk_uuid: "941eced3-b4e6-47ef-a1d5-dcb984aae4dd"
+  curator_disk_reservation_bytes: 38976868433
+  node_uuid: "c6aad814-e56f-472f-9778-4ab26686fc8f"
+}
+disk_list {
+  disk_id: 82
+  service_vm_id: 17
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X70P79"
+  disk_size: 1812424382178
+  statfs_disk_size: 1948843421696
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1X70P79"
+  disk_uuid: "3f2f5f4a-db2a-4594-b3df-4501fe53eb70"
+  curator_disk_reservation_bytes: 38976868433
+  node_uuid: "5418fdce-e08c-4f3e-878c-194517c786b5"
+}
+disk_list {
+  disk_id: 83
+  service_vm_id: 17
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X70DL5"
+  disk_size: 1786976741171
+  statfs_disk_size: 1948843421696
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1X70DL5"
+  disk_uuid: "e9703759-4902-4d69-8bbb-96ada8e82d42"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "5418fdce-e08c-4f3e-878c-194517c786b5"
+}
+disk_list {
+  disk_id: 84
+  service_vm_id: 17
+  mount_path: "/home/nutanix/data/stargate-storage/disks/S31JNX0H500515"
+  disk_size: 215337994240
+  statfs_disk_size: 326799667200
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 73646853120
+  disk_serial_id: "S31JNX0H500515"
+  disk_uuid: "d602e137-43d1-4cba-b8f8-203859fc259c"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "5418fdce-e08c-4f3e-878c-194517c786b5"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+disk_list {
+  disk_id: 97
+  service_vm_id: 16
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1W1SY0V"
+  disk_size: 904157430169
+  statfs_disk_size: 974349754368
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1W1SY0V"
+  disk_uuid: "50d3587b-0a63-4ed6-a37a-d2fe8254525a"
+  curator_disk_reservation_bytes: 21474836480
+  node_uuid: "c9d3c721-274e-4827-90a8-72307796f9a7"
+}
+disk_list {
+  disk_id: 98
+  service_vm_id: 16
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1W1SXZG"
+  disk_size: 861207757209
+  statfs_disk_size: 974349754368
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1W1SXZG"
+  disk_uuid: "9d54c5c5-5a44-468e-aa3c-d55e45844ceb"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "c9d3c721-274e-4827-90a8-72307796f9a7"
+}
+disk_list {
+  disk_id: 99
+  service_vm_id: 16
+  mount_path: "/home/nutanix/data/stargate-storage/disks/BTTV415300VN200GGN"
+  disk_size: 70379256627
+  statfs_disk_size: 131987091456
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 24943709184
+  disk_serial_id: "BTTV415300VN200GGN"
+  disk_uuid: "3fbe9792-f85e-40d2-bed3-8c679c8b779f"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "c9d3c721-274e-4827-90a8-72307796f9a7"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+disk_list {
+  disk_id: 100
+  service_vm_id: 19
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X6ZY3Y"
+  disk_size: 1812424382178
+  statfs_disk_size: 1948843421696
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1X6ZY3Y"
+  disk_uuid: "bc935534-b55d-40cb-9eda-b7ebcc72e3d4"
+  curator_disk_reservation_bytes: 38976868433
+  node_uuid: "aa0aab1d-6c9a-4895-9a3d-3f12c0aa097e"
+}
+disk_list {
+  disk_id: 101
+  service_vm_id: 19
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X73TQE"
+  disk_size: 1786976741171
+  statfs_disk_size: 1948843421696
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1X73TQE"
+  disk_uuid: "52b1bd31-8d34-4ea2-b1ca-9d4c40e28777"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "aa0aab1d-6c9a-4895-9a3d-3f12c0aa097e"
+}
+disk_list {
+  disk_id: 102
+  service_vm_id: 19
+  mount_path: "/home/nutanix/data/stargate-storage/disks/S31JNX0H500460"
+  disk_size: 215337994240
+  statfs_disk_size: 326799667200
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 73646853120
+  disk_serial_id: "S31JNX0H500460"
+  disk_uuid: "b98ddab2-77b4-4b6d-99ce-dfdf04174b18"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "aa0aab1d-6c9a-4895-9a3d-3f12c0aa097e"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+disk_list {
+  disk_id: 88
+  service_vm_id: 13
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1W1SYAF"
+  disk_size: 904157430169
+  statfs_disk_size: 974349754368
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1W1SYAF"
+  disk_uuid: "01c8b988-ea7f-4925-a0c3-95fcb30f9c48"
+  curator_disk_reservation_bytes: 21474836480
+  node_uuid: "65f9c757-4a87-4d0b-8a29-a569ecbf6b57"
+}
+disk_list {
+  disk_id: 89
+  service_vm_id: 13
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1W1SXK6"
+  disk_size: 861207757209
+  statfs_disk_size: 974349754368
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1W1SXK6"
+  disk_uuid: "1ef49932-8313-410a-9892-8cd101c6dad1"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "65f9c757-4a87-4d0b-8a29-a569ecbf6b57"
+}
+disk_list {
+  disk_id: 90
+  service_vm_id: 13
+  mount_path: "/home/nutanix/data/stargate-storage/disks/BTTV415300JR200GGN"
+  disk_size: 70379256627
+  statfs_disk_size: 131987091456
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 24943709184
+  disk_serial_id: "BTTV415300JR200GGN"
+  disk_uuid: "85340714-9d2b-459e-8da2-715b9aac33ed"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "65f9c757-4a87-4d0b-8a29-a569ecbf6b57"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+disk_list {
+  disk_id: 96
+  service_vm_id: 20
+  mount_path: "/home/nutanix/data/stargate-storage/disks/BTTV415300KM200GGN"
+  disk_size: 70379256627
+  statfs_disk_size: 131987091456
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 24943709184
+  disk_serial_id: "BTTV415300KM200GGN"
+  disk_uuid: "daf6ee6f-fbb8-4683-ae63-2a4a328d0333"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "fc2e1922-2635-4d51-89bb-757c768a3f28"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+disk_list {
+  disk_id: 93
+  service_vm_id: 20
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1W4X8E1"
+  disk_size: 861207757209
+  statfs_disk_size: 974349754368
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1W4X8E1"
+  disk_uuid: "b4c59c23-0069-4d5a-9dab-fc749bc84584"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "fc2e1922-2635-4d51-89bb-757c768a3f28"
+}
+disk_list {
+  disk_id: 95
+  service_vm_id: 20
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1W1SGSL"
+  disk_size: 904157430169
+  statfs_disk_size: 974349754368
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1W1SGSL"
+  disk_uuid: "90a05ecc-6e91-4a26-9eb8-075012f69978"
+  curator_disk_reservation_bytes: 21474836480
+  node_uuid: "fc2e1922-2635-4d51-89bb-757c768a3f28"
+}
+disk_list {
+  disk_id: 91
+  service_vm_id: 14
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1W1RYCM"
+  disk_size: 904157430169
+  statfs_disk_size: 974349754368
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1W1RYCM"
+  disk_uuid: "7eeee7cf-4ca4-4217-af1e-b3fa241fbcd7"
+  curator_disk_reservation_bytes: 21474836480
+  node_uuid: "ee645504-35af-402e-aa06-ba851376896a"
+}
+disk_list {
+  disk_id: 92
+  service_vm_id: 14
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1W1NLS7"
+  disk_size: 861207757209
+  statfs_disk_size: 974349754368
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1W1NLS7"
+  disk_uuid: "a85c46eb-3dcd-4a6b-a0c5-a001767eb3b8"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "ee645504-35af-402e-aa06-ba851376896a"
+}
+disk_list {
+  disk_id: 94
+  service_vm_id: 14
+  mount_path: "/home/nutanix/data/stargate-storage/disks/BTTV415301D0200GGN"
+  disk_size: 70379256627
+  statfs_disk_size: 131987091456
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 24943709184
+  disk_serial_id: "BTTV415301D0200GGN"
+  disk_uuid: "84a1aef0-64d4-4dce-a631-12018e112636"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "ee645504-35af-402e-aa06-ba851376896a"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+node_list {
+  service_vm_id: 13
+  service_vm_external_ip: "10.48.192.119"
+  node_status: kNormal
+  hypervisor_key: "10.48.192.115"
+  management_server_name: "10.48.192.115"
+  cassandra_token_id: "7kV00000XUNqgA0dxk0g1Sry41jULWnOpfyI4Wu4YL39cPjjx9jxu9sZPzB1"
+  hypervisor {
+    address_list: "10.48.192.115"
+  }
+  ipmi {
+    address_list: "10.49.46.16"
+  }
+  uuid: "65f9c757-4a87-4d0b-8a29-a569ecbf6b57"
+  rackable_unit_id: 69
+  node_position: 1
+  software_version: "el7.3-release-euphrates-5.15.5-stable-5c9c69ebf0ec79805101dea18db7f049ac4eac9a"
+  node_serial: "ZM147S024824"
+  management_server_id: 70
+  acropolis_status {
+    conn_state: kConnected
+  }
+  cluster_uuid: "0005c389-b8a8-6bc0-0000-000000004222"
+  rackable_unit_uuid: "4ecccb15-20bd-4132-8010-778e851cd788"
+  management_server_uuid: "37db92e7-0ac1-4dd2-86a9-2c8c25158fb1"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.48.192.119"
+  cvm_resource_state {
+    memory_mb: 16045
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "5.0.1"
+    installed_using_phoenix_version: "phoenix-5.0.1_1ec6b3cd"
+    foundation_version: "foundation-4.6.1-64f1d375"
+  }
+}
+node_list {
+  service_vm_id: 14
+  service_vm_external_ip: "10.48.192.121"
+  node_status: kNormal
+  hypervisor_key: "10.48.192.117"
+  management_server_name: "10.48.192.117"
+  cassandra_token_id: "NFV00000QaYVZkfgyvLFmLVsJmwtYUgRyXqjEhOPxSmoTuPH2HFGLyyGh0pt"
+  hypervisor {
+    address_list: "10.48.192.117"
+  }
+  ipmi {
+    address_list: "10.49.46.18"
+  }
+  uuid: "ee645504-35af-402e-aa06-ba851376896a"
+  rackable_unit_id: 69
+  node_position: 3
+  software_version: "el7.3-release-euphrates-5.15.5-stable-5c9c69ebf0ec79805101dea18db7f049ac4eac9a"
+  node_serial: "ZM147S024912"
+  management_server_id: 74
+  acropolis_status {
+    conn_state: kConnected
+  }
+  cluster_uuid: "0005c389-b8a8-6bc0-0000-000000004222"
+  rackable_unit_uuid: "4ecccb15-20bd-4132-8010-778e851cd788"
+  management_server_uuid: "7855acb8-c99f-49d1-a946-4f3581d0cc9a"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.48.192.121"
+  cvm_resource_state {
+    memory_mb: 16045
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "5.0.1"
+    installed_using_phoenix_version: "phoenix-5.0.1_1ec6b3cd"
+    foundation_version: "foundation-4.6.1-64f1d375"
+  }
+}
+node_list {
+  service_vm_id: 15
+  service_vm_external_ip: "10.48.192.158"
+  node_status: kNormal
+  offline_disk_mount_paths: "/home/nutanix/data/stargate-storage/disks/Z1X6ZYSW"
+  hypervisor_key: "10.48.192.154"
+  management_server_name: "10.48.192.154"
+  cassandra_token_id: "FV000000ysf7TxhIGSSkS49IqzBGFKO5FqWZeqEfRyEloI2pkRHk1JkD87GL"
+  hypervisor {
+    address_list: "10.48.192.154"
+  }
+  ipmi {
+    address_list: "10.49.46.27"
+  }
+  zookeeper_myid: 3
+  uuid: "40a156e4-a032-4815-ab52-876e0cc676d5"
+  rackable_unit_id: 48
+  node_position: 4
+  software_version: "el7.3-release-euphrates-5.15.5-stable-5c9c69ebf0ec79805101dea18db7f049ac4eac9a"
+  node_serial: "ZM164S013198"
+  hardware_config: "/appliance/physical/hardware_configs/0aa4f6555a9d74cadc51103eb535b121"
+  management_server_id: 43
+  acropolis_status {
+    conn_state: kConnected
+  }
+  cluster_uuid: "0005c389-b8a8-6bc0-0000-000000004222"
+  rackable_unit_uuid: "38a5a24d-f8c1-45cd-9158-2b943d58a555"
+  management_server_uuid: "eaee9d7b-293e-4d9c-b43f-42b2a1e2f404"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.48.192.158"
+  cvm_resource_state {
+    memory_mb: 20077
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "5.0.1"
+    installed_using_phoenix_version: "phoenix-5.0.1_1ec6b3cd"
+    foundation_version: "foundation-4.6.1-64f1d375"
+  }
+}
+node_list {
+  service_vm_id: 16
+  service_vm_external_ip: "10.48.192.120"
+  node_status: kNormal
+  hypervisor_key: "10.48.192.116"
+  management_server_name: "10.48.192.116"
+  cassandra_token_id: "ckV00000IoTkvHcw0EB6wYamHPcaqciEnqyLH1RHtlQ3aBDUxmoD7wJZtrIN"
+  hypervisor {
+    address_list: "10.48.192.116"
+  }
+  ipmi {
+    address_list: "10.49.46.17"
+  }
+  zookeeper_myid: 2
+  uuid: "c9d3c721-274e-4827-90a8-72307796f9a7"
+  rackable_unit_id: 69
+  node_position: 2
+  software_version: "el7.3-release-euphrates-5.15.5-stable-5c9c69ebf0ec79805101dea18db7f049ac4eac9a"
+  node_serial: "ZM147S024882"
+  management_server_id: 68
+  acropolis_status {
+    conn_state: kConnected
+  }
+  cluster_uuid: "0005c389-b8a8-6bc0-0000-000000004222"
+  rackable_unit_uuid: "4ecccb15-20bd-4132-8010-778e851cd788"
+  management_server_uuid: "14013f58-3d92-4335-a84a-f9f95e8ff802"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.48.192.120"
+  cvm_resource_state {
+    memory_mb: 16045
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "5.0.1"
+    installed_using_phoenix_version: "phoenix-5.0.1_1ec6b3cd"
+    foundation_version: "foundation-4.6.1-64f1d375"
+  }
+}
+node_list {
+  service_vm_id: 17
+  service_vm_external_ip: "10.48.192.157"
+  node_status: kNormal
+  hypervisor_key: "10.48.192.153"
+  management_server_name: "10.48.192.153"
+  cassandra_token_id: "V0000000VjLLKzS4LGrpCkN1nsMWsrjdlZTsjHdhqBQoHDUnyvz4oNoTryKB"
+  hypervisor {
+    address_list: "10.48.192.153"
+  }
+  ipmi {
+    address_list: "10.49.46.26"
+  }
+  uuid: "5418fdce-e08c-4f3e-878c-194517c786b5"
+  rackable_unit_id: 48
+  node_position: 3
+  software_version: "el7.3-release-euphrates-5.15.5-stable-5c9c69ebf0ec79805101dea18db7f049ac4eac9a"
+  node_serial: "ZM163S053068"
+  hardware_config: "/appliance/physical/hardware_configs/54084cd4d4f41d215ed91ab60fd50aef"
+  management_server_id: 62
+  acropolis_status {
+    conn_state: kConnected
+  }
+  cluster_uuid: "0005c389-b8a8-6bc0-0000-000000004222"
+  rackable_unit_uuid: "38a5a24d-f8c1-45cd-9158-2b943d58a555"
+  management_server_uuid: "46848ea9-96f4-4f0f-8ebd-8b2e0deaff32"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.48.192.157"
+  cvm_resource_state {
+    memory_mb: 20077
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "5.0.1"
+    installed_using_phoenix_version: "phoenix-5.0.1_1ec6b3cd"
+    foundation_version: "foundation-4.6.1-64f1d375"
+  }
+}
+node_list {
+  service_vm_id: 18
+  service_vm_external_ip: "10.48.192.156"
+  node_status: kNormal
+  hypervisor_key: "10.48.192.152"
+  management_server_name: "10.48.192.152"
+  cassandra_token_id: "kV000000ACH4epkE3a7Ey3gn6blr23f6gb3Z1D2t0jiFpz38LNJdmF9NIgJF"
+  hypervisor {
+    address_list: "10.48.192.152"
+  }
+  ipmi {
+    address_list: "10.49.46.25"
+  }
+  uuid: "c6aad814-e56f-472f-9778-4ab26686fc8f"
+  rackable_unit_id: 48
+  node_position: 2
+  software_version: "el7.3-release-euphrates-5.15.5-stable-5c9c69ebf0ec79805101dea18db7f049ac4eac9a"
+  node_serial: "ZM163S045448"
+  hardware_config: "/appliance/physical/hardware_configs/291071749ab99c198783b3f5bd56ef10"
+  management_server_id: 64
+  acropolis_status {
+    conn_state: kConnected
+  }
+  cluster_uuid: "0005c389-b8a8-6bc0-0000-000000004222"
+  rackable_unit_uuid: "38a5a24d-f8c1-45cd-9158-2b943d58a555"
+  management_server_uuid: "4ca9a9a3-4238-427c-8a19-4f467544c0e5"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.48.192.156"
+  cvm_resource_state {
+    memory_mb: 20077
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "5.0.1"
+    installed_using_phoenix_version: "phoenix-5.0.1_1ec6b3cd"
+    foundation_version: "foundation-4.6.1-64f1d375"
+  }
+}
+node_list {
+  service_vm_id: 19
+  service_vm_external_ip: "10.48.192.155"
+  node_status: kNormal
+  hypervisor_key: "10.48.192.151"
+  management_server_name: "10.48.192.151"
+  cassandra_token_id: "00000000Lkw9ZL68Sp2TvuzlngVxmMASKRVG804RdBHCygwiUUVcSSKbw5nh"
+  hypervisor {
+    address_list: "10.48.192.151"
+  }
+  ipmi {
+    address_list: "10.49.46.24"
+  }
+  zookeeper_myid: 1
+  uuid: "aa0aab1d-6c9a-4895-9a3d-3f12c0aa097e"
+  rackable_unit_id: 48
+  node_position: 1
+  software_version: "el7.3-release-euphrates-5.15.5-stable-5c9c69ebf0ec79805101dea18db7f049ac4eac9a"
+  node_serial: "ZM163S045322"
+  hardware_config: "/appliance/physical/hardware_configs/9737c3454faa9dea2a00bd134f2f6364"
+  management_server_id: 75
+  acropolis_status {
+    conn_state: kConnected
+  }
+  cluster_uuid: "0005c389-b8a8-6bc0-0000-000000004222"
+  rackable_unit_uuid: "38a5a24d-f8c1-45cd-9158-2b943d58a555"
+  management_server_uuid: "0e5ea6e8-7eeb-43c6-9cbc-0eee7089fc23"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.48.192.155"
+  cvm_resource_state {
+    memory_mb: 20077
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "5.0.1"
+    installed_using_phoenix_version: "phoenix-5.0.1_1ec6b3cd"
+    foundation_version: "foundation-4.6.1-64f1d375"
+  }
+}
+node_list {
+  service_vm_id: 20
+  service_vm_external_ip: "10.48.192.122"
+  node_status: kNormal
+  hypervisor_key: "10.48.192.118"
+  management_server_name: "10.48.192.118"
+  cassandra_token_id: "sFV00000IOMQDLqKDSfBO2txyWDMEjMK2ExmtuzpHqBZlC6bRD61AocY9vWz"
+  hypervisor {
+    address_list: "10.48.192.118"
+  }
+  ipmi {
+    address_list: "10.49.46.19"
+  }
+  uuid: "fc2e1922-2635-4d51-89bb-757c768a3f28"
+  rackable_unit_id: 69
+  node_position: 4
+  software_version: "el7.3-release-euphrates-5.15.5-stable-5c9c69ebf0ec79805101dea18db7f049ac4eac9a"
+  node_serial: "ZM147S024825"
+  management_server_id: 73
+  acropolis_status {
+    conn_state: kConnected
+  }
+  cluster_uuid: "0005c389-b8a8-6bc0-0000-000000004222"
+  rackable_unit_uuid: "4ecccb15-20bd-4132-8010-778e851cd788"
+  management_server_uuid: "195ed5cd-810c-4faa-ae0b-0da35ee0a3b7"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.48.192.122"
+  cvm_resource_state {
+    memory_mb: 16045
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "5.0.1"
+    installed_using_phoenix_version: "phoenix-5.0.1_1ec6b3cd"
+    foundation_version: "foundation-4.6.1-64f1d375"
+  }
+}
+storage_pool_list {
+  storage_pool_name: "default-storage-pool-16930"
+  storage_pool_id: 21
+  disk_id: 80
+  disk_id: 76
+  disk_id: 77
+  disk_id: 81
+  disk_id: 78
+  disk_id: 79
+  disk_id: 82
+  disk_id: 83
+  disk_id: 84
+  disk_id: 97
+  disk_id: 98
+  disk_id: 99
+  disk_id: 100
+  disk_id: 101
+  disk_id: 102
+  disk_id: 88
+  disk_id: 89
+  disk_id: 90
+  disk_id: 96
+  disk_id: 93
+  disk_id: 95
+  disk_id: 91
+  disk_id: 92
+  disk_id: 94
+  storage_pool_uuid: "4347579c-d4bd-4680-ae0a-a665c3ad6f63"
+  disk_uuid: "ec24354f-82c4-427b-a4d1-114c381a8f08"
+  disk_uuid: "fa99c942-ad7f-4e10-ab17-aba969896237"
+  disk_uuid: "1d0fc49d-047f-4df6-bf07-8a2e6b36ca41"
+  disk_uuid: "b3ddc76e-4ac9-4ef9-adcd-a03cd124be5a"
+  disk_uuid: "64d4bad5-b0cd-4c93-9860-59e7f65e4843"
+  disk_uuid: "941eced3-b4e6-47ef-a1d5-dcb984aae4dd"
+  disk_uuid: "3f2f5f4a-db2a-4594-b3df-4501fe53eb70"
+  disk_uuid: "e9703759-4902-4d69-8bbb-96ada8e82d42"
+  disk_uuid: "d602e137-43d1-4cba-b8f8-203859fc259c"
+  disk_uuid: "50d3587b-0a63-4ed6-a37a-d2fe8254525a"
+  disk_uuid: "9d54c5c5-5a44-468e-aa3c-d55e45844ceb"
+  disk_uuid: "3fbe9792-f85e-40d2-bed3-8c679c8b779f"
+  disk_uuid: "bc935534-b55d-40cb-9eda-b7ebcc72e3d4"
+  disk_uuid: "52b1bd31-8d34-4ea2-b1ca-9d4c40e28777"
+  disk_uuid: "b98ddab2-77b4-4b6d-99ce-dfdf04174b18"
+  disk_uuid: "01c8b988-ea7f-4925-a0c3-95fcb30f9c48"
+  disk_uuid: "1ef49932-8313-410a-9892-8cd101c6dad1"
+  disk_uuid: "85340714-9d2b-459e-8da2-715b9aac33ed"
+  disk_uuid: "daf6ee6f-fbb8-4683-ae63-2a4a328d0333"
+  disk_uuid: "b4c59c23-0069-4d5a-9dab-fc749bc84584"
+  disk_uuid: "90a05ecc-6e91-4a26-9eb8-075012f69978"
+  disk_uuid: "7eeee7cf-4ca4-4217-af1e-b3fa241fbcd7"
+  disk_uuid: "a85c46eb-3dcd-4a6b-a0c5-a001767eb3b8"
+  disk_uuid: "84a1aef0-64d4-4dce-a631-12018e112636"
+}
+container_list {
+  container_name: "default-container-16930"
+  container_id: 22
+  storage_pool_id: 21
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 23029889161212
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "6f4a5167-cb48-4286-be60-5fe2f14f4be6"
+  storage_pool_uuid: "4347579c-d4bd-4680-ae0a-a665c3ad6f63"
+  fsid: 2
+  epoch: 0
+}
+container_list {
+  container_name: "NutanixManagementShare"
+  container_id: 23
+  storage_pool_id: 21
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 23029889161212
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    fingerprint_on_write: false
+    nutanix_managed: true
+  }
+  container_uuid: "4db0e68e-7ec4-4248-a21f-302450fd6ff1"
+  storage_pool_uuid: "4347579c-d4bd-4680-ae0a-a665c3ad6f63"
+  fsid: 1
+  epoch: 0
+}
+container_list {
+  container_name: "SelfServiceContainer"
+  container_id: 1177
+  storage_pool_id: 21
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 22986939488252
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "265f26ad-d822-4f20-8859-620fcbde2bd0"
+  storage_pool_uuid: "4347579c-d4bd-4680-ae0a-a665c3ad6f63"
+  fsid: 3
+  epoch: 0
+}
+container_list {
+  container_name: "ctnr-dedup"
+  container_id: 266766
+  storage_pool_id: 21
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 22601934246376
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: true
+  }
+  container_uuid: "530dcf01-9cc8-473c-aa37-fa8d6fe8d893"
+  storage_pool_uuid: "4347579c-d4bd-4680-ae0a-a665c3ad6f63"
+  fsid: 4
+  epoch: 0
+}
+container_list {
+  container_name: "ctnr-comp"
+  container_id: 266767
+  storage_pool_id: 21
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 22601934246376
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 0
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "3de16c63-880d-4eff-94a8-089518564cc0"
+  storage_pool_uuid: "4347579c-d4bd-4680-ae0a-a665c3ad6f63"
+  fsid: 5
+  epoch: 0
+}
+management_server_list {
+  management_server_name: "10.48.192.154"
+  access_url: "qemu+ssh://10.48.192.154/system"
+  management_server_type: kKvm
+  management_server_id: 43
+  parent_management_server_id: 44
+  management_server_uuid: "eaee9d7b-293e-4d9c-b43f-42b2a1e2f404"
+  parent_management_server_uuid: "ed7d50a4-02fc-4862-af32-eb5b85099da1"
+  management_server_version: "el7.nutanix.20190916.410"
+}
+management_server_list {
+  management_server_name: "127.0.0.1"
+  management_server_type: kAcropolis
+  management_server_id: 44
+  management_server_uuid: "ed7d50a4-02fc-4862-af32-eb5b85099da1"
+}
+management_server_list {
+  management_server_name: "10.48.192.153"
+  access_url: "qemu+ssh://10.48.192.153/system"
+  management_server_type: kKvm
+  management_server_id: 62
+  parent_management_server_id: 44
+  management_server_uuid: "46848ea9-96f4-4f0f-8ebd-8b2e0deaff32"
+  parent_management_server_uuid: "ed7d50a4-02fc-4862-af32-eb5b85099da1"
+  management_server_version: "el7.nutanix.20190916.410"
+}
+management_server_list {
+  management_server_name: "10.48.192.152"
+  access_url: "qemu+ssh://10.48.192.152/system"
+  management_server_type: kKvm
+  management_server_id: 64
+  parent_management_server_id: 44
+  management_server_uuid: "4ca9a9a3-4238-427c-8a19-4f467544c0e5"
+  parent_management_server_uuid: "ed7d50a4-02fc-4862-af32-eb5b85099da1"
+  management_server_version: "el7.nutanix.20190916.410"
+}
+management_server_list {
+  management_server_name: "10.48.192.116"
+  access_url: "qemu+ssh://10.48.192.116/system"
+  management_server_type: kKvm
+  management_server_id: 68
+  parent_management_server_id: 44
+  management_server_uuid: "14013f58-3d92-4335-a84a-f9f95e8ff802"
+  parent_management_server_uuid: "ed7d50a4-02fc-4862-af32-eb5b85099da1"
+  management_server_version: "el7.nutanix.20190916.410"
+}
+management_server_list {
+  management_server_name: "10.48.192.115"
+  access_url: "qemu+ssh://10.48.192.115/system"
+  management_server_type: kKvm
+  management_server_id: 70
+  parent_management_server_id: 44
+  management_server_uuid: "37db92e7-0ac1-4dd2-86a9-2c8c25158fb1"
+  parent_management_server_uuid: "ed7d50a4-02fc-4862-af32-eb5b85099da1"
+  management_server_version: "el7.nutanix.20190916.410"
+}
+management_server_list {
+  management_server_name: "10.48.192.118"
+  access_url: "qemu+ssh://10.48.192.118/system"
+  management_server_type: kKvm
+  management_server_id: 73
+  parent_management_server_id: 44
+  management_server_uuid: "195ed5cd-810c-4faa-ae0b-0da35ee0a3b7"
+  parent_management_server_uuid: "ed7d50a4-02fc-4862-af32-eb5b85099da1"
+  management_server_version: "el7.nutanix.20190916.410"
+}
+management_server_list {
+  management_server_name: "10.48.192.117"
+  access_url: "qemu+ssh://10.48.192.117/system"
+  management_server_type: kKvm
+  management_server_id: 74
+  parent_management_server_id: 44
+  management_server_uuid: "7855acb8-c99f-49d1-a946-4f3581d0cc9a"
+  parent_management_server_uuid: "ed7d50a4-02fc-4862-af32-eb5b85099da1"
+  management_server_version: "el7.nutanix.20190916.410"
+}
+management_server_list {
+  management_server_name: "10.48.192.151"
+  access_url: "qemu+ssh://10.48.192.151/system"
+  management_server_type: kKvm
+  management_server_id: 75
+  parent_management_server_id: 44
+  management_server_uuid: "0e5ea6e8-7eeb-43c6-9cbc-0eee7089fc23"
+  parent_management_server_uuid: "ed7d50a4-02fc-4862-af32-eb5b85099da1"
+  management_server_version: "el7.nutanix.20190916.410"
+}
+cluster_incarnation_id: 1622371159534528
+cluster_id: 16930
+cluster_name: "auto_cluster_prod_mohammad_arshi_1af0c3d1aaf2"
+aegis {
+  remote_support {
+    value: false
+    until_time_usecs: 0
+  }
+  email_alerts {
+    value: true
+    until_time_usecs: 0
+  }
+  verbosity: kBasicPlusCoreDump
+  auto_support_config {
+    email_asups {
+      value: true
+      until_time_usecs: 0
+    }
+    default_email_asup_contact_list: "no-email@nutanix.com"
+    send_email_asups_externally: false
+    aos_version: "euphrates-5.15.5-stable"
+    last_login_workflow_time_msecs: 1622375016770
+    remind_later: false
+    pii_scrubbing_level: kNone
+  }
+  send_email_alerts_externally: false
+  send_alert_email_digest: true
+  skip_empty_alert_email_digest: true
+}
+vdisk_list_in_pithos: true
+default_gateway_ip: "10.48.192.1"
+ntp_server_list: "0.centos.pool.ntp.org"
+ntp_server_list: "1.centos.pool.ntp.org"
+ntp_server_list: "2.centos.pool.ntp.org"
+ntp_server_list: "3.centos.pool.ntp.org"
+ntp_server_list: "0.us.pool.ntp.org"
+ntp_server_list: "1.us.pool.ntp.org"
+ntp_server_list: "2.us.pool.ntp.org"
+ntp_server_list: "ntp.dyn.nutanix.com"
+name_server_ip_list: "10.40.64.15"
+name_server_ip_list: "10.40.64.16"
+rackable_unit_list {
+  rackable_unit_id: 48
+  rackable_unit_serial: "16SM6C280069"
+  rackable_unit_model: kUseLayout
+  rackable_unit_model_name: "NX-1065-G5"
+  rackable_unit_uuid: "38a5a24d-f8c1-45cd-9158-2b943d58a555"
+}
+rackable_unit_list {
+  rackable_unit_id: 69
+  rackable_unit_serial: "14SM12340030"
+  rackable_unit_model: kNX1020
+  rackable_unit_model_name: "NX-1020"
+  rackable_unit_uuid: "4ecccb15-20bd-4132-8010-778e851cd788"
+}
+cassandra_schema_version: "el7.3-release-euphrates-5.15.5-stable-5c9c69ebf0ec79805101dea18db7f049ac4eac9a"
+vstore_list {
+  vstore_id: 22
+  vstore_name: "default-container-16930"
+  container_id: 22
+  vstore_uuid: "6f4a5167-cb48-4286-be60-5fe2f14f4be6"
+  container_uuid: "6f4a5167-cb48-4286-be60-5fe2f14f4be6"
+}
+vstore_list {
+  vstore_id: 23
+  vstore_name: "NutanixManagementShare"
+  container_id: 23
+  vstore_uuid: "4db0e68e-7ec4-4248-a21f-302450fd6ff1"
+  container_uuid: "4db0e68e-7ec4-4248-a21f-302450fd6ff1"
+}
+vstore_list {
+  vstore_id: 1177
+  vstore_name: "SelfServiceContainer"
+  container_id: 1177
+  vstore_uuid: "265f26ad-d822-4f20-8859-620fcbde2bd0"
+  container_uuid: "265f26ad-d822-4f20-8859-620fcbde2bd0"
+}
+vstore_list {
+  vstore_id: 266766
+  vstore_name: "ctnr-dedup"
+  container_id: 266766
+  vstore_uuid: "530dcf01-9cc8-473c-aa37-fa8d6fe8d893"
+  container_uuid: "530dcf01-9cc8-473c-aa37-fa8d6fe8d893"
+}
+vstore_list {
+  vstore_id: 266767
+  vstore_name: "ctnr-comp"
+  container_id: 266767
+  vstore_uuid: "3de16c63-880d-4eff-94a8-089518564cc0"
+  container_uuid: "3de16c63-880d-4eff-94a8-089518564cc0"
+}
+release_version: "el7.3-release-euphrates-5.15.5-stable-5c9c69ebf0ec79805101dea18db7f049ac4eac9a"
+ssh_key_list {
+  key_id: "40a156e4-a032-4815-ab52-876e0cc676d5"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4MmDExRce1dWKBfAPjFPiQaQ2EwmbrMSaNRE82HKc8CN/0ZZ1+cAWP9LdPvyefI86h92xg4hfA/xw0w4MvsNMVdCqHLUf+Ae2O0qwzZSMKQmmI+Ut3BK7SSyDES2sKxD57ssPIodU3NJ4oIkziOkvgLXJOZbLahypb+QEyGqJgrp7N4u/bs1wGb01IxFrkLjnT9EAfv44lHWvSuPbJ79D95JQYt98xEmsHcEpd341cVnAUs7jjTwQ5AyjPLub5t3SKxFA659WRpMznNc56YoAb2qYoWWuger0n913E2zbYgtIbjgnK+8ScveHerP+3ThCdZpN2/eMapuBQJjc079j nutanix@ntnx-16sm6c280069-d-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJAPvqwdv31NgmMA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMTA1MzAwOTUxMTFaFw0zMTA1MjgwOTUxMTFaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALgyYMTFFx7V\n1YoF8A+MU+JBpDYTCZusxJo1ETzYcpzwI3/RlnX5wBY/0t0+/J58jzqH3bGDiF8D\n/HDTDgy+w0xV0KoctR/4B7Y7SrDNlIwpCaYj5S3cErtJLIMRLawrEPnuyw8ih1Tc\n0nigiTOI6S+Atck5lstqHKlv5ATIaomCuns3i79uzXAZvTUjEWuQuOdP0QB+/jiU\nda9K49snv0P3klBi33zESawdwSl3fjVxWcBSzuONPBDkDKM8u5vm3dIrEUDrn1ZG\nkzOc1znpigBvapihZa6B6vSf3XcTbNtiC0huOCcr7xJy94d6s/7dOEJ1mk3b94xq\nm4FAmNzTv2MCAwEAAaNQME4wHQYDVR0OBBYEFB+sKQKzD+NP2WoR+S3/c1ZUPiiG\nMB8GA1UdIwQYMBaAFB+sKQKzD+NP2WoR+S3/c1ZUPiiGMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAHi+LEOd/GS82ezpv9f1NV0sQgWLwz7sLfeudLYT\n+ll7RalYM3+VcW0hDsK9BFsUX6Dzn95ZpbeRkgmsTGrq2cyQVdo+I5nVHfuwrylM\n8ipaQRJPf2y4hnBu96vNvgIj4iNTup72jA5/wTo/UNxRaJCce3MYavX40WmUa4d6\noVLtTOydPfNp+XRFZ6anl2IOtRPfN1n9bEytn2j6Dm/0lgMSBS9dFTHTebnWmohn\n5BYnik/6VMIm89KyK7aI0yPRVAZEF/piTFpl7x6FSLYBnC0jqSdAQ/dP9FJT9UTC\nJ4d2MXtsE3fwoASzW0Y+ww+gr0ydDXGANJZ45IoEjsXbqKE=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "5418fdce-e08c-4f3e-878c-194517c786b5"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDlQmh5DCFOV0/SxFNTT1lXE0i8zdpPeLavNgMsWOOHlCXdXf1Iui1FCCWoZtmd/ac30skg7Z22wJRH3d85avjQ8UVctvFQeUeh76LTlZlPyrytqcZ8JmX+My3LvJhm+5i29xHIszwt4UPW0nWKe7Kd7atM1pAbr68Ek1A513unop6DcjQiW67S9yQDM2orABgkr+tu2XTFAwIppXwKLuzr7apIwsNDjHvAYx935sFnIC8g80x9ZdxBjUzQbI8Be6XVpyxnfA8eJM7TeTj5g2mlUrBp/+lM9KHL/B3CHxMbOcqGyRDxWQHlqC3o1536yb+fkBYALdmz5OEpi2fdeoEH nutanix@ntnx-16sm6c280069-c-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJAP0kqj6VNUE/MA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMTA1MzAwOTU0MDlaFw0zMTA1MjgwOTU0MDlaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOVCaHkMIU5X\nT9LEU1NPWVcTSLzN2k94tq82AyxY44eUJd1d/Ui6LUUIJahm2Z39pzfSySDtnbbA\nlEfd3zlq+NDxRVy28VB5R6HvotOVmU/KvK2pxnwmZf4zLcu8mGb7mLb3EcizPC3h\nQ9bSdYp7sp3tq0zWkBuvrwSTUDnXe6einoNyNCJbrtL3JAMzaisAGCSv627ZdMUD\nAimlfAou7OvtqkjCw0OMe8BjH3fmwWcgLyDzTH1l3EGNTNBsjwF7pdWnLGd8Dx4k\nztN5OPmDaaVSsGn/6Uz0ocv8HcIfExs5yobJEPFZAeWoLejXnfrJv5+QFgAt2bPk\n4SmLZ916gQcCAwEAAaNQME4wHQYDVR0OBBYEFH5BSrdaXzYtR9KvVA4iWXgMsOPZ\nMB8GA1UdIwQYMBaAFH5BSrdaXzYtR9KvVA4iWXgMsOPZMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAA8keZaXBZkG+c+fzr8KdfiZlupzTTwEtkgndTaV\nR8t02dvkoHwKvx7r+pT5YuvuUyWFsjpkfPYSPIjr33nS+47Sgy906QqGD4tePYi0\nMFv587oGbaUrP1p7vqUeXrBFVGoEohSSQZp/sCvXTcQNffDK30o5GG4ucIT9GG2Q\nQd81vKoeQmgKviNX4dsLRcIompV0KsXTyznH+OHFebMTIyvqJYP8yE2xfWdsdvll\nqW1ulXcKqOj4YbIC+gl0uDFCSDhMeclfTr7TX6LhrQ0CmWZwMeuzowikag4BsjIn\nF/q0EqJWfRvxIkZ9Ic9sFVfmiWi9XYBsIJK45PPgCKEDu3I=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "c6aad814-e56f-472f-9778-4ab26686fc8f"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCNoMRr588BsJECtnBkMmntv63eLt0QsgBuiAgyjkM3hYu10kU9QbPjWUIRBADyyP3zkGEnw9lztcGXCBInIiK4FsL3j8s/uYajYIGoTCBF3yYAgL7Tg/PEJciCL/ThxF2nwhCRfY87f6YoLTkNgcmjPtDO2m5sAlz+q0yWrlSna4n94ObiAtE+BiwyQPAwn1oYIa+REDz6XVjSRXtBf61BQgom4drqDoccZix4xNzidIE6zm5IDkNWilkxZXv/8vVoaiUXuW8qeStYiCKb+Xq0sf9sm3hGZTA8bfJE8ewHeZw+diLi1XLZQk2yG0noVnf6GUgOzhLhlppdePjlVjoV nutanix@ntnx-16sm6c280069-b-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJAMhMiQCMnzI1MA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMTA1MzAwOTUyNTFaFw0zMTA1MjgwOTUyNTFaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI2gxGvnzwGw\nkQK2cGQyae2/rd4u3RCyAG6ICDKOQzeFi7XSRT1Bs+NZQhEEAPLI/fOQYSfD2XO1\nwZcIEiciIrgWwvePyz+5hqNggahMIEXfJgCAvtOD88QlyIIv9OHEXafCEJF9jzt/\npigtOQ2ByaM+0M7abmwCXP6rTJauVKdrif3g5uIC0T4GLDJA8DCfWhghr5EQPPpd\nWNJFe0F/rUFCCibh2uoOhxxmLHjE3OJ0gTrObkgOQ1aKWTFle//y9WhqJRe5byp5\nK1iIIpv5erSx/2ybeEZlMDxt8kTx7Ad5nD52IuLVctlCTbIbSehWd/oZSA7OEuGW\nml14+OVWOhUCAwEAAaNQME4wHQYDVR0OBBYEFO/LUqqTmjA7o/oOsPbxdTXdRVvj\nMB8GA1UdIwQYMBaAFO/LUqqTmjA7o/oOsPbxdTXdRVvjMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAFbetNxupB081zaPJNJtNZOx3IAflB04clYVpel+\nk7Ubcakk/EOQcniv4eVaNpIrliCURl3FxQW4/2NymAjz6oOe11uwLttbGHcsxkjq\nQ9Y/a81WdDJPhZoV+VHDkkCONSNTQYh+KENTyUkK67x4/IA+Do69S6/Wctulef28\nngdMuQHN0wm5fu8lrIf/zVLMik2IF7AZWSKm8Gd7gbrlm33pe4FlMf2bdWKMK4N7\njONCDh7UpEnBi7a6aWs6W/OUcx4Hf2DAG6wSbpDHsl6WYcTAcoBqAHkkywbtn+Hq\nmcK7c6UlMZRy6lzE+FziXm2kTgTzCLAEyfPtXWK4v7Uy/WY=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "c9d3c721-274e-4827-90a8-72307796f9a7"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNvIk2GNOMNjyVU1KWizFWWxEVutMw2hRjQ36yO+nXLTvr6ZN+TtSD/83/dk5deaZVy4Id8maYDEileu4S0RvaX71DC6VWVTiPtObd6PW9lqvs3kNTPoUyTcP6Sx7TCFo87TvYp8sCAnEzyuKOp+49a246lSVEH/SCnbNmGqyUFHNesGfsS5qoDU14ZQO9dwQyWI3h6BCcxWu1Xs42UezcfcKecLzpO6DV4eBPaU4lQRm9mqMsde0lJ8giuUdMpLdUfkmmqg22a4g7vrbFcF95SKX+guSgnOQ4DpIYQ6U0shgBmCzafVOVEBIGhKiiCOu/BgHtLW2Vl9ldJp6Rsax1 nutanix@ntnx-14sm12340030-b-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJAIYUhB87T92EMA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMTA1MzAxMDAwNTNaFw0zMTA1MjgxMDAwNTNaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM28iTYY04w2\nPJVTUpaLMVZbERW60zDaFGNDfrI76dctO+vpk35O1IP/zf92Tl15plXLgh3yZpgM\nSKV67hLRG9pfvUMLpVZVOI+05t3o9b2Wq+zeQ1M+hTJNw/pLHtMIWjztO9inywIC\ncTPK4o6n7j1rbjqVJUQf9IKds2YarJQUc16wZ+xLmqgNTXhlA713BDJYjeHoEJzF\na7VezjZR7Nx9wp5wvOk7oNXh4E9pTiVBGb2aoyx17SUnyCK5R0ykt1R+SaaqDbZr\niDu+tsVwX3lIpf6C5KCc5DgOkhhDpTSyGAGYLNp9U5UQEgaEqKII678GAe0tbZWX\n2V0mnpGxrHUCAwEAAaNQME4wHQYDVR0OBBYEFNhv+5nyZCB60OLx9+Yb8JOQuuhV\nMB8GA1UdIwQYMBaAFNhv+5nyZCB60OLx9+Yb8JOQuuhVMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAGqDB5Mj4voMFD2cBf+BbS4Z9A3EFa132Af3ykEg\n1dsNSqg4P+Zctt9/ZitzCg9uFjAVtEo4Oaw1B4acC2YHC5xSOlPoXXVwSkwZgRN8\nEDKv9YVosusWHuN8F05Fx1X3wja+2vGxaMd86MLrLjJ0EF5n8VdBtVgWvFm7B/fY\nf/6d+ZPAOWNLEkBA8WKAPDZC2PlSPMO+ShtI5LyIt7j5iYbc7KTj4n0uxVxqEikk\n3IgPiDLvWsjZ8SsYlz70kVUsal/M+Mxd7Giuuo/acmyQdXHM1dK0cM9H02FVH7yj\n8JjXhCShs0Hu9KkDWDVda8yjEfBct+lIuM9eb9aFguqcmJU=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "65f9c757-4a87-4d0b-8a29-a569ecbf6b57"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCg5iQyi/wZi2cDAEwlJvaI6d4mPe1zp4o3qxd4UQvd5tRv0X0+KtX6SseWspnG7N2Pz9pRAX9Qd5GcW7pre3WgDK02fGILRD/mRXhqcwf7+uNrumjjY8agEUHsN0mTcaH2Rvyq+7xC8UsZonBni+WcPN9pxgwzcq5octmshurOMAyaqoRUk2DskT473TxPuLTYupDi4GD3B7XISq4jxKzLvtIyjLv3hAx7gfHfdHTs1iPy2/HTtxWXN6PMYTl8d3Bqq2V/znFDNxAs/xs/bOuMrwGvIpwoHe6F9oUF4qhizA8MdlePuLEM0svvXPbxeKIDhAHs/6pV+3ulzsmighPp nutanix@ntnx-14sm12340030-a-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJAI+GrjlK4QMnMA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMTA1MzAxMDAwMjNaFw0zMTA1MjgxMDAwMjNaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKDmJDKL/BmL\nZwMATCUm9ojp3iY97XOnijerF3hRC93m1G/RfT4q1fpKx5aymcbs3Y/P2lEBf1B3\nkZxbumt7daAMrTZ8YgtEP+ZFeGpzB/v642u6aONjxqARQew3SZNxofZG/Kr7vELx\nSxmicGeL5Zw832nGDDNyrmhy2ayG6s4wDJqqhFSTYOyRPjvdPE+4tNi6kOLgYPcH\ntchKriPErMu+0jKMu/eEDHuB8d90dOzWI/Lb8dO3FZc3o8xhOXx3cGqrZX/OcUM3\nECz/Gz9s64yvAa8inCgd7oX2hQXiqGLMDwx2V4+4sQzSy+9c9vF4ogOEAez/qlX7\ne6XOyaKCE+kCAwEAAaNQME4wHQYDVR0OBBYEFPafNEVSaOhRWvl4GWRK2KeLHLRe\nMB8GA1UdIwQYMBaAFPafNEVSaOhRWvl4GWRK2KeLHLReMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAFnJreeKN/PzRKGf2sjySV2b+v5wZYZfP/OG50gF\nbjr73niafcojQQlaHZWD/CYlSCjJfjCfA3M85qcbnzZyWqwC1R6e7N7WSRfzlMf+\nqe9G2nW3GbuypRkVanqscZgJthU7Tb6o4S5nxV6Qh1YOgrZvKypHUUSUPiCxGJA5\nk27OTRWcu/JddR93irzkshWZ1Ys+CT6qOwamTN1CTouvuvGkACE+wY22nPoPYxKA\n4Pu+8rw+oA3W6NibegsJICu4u0yx3ZI3ff82G7OXHsvL0iKo6xEXA/BXMYiHSpFU\nphz5rYcBjJSf0kxsVDw490TEGgeUMZqnwNlPSek6mjec8ls=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "fc2e1922-2635-4d51-89bb-757c768a3f28"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDa07+miFJwI5vBpg1CU7/+KLChnaDn1BJBnlEd4Wm1jzSfhbasyMKwF9yujOd8L6PN/Dad0BH9/Bp+RrGPAfZ3XWfrC5IRUGS/bi00zsrKI1BIZsrQM/FjdSiOuztxyFhoS4MFDf/2H11t/pVsFk1qmBEJXNx2T14cghylxl01R2aoGN1BVLRUdJ5BQh9fkx4BXAhL7ciFqL8+A8lVEqKo86m8UCRp8eoHsIQ79L82RHgzsyu47ZLHDJICI8CmBupOStjVYdYhHpLu64xq4ad9aSBwGR9WpmDUZlM8x/V1i4q9RJQwKBtEts2voHX+rFFK+xkP7Jv635eo9Tm2A11n nutanix@ntnx-14sm12340030-d-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJANQ7CP5wF5XJMA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMTA1MzAxMDAzMzNaFw0zMTA1MjgxMDAzMzNaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANrTv6aIUnAj\nm8GmDUJTv/4osKGdoOfUEkGeUR3habWPNJ+FtqzIwrAX3K6M53wvo838Np3QEf38\nGn5GsY8B9nddZ+sLkhFQZL9uLTTOysojUEhmytAz8WN1KI67O3HIWGhLgwUN//Yf\nXW3+lWwWTWqYEQlc3HZPXhyCHKXGXTVHZqgY3UFUtFR0nkFCH1+THgFcCEvtyIWo\nvz4DyVUSoqjzqbxQJGnx6gewhDv0vzZEeDOzK7jtkscMkgIjwKYG6k5K2NVh1iEe\nku7rjGrhp31pIHAZH1amYNRmUzzH9XWLir1ElDAoG0S2za+gdf6sUUr7GQ/sm/rf\nl6j1ObYDXWcCAwEAAaNQME4wHQYDVR0OBBYEFNM5wZVmMIc9mji/Vunt1Vd9etwh\nMB8GA1UdIwQYMBaAFNM5wZVmMIc9mji/Vunt1Vd9etwhMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAHbRYdymTrTbFcBgFoqYsXLnWMbVYymdI4X0INdZ\nWQfdNJ7Se/qu+e2362ErfDARPnRcn2QtGWZqMj5XdQJmGap2+v6wINEYC8sjURSO\nNLYy/BXdihJwhXdQVHBeIqKfEPTwQaxp1Rzb8Bwil2PEj3mOzSBNo6szCz6USTTR\ntzAessmfbW2PhxbXg8O2kuLSVBpIpgwzEH2xgEZxcGRkzIPfY7waW1IbQPrI0+J8\nYw1z6p3xq7G6hgODxeFFtCKm9eg5Ga4ui0pWF5GAC62owwulu68rceMQIYdRYA+l\nShK0rALQewRvHr+eq70Cn1lzwF6t/U0m854VK1YgLMqrz74=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "ee645504-35af-402e-aa06-ba851376896a"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCGpqHoypo1dg+cveAAGHsI/B8QAXT9yFpn7Wy3NTfgUubadEZvfTTlaj6hstWx0AkARKB0FskTYkWnLRYJFVnbgwxKikXopOZj22LKydouNopZ5GoJGf4oTNu/loME8ACj6DGENyf2z73acicAP18Yg9gBCqMjxRgWEARYj+yVGpUepFOAbKJvf6jh22iH5xXSA/ObsIH+o3XktyDDIP3ER6+ZScmWwDLZN539QsgyaB6cfzbEhmBDE2YsqfHGl9Mf2+P1GnpGvdkIyCmyumfjK/jROAhbM/gv822IaLInW8wLKOcKFCBB73T6VyrT5JpY7Vp0hHMx0m3CDpZWjkWb nutanix@ntnx-14sm12340030-c-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJAO7Qhv24KnSkMA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMTA1MzAxMDIzMTdaFw0zMTA1MjgxMDIzMTdaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIamoejKmjV2\nD5y94AAYewj8HxABdP3IWmftbLc1N+BS5tp0Rm99NOVqPqGy1bHQCQBEoHQWyRNi\nRactFgkVWduDDEqKReik5mPbYsrJ2i42ilnkagkZ/ihM27+WgwTwAKPoMYQ3J/bP\nvdpyJwA/XxiD2AEKoyPFGBYQBFiP7JUalR6kU4Bsom9/qOHbaIfnFdID85uwgf6j\ndeS3IMMg/cRHr5lJyZbAMtk3nf1CyDJoHpx/NsSGYEMTZiyp8caX0x/b4/Uaeka9\n2QjIKbK6Z+Mr+NE4CFsz+C/zbYhosidbzAso5woUIEHvdPpXKtPkmljtWnSEczHS\nbcIOllaORZsCAwEAAaNQME4wHQYDVR0OBBYEFC8SlpIY8goAXIfg2ACWY/NCW+U8\nMB8GA1UdIwQYMBaAFC8SlpIY8goAXIfg2ACWY/NCW+U8MAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBADzg/u71lx2DwlyArcdlRGPnsy6hRR4wmY9KxiKl\nQ7TuizwYkuyCeP1gznWBDAVC0FjqToenmIXG8qnEt4EmQg+hl/xeroyaU68lx5Po\n4x2kg+pNCK0nhjR9B8V6few3dF33vEqfl+4PqVbXG5c0Rcs3xF5vdVGgO/YJ743u\ndNwiFCmDSWIclDfELXt/dHYq9vKhEuyINOKToPyAbjgkkgr7vl4edg9ODNu3BpcD\nS1A4JWDA0V3vOd7FgVdbHuI8QOnCtyrjjj9a8a99CNJ2bIqpZJESTEsihnPoNmbI\nm01J5O9o+Y0FZl8MGDTqiQPATRPuh/WHq/K0IFNvAwBR8OQ=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "aa0aab1d-6c9a-4895-9a3d-3f12c0aa097e"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCc8svvSZ/3XVMdzSsqj++rQWBGL//jECxemvBxgOdrDG7dchDeUQh12kvAyiazxc4LB+DXigwtyGtHNR9weyoadMkDDWui60CSC1Tv6KJOh7VsQigkbByoP9E+Gg8f7twRACvITQZXiGAl1diqa2k0JykmyC0Su77VAQU9s4N9nuAd+x5HvDkuncd2hpdApe/fRWIYUYnyH8/t/tNCVwRWpRCWALrR0omDHS7d9ER160RtvK2O/n/DrKUoEKYk43pcc4Dtb6DDGAWaU04sf5agZ3/5rTYHJSPP9YwuP+3w++3SOxs5g+DmDxXTPAW3jBytf6R/OefkvgwVF7icDxoH nutanix@ntnx-16sm6c280069-a-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJALjugYLInjODMA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMTA1MzAwOTU0MDlaFw0zMTA1MjgwOTU0MDlaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJzyy+9Jn/dd\nUx3NKyqP76tBYEYv/+MQLF6a8HGA52sMbt1yEN5RCHXaS8DKJrPFzgsH4NeKDC3I\na0c1H3B7Khp0yQMNa6LrQJILVO/ook6HtWxCKCRsHKg/0T4aDx/u3BEAK8hNBleI\nYCXV2KpraTQnKSbILRK7vtUBBT2zg32e4B37Hke8OS6dx3aGl0Cl799FYhhRifIf\nz+3+00JXBFalEJYAutHSiYMdLt30RHXrRG28rY7+f8OspSgQpiTjelxzgO1voMMY\nBZpTTix/lqBnf/mtNgclI8/1jC4/7fD77dI7GzmD4OYPFdM8BbeMHK1/pH855+S+\nDBUXuJwPGgcCAwEAAaNQME4wHQYDVR0OBBYEFHHS9iv7JiyzaEsFRnJwgVYnH8XO\nMB8GA1UdIwQYMBaAFHHS9iv7JiyzaEsFRnJwgVYnH8XOMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAFj2PpOIWbCz6pGcRZE0S3gmBJdyCuPdolOUcPSb\nb/YGcVQURdNjaPV36d7nYi9On2mQw0toZyBpoxXRDFtAd//LYg+6zAI6NG5aHv37\nXwi4DkDs2ERILHWT2OYcdBJ6s9cZb7J+4IxVKG5FI1LrOsuN0IuS9E8XIsw4jRdP\nB5ndzRcrF4ybLy2ysjQGl7MD7upYQgfUT5/O0tXoJblCPS3QD+W9+bgBcG4JXnEH\nv7yPwM9aDSIjY7oaNUfTz0nNy7jotOK1/NVhq5ASlG157NUpUYef4w6FLKCzSAxj\n4WDr1hW4oIBb4PrUVlOKnJcsEr3OyOVsgFLcDmQFPug4Hr8=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "agave"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAw8NhpiLG/6c8c0LocaQVM6+x8yBvLS+z13nYlqzSKr64HQSH+IIx14bS+uh0xf8ou5ROnbUa44YM9qG2RBK1hBVrwTIKZBwFwOTxDuXH9YoswqflnOeyTGUFerrMxlg5iYvKE01QIErKWt/BJ+hK/qVQi6SHh/WhyjAGNQPxjPBG3oEUFoLV9uDLX9RT/sLIQpBf91DCbF9+2rSToqjydj36d38JbmuGJGqr+DrEd0lKzfiJiQ39t3AXBE1bY2ISX+uwq07XkYZbrHaijrxnOBFZE7ETQmyxdcOvgDxvhnhZpFsUqbPqIqa45CwFWV+btzITvpJkveYjGSGR7ZJNHQ== nutanix@titan"
+  key_type: kExternalKey
+}
+cluster_content_cache_fingerprint_pct: 100
+cluster_external_ip: "10.48.192.125"
+cluster_fault_tolerance_state {
+  current_max_fault_tolerance: 1
+  desired_max_fault_tolerance: 1
+  desired_fault_tolerance_level: kNode
+}
+domain_fault_tolerance_state {
+  domains {
+    domain_type: kNode
+    components {
+      component_type: kZookeeperInstances
+      max_faults_tolerated: 1
+      last_update_secs: 1622371346
+      tolerance_details_message {
+        message_id: "Zookeeper can tolerate 1 node failure(s)"
+      }
+    }
+    components {
+      component_type: kStaticConfig
+      max_faults_tolerated: 1
+      last_update_secs: 1622371532
+      tolerance_details_message {
+        message_id: "Cluster configuration supports node (host) fault tolerance"
+      }
+    }
+    components {
+      component_type: kCassandraRing
+      max_faults_tolerated: 1
+      last_update_secs: 1622371541
+      tolerance_details_message {
+        message_id: "All metadata ring partitions are fault tolerant"
+      }
+    }
+    components {
+      component_type: kStargateHealth
+      max_faults_tolerated: 1
+      last_update_secs: 1625144377
+      tolerance_details_message {
+        message_id: "Based on stargate health the cluster can tolerate a maximum of 1 node failure(s)"
+      }
+    }
+    components {
+      component_type: kFreeSpace
+      max_faults_tolerated: 1
+      last_update_secs: 1625144162
+      tolerance_details_message {
+        message_id: "Cluster has enough capacity (20789509864198) for usage (3094497775616) to tolerate at least 1 node failure(s)"
+      }
+    }
+    components {
+      component_type: kExtentGroupReplicas
+      max_faults_tolerated: 1
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "Based on placement of extent group replicas the cluster can tolerate a maximum of 1 node failure(s)"
+      }
+      under_computation: false
+    }
+    components {
+      component_type: kOplogEpisodes
+      max_faults_tolerated: 1
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "Based on placement of oplog episodes the cluster can tolerate a maximum of 1 node failure(s)"
+      }
+    }
+    components {
+      component_type: kErasureCodeStripSize
+      max_faults_tolerated: 1
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "Based on erasure code strip size the cluster can tolerate a maximum of 1 node failure(s)"
+      }
+    }
+  }
+  domains {
+    domain_type: kRackableUnit
+    components {
+      component_type: kZookeeperInstances
+      max_faults_tolerated: 0
+      last_update_secs: 1622371346
+      tolerance_details_message {
+        message_id: "Rackable unit (block) aware Zookeeper placement is disabled - Not enough rackable units (blocks) in the cluster"
+      }
+    }
+    components {
+      component_type: kOplogEpisodes
+      max_faults_tolerated: 0
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "kRackableUnit aware data placement is disabled - Not enough rackable units (blocks) in the cluster."
+      }
+    }
+    components {
+      component_type: kStaticConfig
+      max_faults_tolerated: 0
+      last_update_secs: 1622371531
+      tolerance_details_message {
+        message_id: "Not enough rackable units (blocks) in the cluster."
+      }
+    }
+    components {
+      component_type: kExtentGroupReplicas
+      max_faults_tolerated: 0
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "kRackableUnit aware data placement is disabled - Not enough rackable units (blocks) in the cluster."
+      }
+      under_computation: false
+    }
+    components {
+      component_type: kCassandraRing
+      max_faults_tolerated: 0
+      last_update_secs: 1622371541
+      tolerance_details_message {
+        message_id: "Metadata ring partitions with nodes: {non_fault_tolerant_nodes} are not fault tolerant."
+        attribute_list {
+          attribute: "non_fault_tolerant_nodes"
+          value: "10.48.192.155, 10.48.192.119, 10.48.192.158"
+        }
+      }
+    }
+    components {
+      component_type: kStargateHealth
+      max_faults_tolerated: 0
+      last_update_secs: 1625144377
+      tolerance_details_message {
+        message_id: "kRackableUnit aware data placement is disabled - Not enough rackable units (blocks) in the cluster."
+      }
+    }
+    components {
+      component_type: kFreeSpace
+      max_faults_tolerated: 0
+      last_update_secs: 1625144162
+      tolerance_details_message {
+        message_id: "kRackableUnit aware data placement is disabled - Not enough rackable units (blocks) in the cluster."
+      }
+    }
+    components {
+      component_type: kErasureCodeStripSize
+      max_faults_tolerated: 0
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "kRackableUnit aware data placement is disabled - Not enough rackable units (blocks) in the cluster."
+      }
+    }
+  }
+  domains {
+    domain_type: kRack
+    components {
+      component_type: kZookeeperInstances
+      max_faults_tolerated: 0
+      last_update_secs: 1622371521
+      tolerance_details_message {
+        message_id: "Rack aware Zookeeper placement is disabled - Not enough racks in the cluster"
+      }
+    }
+    components {
+      component_type: kOplogEpisodes
+      max_faults_tolerated: 0
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "kRack awareness is disabled."
+      }
+    }
+    components {
+      component_type: kStaticConfig
+      max_faults_tolerated: 0
+      last_update_secs: 1622371530
+      tolerance_details_message {
+        message_id: "Rack aware placement is not enabled."
+      }
+    }
+    components {
+      component_type: kExtentGroupReplicas
+      max_faults_tolerated: 0
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "kRack awareness is disabled."
+      }
+      under_computation: false
+    }
+    components {
+      component_type: kStargateHealth
+      max_faults_tolerated: 0
+      last_update_secs: 1625144377
+      tolerance_details_message {
+        message_id: "kRack awareness is disabled."
+      }
+    }
+    components {
+      component_type: kFreeSpace
+      max_faults_tolerated: 0
+      last_update_secs: 1625144162
+      tolerance_details_message {
+        message_id: "kRack awareness is disabled."
+      }
+    }
+    components {
+      component_type: kErasureCodeStripSize
+      max_faults_tolerated: 0
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "kRack awareness is disabled."
+      }
+    }
+  }
+  domains {
+    domain_type: kDisk
+    components {
+      component_type: kCassandraRing
+      max_faults_tolerated: 1
+      last_update_secs: 1622371541
+      tolerance_details_message {
+        message_id: "All metadata ring partitions are fault tolerant"
+      }
+    }
+    components {
+      component_type: kFreeSpace
+      max_faults_tolerated: 1
+      last_update_secs: 1625144162
+      tolerance_details_message {
+        message_id: "Cluster has enough capacity (20789509864198) for usage (3094497775616) to tolerate at least 1 disk failure(s)"
+      }
+    }
+    components {
+      component_type: kExtentGroupReplicas
+      max_faults_tolerated: 1
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "Based on placement of extent group replicas the cluster can tolerate a maximum of 1 disk failure(s)"
+      }
+    }
+    components {
+      component_type: kOplogEpisodes
+      max_faults_tolerated: 1
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "Based on placement of oplog episodes the cluster can tolerate a maximum of 1 disk failure(s)"
+      }
+    }
+    components {
+      component_type: kErasureCodeStripSize
+      max_faults_tolerated: 1
+      last_update_secs: 1625142847
+      tolerance_details_message {
+        message_id: "Based on erasure code strip size the cluster can tolerate a maximum of 1 disk failure(s)"
+      }
+    }
+  }
+}
+shadow_clones_enabled: true
+password_remote_login_enabled: true
+stargate_version: 529
+cluster_functions: 1
+cluster_uuid: "0005c389-b8a8-6bc0-0000-000000004222"
+timezone: "America/Los_Angeles"
+disable_on_disk_dedup: true
+extended_nfs_fhandle_enabled: true
+curator_scan_info {
+  partial_scan_execution_id: 2614
+  full_scan_execution_id: 2547
+  selective_scan_execution_id: 1918
+}
+acropolis_ha_config {
+  failover_enabled: true
+  num_host_failures_to_tolerate: 1
+  logical_timestamp: 2
+  ha_state: kAcropolisHAHighlyAvailable
+  reservation_type: kAcropolisHAReserveSegments
+  reservation_type_override: true
+  removed_node_locality_cleared: true
+  num_remaining_host_failures_to_tolerate: 1
+}
+cvm_security_compliance_config {
+  schedule: kDaily
+  aide: false
+  core: false
+  high_strength_password: false
+  banner: false
+  snmp_v3_only: false
+}
+hypervisor_security_compliance_config {
+  schedule: kDaily
+  aide: false
+  core: false
+  high_strength_password: false
+  banner: false
+}
+cluster_external_data_services_ip: "10.48.192.126"
+disable_degraded_node_monitoring: false
+cluster_operation_mode: kNormal
+common_criteria_mode: false
+iscsi_config {
+  iscsi_client_uuid_fix_done: true
+  scsi_pr_endian_state: kBigEndian
+}
+curator_stargate_protocol_config {
+  current_version: 1
+  desired_version: 1
+  enable_dedup_extents_two_phase_deletion: true
+}
+initialized_dedup_extents_two_phase_deletion: true
+management_share_container_id: 23
+default_ssp_container_id: 1177
+cluster_arch: kX86_64
+image_conversion_complete_obelix: true
+catalog_pe_registered: true
+acropolis_scheduler_cleanup_done: true
+hypervisor_lldp_config {
+  lldpd_tx: true
+}
+cerebro_features_bitmap: 10816452607
+catalog_subset_migration_enabled: true
+acropolis_scheduler_hot_add_cleanup_done: true
+acropolis_ha_priority_cleanup_done: true
+is_lts: true
+aes_supported_version_logical_timestamp: 0
