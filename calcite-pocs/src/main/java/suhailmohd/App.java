@@ -16,6 +16,7 @@ import java.nio.file.Paths;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import suhailmohd.idf.IDFSchema;
 
 public class App
 {
@@ -39,8 +40,10 @@ public class App
 
 
         SchemaPlus rootSchema = calciteConnection.getRootSchema();
-        Schema schema = new TartarusSchema();
-        rootSchema.add("tartarus", schema);
+        Schema tSchema = new TartarusSchema();
+        Schema idfSchema = new IDFSchema();
+        rootSchema.add("tartarus", tSchema);
+        rootSchema.add("idf", idfSchema);
 
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
