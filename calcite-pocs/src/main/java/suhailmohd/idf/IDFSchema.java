@@ -30,6 +30,11 @@ import java.util.Map;
 import java.util.ArrayList;
 import java.io.IOException;
 
+import suhailmohd.idf.nutanixdb.IDF;
+import suhailmohd.idf.nutanixdb.IDFTableDesc;
+import com.nutanix.insights.exception.InsightsInterfaceException;
+
+
 /**
  * Schema mapped onto a directory of CSV files. Each table in the schema
  * is a CSV file in that directory.
@@ -37,25 +42,31 @@ import java.io.IOException;
 public class IDFSchema extends AbstractSchema {
 
   private Map<String, Table> tableMap;
+  private IDF idf;
 
   public IDFSchema() {
     super();
+    this.idf = new IDF();
   }
 
   @Override protected Map<String, Table> getTableMap() {
     if (tableMap == null) {
       try {
         tableMap = createTableMap();
-      } catch(IOException e) {
-        System.out.println(e);
+      } catch(InsightsInterfaceException e) {
+        System.err.println(e);
       }
     }
     return tableMap;
   }
 
-  private Map<String, Table> createTableMap() throws IOException {
+  private Map<String, Table> createTableMap() throws InsightsInterfaceException {
     final ImmutableMap.Builder<String, Table> builder = ImmutableMap.builder();
-    builder.put("disk", new IDFTable());
+
+    for(IDFTableDesc desc: idf.ListTables()) {
+      System.err.println("Creating table: " + desc.tableName);
+      builder.put(desc.tableName.toUpperCase(), new IDFTable(idf, desc));
+    }
     return builder.build();
   }
 }

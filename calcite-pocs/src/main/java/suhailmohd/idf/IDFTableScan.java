@@ -20,9 +20,11 @@ public class IDFTableScan extends TableScan implements IDFRel {
     @Override public void implement(Implementor implementor) {
         implementor.idfTable = idfTable;
         implementor.table = table;
+        implementor.whereClauseString = "";
     }
 
     @Override public void register(RelOptPlanner planner) {
         planner.addRule(IDFRules.TO_ENUMERABLE);
+        planner.addRule(IDFRules.FILTER);
     }
 }

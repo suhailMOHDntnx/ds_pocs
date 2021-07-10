@@ -39,16 +39,17 @@ public abstract class TartarusTable extends AbstractTable {
     final List<RelDataType> types = new ArrayList<>();
     final List<String> names = new ArrayList<>();
 
-    for (String string : tableDesc.rowDescs) {
+    for (String string: tableDesc.rowDescs) {
       final String name;
       final TartarusFieldType fieldType;
       final int colon = string.indexOf(':');
+      // name:type
       if (colon >= 0) {
         name = string.substring(0, colon);
         String typeString = string.substring(colon + 1);
         fieldType = TartarusFieldType.of(typeString);
         if (fieldType == null) {
-          System.out.println("WARNING: Found unknown type: "
+          System.err.println("WARNING: Found unknown type: "
               + typeString
               + " for column: " + name
               + ". Will assume the type of column is string");
@@ -57,7 +58,6 @@ public abstract class TartarusTable extends AbstractTable {
         name = string;
         fieldType = null;
       }
-
 
       final RelDataType type;
       if (fieldType == null) {

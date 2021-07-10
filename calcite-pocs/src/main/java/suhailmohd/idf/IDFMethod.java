@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 import java.util.List;
 
 public enum IDFMethod {
-  IDF_QUERYABLE_QUERY(IDFTable.IDFQueryable.class, "query");
+  IDF_QUERYABLE_QUERY(IDFTable.IDFQueryable.class, "query", String.class);
 
   @SuppressWarnings("ImmutableEnumChecker")
   public final Method method;

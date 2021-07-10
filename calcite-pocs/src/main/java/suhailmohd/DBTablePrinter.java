@@ -288,19 +288,19 @@ class DBTablePrinter {
      */
     public static void printTable(Connection conn, String tableName, int maxRows, int maxStringColWidth) {
         if (conn == null) {
-            System.err.println("DBTablePrinter Error: No connection to database (Connection is null)!");
+            System.out.println("DBTablePrinter Error: No connection to database (Connection is null)!");
             return;
         }
         if (tableName == null) {
-            System.err.println("DBTablePrinter Error: No table name (tableName is null)!");
+            System.out.println("DBTablePrinter Error: No table name (tableName is null)!");
             return;
         }
         if (tableName.length() == 0) {
-            System.err.println("DBTablePrinter Error: Empty table name!");
+            System.out.println("DBTablePrinter Error: Empty table name!");
             return;
         }
         if (maxRows < 1) {
-            System.err.println("DBTablePrinter Info: Invalid max. rows number. Using default!");
+            System.out.println("DBTablePrinter Info: Invalid max. rows number. Using default!");
             maxRows = DEFAULT_MAX_ROWS;
         }
 
@@ -308,7 +308,7 @@ class DBTablePrinter {
         ResultSet rs = null;
         try {
             if (conn.isClosed()) {
-                System.err.println("DBTablePrinter Error: Connection is closed!");
+                System.out.println("DBTablePrinter Error: Connection is closed!");
                 return;
             }
 
@@ -319,8 +319,8 @@ class DBTablePrinter {
             printResultSet(rs, maxStringColWidth);
 
         } catch (SQLException e) {
-            System.err.println("SQL exception in DBTablePrinter. Message:");
-            System.err.println(e.getMessage());
+            System.out.println("SQL exception in DBTablePrinter. Message:");
+            System.out.println(e.getMessage());
         } finally {
             try {
                 if (stmt != null) {
@@ -359,15 +359,15 @@ class DBTablePrinter {
     public static void printResultSet(ResultSet rs, int maxStringColWidth) {
         try {
             if (rs == null) {
-                System.err.println("DBTablePrinter Error: Result set is null!");
+                System.out.println("DBTablePrinter Error: Result set is null!");
                 return;
             }
             if (rs.isClosed()) {
-                System.err.println("DBTablePrinter Error: Result Set is closed!");
+                System.out.println("DBTablePrinter Error: Result Set is closed!");
                 return;
             }
             if (maxStringColWidth < 1) {
-                System.err.println("DBTablePrinter Info: Invalid max. varchar column width. Using default!");
+                System.out.println("DBTablePrinter Info: Invalid max. varchar column width. Using default!");
                 maxStringColWidth = DEFAULT_MAX_TEXT_COL_WIDTH;
             }
 
@@ -569,8 +569,8 @@ class DBTablePrinter {
              */
 
         } catch (SQLException e) {
-            System.err.println("SQL exception in DBTablePrinter. Message:");
-            System.err.println(e.getMessage());
+            System.out.println("SQL exception in DBTablePrinter. Message:");
+            System.out.println(e.getMessage());
         }
     }
 

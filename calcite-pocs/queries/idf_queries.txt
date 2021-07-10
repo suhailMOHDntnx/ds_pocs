@@ -1,1 +1,1 @@
-select * from idf.disk
+select * from idf.ALERT_CHECK_SCHEMA

@@ -52,12 +52,18 @@ public class IDFEnumerableConverter extends ConverterImpl implements EnumerableR
                     IDFTable.IDFQueryable.class
                 )
         );
+
+        final Expression whereString = list.append(
+                "whereString",
+                Expressions.constant(idfImplementor.whereClauseString)
+        );
         
         Expression enumerable = list.append(
                 "enumerable",
                 Expressions.call(
                     table,
-                    IDFMethod.IDF_QUERYABLE_QUERY.method
+                    IDFMethod.IDF_QUERYABLE_QUERY.method,
+                    whereString
                 )
         );
         list.add(

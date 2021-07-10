@@ -49,7 +49,7 @@ public class TartarusSchema extends AbstractSchema {
       try {
         tableMap = createTableMap();
       } catch(IOException e) {
-        System.out.println(e);
+        System.err.println(e);
       }
     }
     return tableMap;
