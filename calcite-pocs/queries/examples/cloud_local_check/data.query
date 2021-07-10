@@ -1,0 +1,31 @@
+WITH t1 AS (
+  SELECT COUNT(*) > 0 AS isCloudCvmConfigured
+  FROM zeusConfig.remoteSiteList
+),
+t2 AS (
+  SELECT COLLECT(ALL storagePoolName) spNameSet
+  FROM zeusConfig.storagePoolList
+),
+t3 AS (
+  SELECT
+    'DoNotUse-sp' MEMBER OF spNameSet hasDoNotUseSp,
+    spNameSet IS A SET AND CARDINALITY(spNameSet) = 2 hasBackupSp
+  FROM t2
+),
+t4 AS (
+  SELECT EVERY(CARDINALITY(diskId) = 1) hasOneDisk
+  FROM zeusConfig.storagePoolList
+  WHERE storagePoolName <> 'DoNotUse-sp'
+),
+t5 AS (
+  SELECT EVERY(disk.storageTier = 'CLOUD') hasCloudDisk
+  FROM zeusConfig.diskList disk, zeusConfig.storagePoolList storagePool
+  WHERE storagePool.storagePoolName <> 'DoNotUse-sp'
+    AND CARDINALITY(storagePool.diskId) = 1
+    AND disk.diskId = storagePool.diskId[1]
+),
+t6 AS (
+  SELECT EVERY(compressionAlgorithm IS NOT NULL) allRemoteSitesHaveCompression
+  FROM zeusConfig.remoteSiteList
+)
+SELECT * FROM t1, t3, t4, t5, t6

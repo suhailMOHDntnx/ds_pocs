@@ -12,6 +12,7 @@ import json
 import os
 import queue
 
+from pithos.stretch_params_pb2 import StretchParams
 from zeus.configuration_pb2 import ConfigurationProto
 
 PROTOTOP = "proto_top"
@@ -63,7 +64,10 @@ class POJO(object):
 
   def __add_field(self, is_repeated, is_message, field_name, field_type):
     if is_message:
-      type_dict = {"$ref": POJO.get_file_name(field_type)}
+      if field_type == self.name:
+        type_dict = {"$ref": "#"}
+      else:
+        type_dict = {"$ref": POJO.get_file_name(field_type)}
       self.depends_on.append(field_type)
     else:
       type_dict = {"type": field_type}
@@ -99,7 +103,10 @@ def check_for_cyclic_dependency(descriptor, status={}):
   status[descriptor.name] = 1
   for field_descriptor in descriptor.fields:
     if ProtoFieldType.get_from_field_descriptor(field_descriptor).is_message():
-      val = status.get(field_descriptor.message_type.name, 0)
+      message_name = field_descriptor.message_type.name
+      if message_name == descriptor.name:
+        continue
+      val = status.get(message_name, 0)
       if val == 1:
         raise Exception("Cyclic dependency - {} has field {} but its message "
             "type {} was already visited!".format(descriptor.name,
@@ -155,7 +162,7 @@ def dump_jsons(dir_path):
   --target java-gen""".format(",".join(POJO.get_file_name(name)
                                        for name in ordered_names))
 
-def generate_files_for_proto(proto_cls, namespace, dir_path):
+def generate_files_for_multi_proto(proto_cls, namespace, dir_path):
   check_for_cyclic_dependency(proto_cls.DESCRIPTOR)
 
   aggregate_pojo = POJO(namespace)
@@ -174,6 +181,13 @@ def generate_files_for_proto(proto_cls, namespace, dir_path):
 
   dump_jsons(dir_path)
 
+def generate_files_for_single_proto(proto_cls, dir_path):
+  check_for_cyclic_dependency(proto_cls.DESCRIPTOR)
+  create_pojo_from_message(proto_cls.DESCRIPTOR)
+  dump_jsons(dir_path)
+
 if __name__ == "__main__":
-  generate_files_for_proto(ConfigurationProto, "zeus_config",
-      "/home/nutanix/generated_zeus_config_classes")
+  # generate_files_for_multi_proto(ConfigurationProto, "zeus_config",
+  #     "/home/nutanix/generated_zeus_config_classes")
+  generate_files_for_single_proto(StretchParams,
+      "/home/nutanix/generated_stretch_params_classes")

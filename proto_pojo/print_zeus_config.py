@@ -30,7 +30,7 @@ def is_repeated_message(field_descriptor):
       and field_descriptor.label == FieldDescriptor.LABEL_REPEATED
 
 def get_json_for_proto(proto):
-  data = {}
+  data = {PROTOTOP: []}
   for field_descriptor, value in proto.ListFields():
     if allowed_fields and field_descriptor.name not in allowed_fields:
         continue

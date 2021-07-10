@@ -1,0 +1,6 @@
+SELECT
+  pd.pdName pdName,
+  pd.stretchParams.stretchParamsId.clusterId IS NOT NULL isStretchCluster,
+  pd.fileCount fileCount
+FROM cerebro.protectionDomainList pd
+WHERE pd.vstoreId >= 0 AND pd.isActive = True

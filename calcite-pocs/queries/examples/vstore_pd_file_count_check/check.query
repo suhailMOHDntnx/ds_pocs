@@ -1,0 +1,16 @@
+WITH data AS (
+  SELECT
+    pd.pdName pdName,
+    pd.stretchParams.stretchParamsId.clusterId IS NOT NULL isStretchCluster,
+    pd.fileCount fileCount
+  FROM cerebro.protectionDomainList pd
+  WHERE pd.vstoreId >= 0 AND pd.isActive = True
+)
+SELECT
+  pdName,
+  CASE
+    WHEN isStretchCluster = True AND fileCount > 3600 THEN 'FAIL'
+    WHEN isStretchCluster = False AND fileCount > 4500 THEN 'FAIL'
+    ELSE 'PASS'
+  END as status
+FROM data

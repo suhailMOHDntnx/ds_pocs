@@ -1,0 +1,3025 @@
+logical_timestamp: 561338
+internal_subnet: "192.168.5.0/255.255.255.128"
+external_subnet: "10.136.104.0/255.255.252.0"
+storage_tier_list {
+  storage_tier_name: "SSD-PCIe"
+  random_io_priority: 9
+  sequential_io_priority: 9
+  storage_type: kPcieSSD
+}
+storage_tier_list {
+  storage_tier_name: "SSD-SATA"
+  random_io_priority: 8
+  sequential_io_priority: 8
+  storage_type: kSataSSD
+}
+storage_tier_list {
+  storage_tier_name: "DAS-SATA"
+  random_io_priority: 7
+  sequential_io_priority: 7
+  storage_type: kHDD
+}
+disk_list {
+  disk_id: 42
+  service_vm_id: 8
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1Y3XJKS"
+  disk_size: 1812432777831
+  statfs_disk_size: 1948852449280
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1Y3XJKS"
+  disk_uuid: "9ad2ad99-50a6-49fa-b8bc-bbff40ea92b5"
+  curator_disk_reservation_bytes: 38977048985
+  node_uuid: "99f1f99b-21ec-4621-9bce-3a06d2979f41"
+}
+disk_list {
+  disk_id: 43
+  service_vm_id: 8
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1Y3Y37S"
+  disk_size: 1786985317376
+  statfs_disk_size: 1948852449280
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1Y3Y37S"
+  disk_uuid: "9a80cc97-e0b7-466d-8e6e-127d6be95b0d"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "99f1f99b-21ec-4621-9bce-3a06d2979f41"
+}
+disk_list {
+  disk_id: 44
+  service_vm_id: 8
+  mount_path: "/home/nutanix/data/stargate-storage/disks/BTHC546601XQ480MGN"
+  disk_size: 215338969088
+  statfs_disk_size: 326801059840
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 73647201280
+  disk_serial_id: "BTHC546601XQ480MGN"
+  disk_uuid: "fdd53ffd-717b-4a47-8fb8-de805dd1ee4f"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "99f1f99b-21ec-4621-9bce-3a06d2979f41"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+disk_list {
+  disk_id: 49
+  service_vm_id: 6
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1Y3XZE7"
+  disk_size: 1812432777831
+  statfs_disk_size: 1948852449280
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1Y3XZE7"
+  disk_uuid: "edf1642e-d304-4379-8bd5-a7e5523a6235"
+  curator_disk_reservation_bytes: 38977048985
+  node_uuid: "de2b520f-bcd6-4adf-bc79-32abc1787af6"
+}
+disk_list {
+  disk_id: 50
+  service_vm_id: 6
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1Y3XZJS"
+  disk_size: 1786985317376
+  statfs_disk_size: 1948852449280
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1Y3XZJS"
+  disk_uuid: "0e9f6947-2f5c-4773-8a7d-fb36496190ba"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "de2b520f-bcd6-4adf-bc79-32abc1787af6"
+}
+disk_list {
+  disk_id: 51
+  service_vm_id: 6
+  mount_path: "/home/nutanix/data/stargate-storage/disks/BTHC546602UE480MGN"
+  disk_size: 215338969088
+  statfs_disk_size: 326801059840
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 73647201280
+  disk_serial_id: "BTHC546602UE480MGN"
+  disk_uuid: "ca979c46-22ea-4b8b-9cbb-32a683b21fa1"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "de2b520f-bcd6-4adf-bc79-32abc1787af6"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+disk_list {
+  disk_id: 46
+  service_vm_id: 7
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1Y3Y11D"
+  disk_size: 1786985317376
+  statfs_disk_size: 1948852449280
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1Y3Y11D"
+  disk_uuid: "fe2a83d5-1f1b-4894-8722-fab9ee896ae2"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "8bcc6d93-b2d8-4a3b-8f8d-7567b5f5dc06"
+}
+disk_list {
+  disk_id: 47
+  service_vm_id: 7
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X641WM"
+  disk_size: 1812432777831
+  statfs_disk_size: 1948852449280
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1X641WM"
+  disk_uuid: "40eb85a8-9143-4c6d-a589-77e30f6087b5"
+  curator_disk_reservation_bytes: 38977048985
+  node_uuid: "8bcc6d93-b2d8-4a3b-8f8d-7567b5f5dc06"
+}
+disk_list {
+  disk_id: 52
+  service_vm_id: 9
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X5TJ5S"
+  disk_size: 1812432777831
+  statfs_disk_size: 1948852449280
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 3
+  disk_serial_id: "Z1X5TJ5S"
+  disk_uuid: "d161803b-ece7-48e4-af7a-2936f3e07302"
+  curator_disk_reservation_bytes: 38977048985
+  node_uuid: "6ec1b3d7-d88a-48f0-8365-a259c0c8766b"
+}
+disk_list {
+  disk_id: 53
+  service_vm_id: 9
+  mount_path: "/home/nutanix/data/stargate-storage/disks/Z1X64FCZ"
+  disk_size: 1786985317376
+  statfs_disk_size: 1948852449280
+  storage_tier: "DAS-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  disk_location: 2
+  disk_serial_id: "Z1X64FCZ"
+  disk_uuid: "6cc5a7de-04c7-44fd-adf0-e7f0180a37fd"
+  curator_disk_reservation_bytes: 64424509440
+  is_curator_primary: true
+  node_uuid: "6ec1b3d7-d88a-48f0-8365-a259c0c8766b"
+}
+disk_list {
+  disk_id: 54
+  service_vm_id: 9
+  mount_path: "/home/nutanix/data/stargate-storage/disks/BTHC54730424480MGN"
+  disk_size: 215338969088
+  statfs_disk_size: 326801059840
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 73647201280
+  disk_serial_id: "BTHC54730424480MGN"
+  disk_uuid: "280a6d44-e77b-4009-9a1c-fc8b0750abcc"
+  curator_disk_reservation_bytes: 0
+  node_uuid: "6ec1b3d7-d88a-48f0-8365-a259c0c8766b"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 32212254720
+}
+disk_list {
+  disk_id: 19262900
+  service_vm_id: 7
+  mount_path: "/home/nutanix/data/stargate-storage/disks/BTHC54660293480MGN"
+  disk_size: 227565352550
+  statfs_disk_size: 312438546432
+  storage_tier: "SSD-SATA"
+  data_dir_sublevels: 2
+  data_dir_sublevel_dirs: 20
+  data_migration_status: 0
+  disk_location: 1
+  contains_metadata: true
+  oplog_disk_size: 71398750208
+  disk_serial_id: "BTHC54660293480MGN"
+  disk_uuid: "caeda6c1-bb45-4516-87de-ea82344abadb"
+  node_uuid: "8bcc6d93-b2d8-4a3b-8f8d-7567b5f5dc06"
+  chosen_for_metadata: false
+  metadata_disk_reservation_bytes: 1073741824
+}
+node_list {
+  service_vm_id: 6
+  service_vm_external_ip: "10.136.106.131"
+  node_status: kNormal
+  hypervisor_key: "10.136.105.131"
+  management_server_name: "10.136.105.131"
+  cassandra_token_id: "FV0000000000000000000000000000000000000000000000000000000000"
+  hypervisor {
+    address_list: "10.136.105.131"
+  }
+  ipmi {
+    address_list: "10.136.104.131"
+  }
+  uuid: "de2b520f-bcd6-4adf-bc79-32abc1787af6"
+  rackable_unit_id: 24
+  node_position: 1
+  maintenance_mode: false
+  cassandra_status: kNormalMode
+  software_version: "el7.3-release-euphrates-5.16.1-stable-d0ca35e3b5a339dbd733142d8cc154028e6b3f73"
+  node_serial: "ZM162S035520"
+  hardware_config: "/appliance/physical/hardware_configs/8248214bb886ae4f7470819a9a97ea76"
+  management_server_id: 33
+  cassandra_status_history {
+    cassandra_status: kToBeAddedToRing
+    state_change_source: kAutoAdd
+    svm_id_source_of_status_change: 6
+    cassandra_status_change_timestamp: 1601352641852197
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 6
+    cassandra_status_change_timestamp: 1601353240489602
+    cassandra_token_id: "FV0000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_status_history {
+    cassandra_status: kToBeDetachedFromRing
+    state_change_source: kDetachDueToFrequentRestarts
+    svm_id_source_of_status_change: 6
+    cassandra_status_change_timestamp: 1601353299796773
+  }
+  cassandra_status_history {
+    cassandra_status: kBeingDetachedFromRing
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1601353807675132
+  }
+  cassandra_status_history {
+    cassandra_status: kDetachedFromRing
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1601353827821480
+  }
+  cassandra_status_history {
+    cassandra_status: kDataDeletedNowInPreLimbo
+    state_change_source: kCassandraMonitor
+    svm_id_source_of_status_change: 6
+    cassandra_status_change_timestamp: 1601353831751835
+  }
+  cassandra_status_history {
+    cassandra_status: kToBeAddedToRing
+    state_change_source: kEnableMetadataStoreNcli
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1601891736711000
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 6
+    cassandra_status_change_timestamp: 1601891904154055
+    cassandra_token_id: "FV0000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_status_history {
+    cassandra_status: kForwardingMode
+    state_change_source: kDegradedNode
+    svm_id_source_of_status_change: 6
+    cassandra_status_change_timestamp: 1622723687907720
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kCassandraMonitor
+    svm_id_source_of_status_change: 6
+    cassandra_status_change_timestamp: 1622807631648135
+    cassandra_token_id: "FV0000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_auto_add_disabled: false
+  cassandra_compaction_pending: false
+  cluster_uuid: "00059f88-d485-cbf2-0000-00000000b790"
+  rackable_unit_uuid: "3bc77051-a8fb-4df6-bc48-a24d38de914b"
+  management_server_uuid: "2d36a579-b180-4cb9-b6a6-5612f5a5bc55"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.136.106.131"
+  cvm_resource_state {
+    memory_mb: 24109
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "4.5.1"
+    installed_using_phoenix_version: "phoenix-4.5.1_c16d032f"
+    foundation_version: "foundation-5.0.1-1ec6b3cd"
+  }
+  maintenance_mode_status_change_timestamp: 0
+  is_secure_booted: false
+}
+node_list {
+  service_vm_id: 7
+  service_vm_external_ip: "10.136.106.132"
+  node_status: kNormal
+  hypervisor_key: "10.136.105.132"
+  management_server_name: "10.136.105.132"
+  cassandra_token_id: "V00000000000000000000000000000000000000000000000000000000000"
+  hypervisor {
+    address_list: "10.136.105.132"
+  }
+  ipmi {
+    address_list: "10.136.104.132"
+  }
+  zookeeper_myid: 2
+  uuid: "8bcc6d93-b2d8-4a3b-8f8d-7567b5f5dc06"
+  rackable_unit_id: 24
+  node_position: 2
+  maintenance_mode: false
+  cassandra_status: kNormalMode
+  software_version: "el7.3-release-euphrates-5.16.1-stable-d0ca35e3b5a339dbd733142d8cc154028e6b3f73"
+  node_serial: "ZM162S035566"
+  hardware_config: "/appliance/physical/hardware_configs/73a0c091232f8bfd1a2424ec42dac45a"
+  management_server_id: 39
+  cassandra_status_history {
+    cassandra_status: kMetadataRepairDone
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 9
+    cassandra_status_change_timestamp: 1601893911648944
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kCassandraMonitor
+    svm_id_source_of_status_change: 7
+    cassandra_status_change_timestamp: 1601893914549054
+    cassandra_token_id: "V00000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_status_history {
+    cassandra_status: kToBeDetachedFromRing
+    state_change_source: kDetachDueToServiceDown
+    svm_id_source_of_status_change: 6
+    cassandra_status_change_timestamp: 1603808083885707
+  }
+  cassandra_status_history {
+    cassandra_status: kBeingDetachedFromRing
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 9
+    cassandra_status_change_timestamp: 1603808684259108
+  }
+  cassandra_status_history {
+    cassandra_status: kDetachedFromRing
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 9
+    cassandra_status_change_timestamp: 1603808704448753
+  }
+  cassandra_status_history {
+    cassandra_status: kDataDeletedNowInPreLimbo
+    state_change_source: kCassandraMonitor
+    svm_id_source_of_status_change: 7
+    cassandra_status_change_timestamp: 1604421098830875
+  }
+  cassandra_status_history {
+    cassandra_status: kToBeAddedToRing
+    state_change_source: kAutoAdd
+    svm_id_source_of_status_change: 7
+    cassandra_status_change_timestamp: 1604423341470222
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 7
+    cassandra_status_change_timestamp: 1604423592562268
+    cassandra_token_id: "V00000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_status_history {
+    cassandra_status: kToBeDetachedFromRing
+    state_change_source: kDetachDueToFrequentRestarts
+    svm_id_source_of_status_change: 7
+    cassandra_status_change_timestamp: 1618527319060857
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kDetachDueToServiceDown
+    svm_id_source_of_status_change: 7
+    cassandra_status_change_timestamp: 1618527562360214
+    cassandra_token_id: "V00000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_auto_add_disabled: false
+  cassandra_compaction_pending: false
+  cluster_uuid: "00059f88-d485-cbf2-0000-00000000b790"
+  rackable_unit_uuid: "3bc77051-a8fb-4df6-bc48-a24d38de914b"
+  management_server_uuid: "88e02928-f8c6-4a98-8e2c-bac55dc00695"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.136.106.132"
+  cvm_resource_state {
+    memory_mb: 24109
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "4.5.1"
+    installed_using_phoenix_version: "phoenix-4.5.1_c16d032f"
+    foundation_version: "foundation-5.0.1-1ec6b3cd"
+  }
+  maintenance_mode_status_change_timestamp: 0
+  is_secure_booted: false
+}
+node_list {
+  service_vm_id: 8
+  service_vm_external_ip: "10.136.106.133"
+  node_status: kNormal
+  hypervisor_key: "10.136.105.133"
+  management_server_name: "10.136.105.133"
+  cassandra_token_id: "kV0000000000000000000000000000000000000000000000000000000000"
+  hypervisor {
+    address_list: "10.136.105.133"
+  }
+  ipmi {
+    address_list: "10.136.104.133"
+  }
+  zookeeper_myid: 3
+  uuid: "99f1f99b-21ec-4621-9bce-3a06d2979f41"
+  rackable_unit_id: 24
+  node_position: 3
+  cassandra_status: kNormalMode
+  software_version: "el7.3-release-euphrates-5.16.1-stable-d0ca35e3b5a339dbd733142d8cc154028e6b3f73"
+  node_serial: "ZM162S035567"
+  hardware_config: "/appliance/physical/hardware_configs/f849be69a2c3eead63a0397db450ed12"
+  management_server_id: 22
+  cassandra_status_history {
+    cassandra_status: kToBeDetachedFromRing
+    state_change_source: kDetachDueToServiceDown
+    svm_id_source_of_status_change: 6
+    cassandra_status_change_timestamp: 1591346619715228
+  }
+  cassandra_status_history {
+    cassandra_status: kBeingDetachedFromRing
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 7
+    cassandra_status_change_timestamp: 1591347079466205
+  }
+  cassandra_status_history {
+    cassandra_status: kDetachedFromRing
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 7
+    cassandra_status_change_timestamp: 1591347099635902
+  }
+  cassandra_status_history {
+    cassandra_status: kDataDeletedNowInPreLimbo
+    state_change_source: kCassandraMonitor
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1591522061971418
+  }
+  cassandra_status_history {
+    cassandra_status: kToBeAddedToRing
+    state_change_source: kEnableMetadataStoreNcli
+    svm_id_source_of_status_change: 9
+    cassandra_status_change_timestamp: 1591522129020000
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1591522328751749
+    cassandra_token_id: "kV0000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_status_history {
+    cassandra_status: kToBeDetachedFromRing
+    state_change_source: kDetachDueToFrequentRestarts
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1618525547693242
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kDetachDueToServiceDown
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1618526048699683
+    cassandra_token_id: "kV0000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_status_history {
+    cassandra_status: kToBeDetachedFromRing
+    state_change_source: kDetachDueToFrequentRestarts
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1618526391094185
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kDetachDueToServiceDown
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1618526719440786
+    cassandra_token_id: "kV0000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_auto_add_disabled: false
+  cassandra_compaction_pending: false
+  cluster_uuid: "00059f88-d485-cbf2-0000-00000000b790"
+  rackable_unit_uuid: "3bc77051-a8fb-4df6-bc48-a24d38de914b"
+  management_server_uuid: "1b3fdbef-54d8-4d68-9347-28570fa62a18"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.136.106.133"
+  cvm_resource_state {
+    memory_mb: 24109
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "4.5.1"
+    installed_using_phoenix_version: "phoenix-4.5.1_c16d032f"
+    foundation_version: "foundation-5.0.1-1ec6b3cd"
+  }
+  is_secure_booted: false
+}
+node_list {
+  service_vm_id: 9
+  service_vm_external_ip: "10.136.106.134"
+  node_status: kNormal
+  hypervisor_key: "10.136.105.134"
+  management_server_name: "10.136.105.134"
+  cassandra_token_id: "000000000000000000000000000000000000000000000000000000000000"
+  hypervisor {
+    address_list: "10.136.105.134"
+  }
+  ipmi {
+    address_list: "10.136.104.134"
+  }
+  zookeeper_myid: 1
+  uuid: "6ec1b3d7-d88a-48f0-8365-a259c0c8766b"
+  rackable_unit_id: 24
+  node_position: 4
+  maintenance_mode: false
+  cassandra_status: kNormalMode
+  software_version: "el7.3-release-euphrates-5.16.1-stable-d0ca35e3b5a339dbd733142d8cc154028e6b3f73"
+  node_serial: "ZM162S035572"
+  hardware_config: "/appliance/physical/hardware_configs/62e8c8dfeac4e24ea645180d60e1bba2"
+  management_server_id: 41
+  cassandra_status_history {
+    cassandra_status: kToBeDetachedFromRing
+    state_change_source: kDetachDueToServiceDown
+    svm_id_source_of_status_change: 6
+    cassandra_status_change_timestamp: 1606733210694725
+  }
+  cassandra_status_history {
+    cassandra_status: kBeingDetachedFromRing
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1606733800850929
+  }
+  cassandra_status_history {
+    cassandra_status: kDetachedFromRing
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 8
+    cassandra_status_change_timestamp: 1606733820947869
+  }
+  cassandra_status_history {
+    cassandra_status: kDataDeletedNowInPreLimbo
+    state_change_source: kCassandraMonitor
+    svm_id_source_of_status_change: 9
+    cassandra_status_change_timestamp: 1610703704933464
+  }
+  cassandra_status_history {
+    cassandra_status: kToBeAddedToRing
+    state_change_source: kAutoAdd
+    svm_id_source_of_status_change: 9
+    cassandra_status_change_timestamp: 1610705505213667
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kDynamicRingChanger
+    svm_id_source_of_status_change: 9
+    cassandra_status_change_timestamp: 1610705791320049
+    cassandra_token_id: "000000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_status_history {
+    cassandra_status: kToBeDetachedFromRing
+    state_change_source: kDetachDueToFrequentRestarts
+    svm_id_source_of_status_change: 9
+    cassandra_status_change_timestamp: 1618526779170656
+  }
+  cassandra_status_history {
+    cassandra_status: kNormalMode
+    state_change_source: kDetachDueToServiceDown
+    svm_id_source_of_status_change: 9
+    cassandra_status_change_timestamp: 1618527022259381
+    cassandra_token_id: "000000000000000000000000000000000000000000000000000000000000"
+  }
+  cassandra_compaction_pending: false
+  cluster_uuid: "00059f88-d485-cbf2-0000-00000000b790"
+  rackable_unit_uuid: "3bc77051-a8fb-4df6-bc48-a24d38de914b"
+  management_server_uuid: "f5245473-3f32-45c1-bf0a-9e1688868375"
+  cassandra_schema_timestamp: 0
+  controller_vm_backplane_ip: "10.136.106.134"
+  cvm_resource_state {
+    memory_mb: 24109
+  }
+  node_type: kRegular
+  foundation_info {
+    installed_using_foundation_version: "4.5.1"
+    installed_using_phoenix_version: "phoenix-4.5.1_c16d032f"
+    foundation_version: "foundation-5.0.1-1ec6b3cd"
+  }
+  maintenance_mode_status_change_timestamp: 0
+  is_secure_booted: false
+}
+storage_pool_list {
+  storage_pool_name: "default-storage-pool-46992"
+  storage_pool_id: 10
+  disk_id: 42
+  disk_id: 43
+  disk_id: 44
+  disk_id: 49
+  disk_id: 50
+  disk_id: 51
+  disk_id: 46
+  disk_id: 47
+  disk_id: 52
+  disk_id: 53
+  disk_id: 54
+  disk_id: 19262900
+  total_implicit_reserved_capacity: 0
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  disk_uuid: "9ad2ad99-50a6-49fa-b8bc-bbff40ea92b5"
+  disk_uuid: "9a80cc97-e0b7-466d-8e6e-127d6be95b0d"
+  disk_uuid: "fdd53ffd-717b-4a47-8fb8-de805dd1ee4f"
+  disk_uuid: "edf1642e-d304-4379-8bd5-a7e5523a6235"
+  disk_uuid: "0e9f6947-2f5c-4773-8a7d-fb36496190ba"
+  disk_uuid: "ca979c46-22ea-4b8b-9cbb-32a683b21fa1"
+  disk_uuid: "fe2a83d5-1f1b-4894-8722-fab9ee896ae2"
+  disk_uuid: "40eb85a8-9143-4c6d-a589-77e30f6087b5"
+  disk_uuid: "d161803b-ece7-48e4-af7a-2936f3e07302"
+  disk_uuid: "6cc5a7de-04c7-44fd-adf0-e7f0180a37fd"
+  disk_uuid: "280a6d44-e77b-4009-9a1c-fc8b0750abcc"
+  disk_uuid: "caeda6c1-bb45-4516-87de-ea82344abadb"
+}
+container_list {
+  container_name: "default-container-46992"
+  container_id: 11
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    total_implicit_reserved_capacity: 128849018880
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 0
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  locs {
+    component_id: 7
+    incarnation_id: 36919775
+    operation_id: 1522827066
+  }
+  locs {
+    component_id: 8
+    incarnation_id: 254856
+    operation_id: 87105326
+  }
+  locs {
+    component_id: 9
+    incarnation_id: 8982244
+    operation_id: 2466142630
+  }
+  locs {
+    component_id: 6
+    incarnation_id: 36919876
+    operation_id: 209628837
+  }
+  container_uuid: "2187d7c8-8a92-44d3-8326-1ce5a98d0c02"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 2
+  epoch: 0
+}
+container_list {
+  container_name: "NutanixManagementShare"
+  container_id: 12
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    fingerprint_on_write: false
+    nutanix_managed: true
+  }
+  container_uuid: "4fdf18e9-0c3a-4c3c-9595-d92654bc3fdb"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 1
+  epoch: 0
+}
+container_list {
+  container_name: "SelfServiceContainer"
+  container_id: 616
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "aa57526f-a5cd-4258-b4c4-cea983dea0ea"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 3
+  epoch: 0
+}
+container_list {
+  container_name: "vmContainer1"
+  container_id: 1589
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "3a2bac75-c257-4042-b945-18458a0a302f"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 4
+  epoch: 0
+}
+container_list {
+  container_name: "vmContainer2"
+  container_id: 1591
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "aab30e72-553c-47f3-8c1a-3d1478653e3e"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 5
+  epoch: 0
+}
+container_list {
+  container_name: "Guru-ctr"
+  container_id: 11714
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    total_implicit_reserved_capacity: 0
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  locs {
+    component_id: 8
+    incarnation_id: 254856
+    operation_id: 694563247
+  }
+  locs {
+    component_id: 6
+    incarnation_id: 36919876
+    operation_id: 363712923
+  }
+  container_uuid: "d4f4cd54-a736-4a78-a8f3-a1a9959d6d3d"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 6
+  epoch: 0
+}
+container_list {
+  container_name: "Nutanix_Files_ctr"
+  container_id: 287642
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "e65692d8-4a03-4e3a-8cf2-8d0d276eee27"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 7
+  epoch: 0
+}
+container_list {
+  container_name: "vmtestcontaner"
+  container_id: 934183
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    total_implicit_reserved_capacity: 0
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  locs {
+    component_id: 8
+    incarnation_id: 254856
+    operation_id: 592317855
+  }
+  locs {
+    component_id: 6
+    incarnation_id: 19053830
+    operation_id: 1171486855
+  }
+  container_uuid: "61e5c361-c9f3-4160-a9eb-e90e0aeb0926"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 9
+  epoch: 0
+}
+container_list {
+  container_name: "vmtestcontainerde"
+  container_id: 938232
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    total_implicit_reserved_capacity: 0
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 0
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+    advertised_capacity_bytes: 12884901888000
+  }
+  locs {
+    component_id: 8
+    incarnation_id: 254856
+    operation_id: 592314053
+  }
+  container_uuid: "8cbd5252-1c25-4a18-a729-5df32bd6873c"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 10
+  epoch: 0
+}
+container_list {
+  container_name: "Banu-ctr"
+  container_id: 4437879
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    total_implicit_reserved_capacity: 0
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  locs {
+    component_id: 7
+    incarnation_id: 27417390
+    operation_id: 603663184
+  }
+  locs {
+    component_id: 6
+    incarnation_id: 19053830
+    operation_id: 1171466321
+  }
+  container_uuid: "28c7a323-08f7-4d36-a8c2-b40868920f46"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 11
+  epoch: 0
+}
+container_list {
+  container_name: "prachi"
+  container_id: 8263182
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "50c8c43f-5570-4912-a0df-be9b80e77da8"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 12
+  epoch: 0
+}
+container_list {
+  container_name: "metro-pd"
+  container_id: 9714237
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "2cc4e043-080c-4c77-8bbd-78d303a660d4"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 13
+  epoch: 0
+}
+container_list {
+  container_name: "TR"
+  container_id: 13029325
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "d6dfea20-09c4-4da9-b305-8a0fcd13b6f8"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 14
+  epoch: 0
+}
+container_list {
+  container_name: "test"
+  container_id: 13029336
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "cd1b3e67-f6e5-43ff-a29b-94642525cff8"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 15
+  epoch: 1
+}
+container_list {
+  container_name: "me-tro"
+  container_id: 21298275
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "4539ac74-1d08-4414-b64b-7c6da33cca43"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 17
+  epoch: 0
+}
+container_list {
+  container_name: "Nutanix_abc_ctr"
+  container_id: 23710191
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "97bb8697-0903-4235-be85-9f8c38c52dcb"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 18
+  epoch: 0
+}
+container_list {
+  container_name: "test-esxi"
+  container_id: 23762782
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    total_implicit_reserved_capacity: 0
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+    advertised_capacity_bytes: 6597069766656
+  }
+  locs {
+    component_id: 7
+    incarnation_id: 27417390
+    operation_id: 1061885716
+  }
+  container_uuid: "7f4e2a95-1087-4f02-9b85-5f1f1cc1c1eb"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 19
+  epoch: 0
+}
+container_list {
+  container_name: "ctr1"
+  container_id: 27329024
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "ea79db3e-f651-40f9-968c-a868bef8fe16"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 20
+  epoch: 1
+}
+container_list {
+  container_name: "prad-rf2"
+  container_id: 28262256
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    total_explicit_reserved_capacity: 0
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "1bb29c58-b694-4c70-9ab2-925948b5a894"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 21
+  epoch: 0
+}
+container_list {
+  container_name: "prad-nfs1"
+  container_id: 28262822
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "2f007fea-ee1f-411a-8308-feddb2644af5"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 22
+  epoch: 0
+}
+container_list {
+  container_name: "labtest"
+  container_id: 33645197
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+    advertised_capacity_bytes: 2147483648
+  }
+  container_uuid: "f646b5ca-005c-4ebc-9e8d-57e20cf367a2"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 23
+  epoch: 0
+}
+container_list {
+  container_name: "Site-A"
+  container_id: 36949578
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "78ae77eb-d9ed-4df0-9e1f-0709587fa84f"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 24
+  epoch: 2
+}
+container_list {
+  container_name: "Site-B"
+  container_id: 36949580
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "9268ce3c-1240-461c-a656-b51c458b2101"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 25
+  epoch: 0
+}
+container_list {
+  container_name: "AK-ctr"
+  container_id: 37681512
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "017c0478-3b51-4dd4-9729-22e662584dad"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 26
+  epoch: 0
+}
+container_list {
+  container_name: "AK-Ctr"
+  container_id: 37681514
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "347a3ecc-bd81-4557-bfd2-9be44989ddc1"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 27
+  epoch: 0
+}
+container_list {
+  container_name: "Dr_Nutanix_VM"
+  container_id: 44678347
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    compression_type: kLow
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      dedup_compress_delay_secs: 3600
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "cbed413a-0ace-4c92-84ab-d6b6b0f405be"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 29
+  epoch: 0
+}
+container_list {
+  container_name: "NTNX-NFS-DEFAULT-0"
+  container_id: 46489677
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    total_implicit_reserved_capacity: 0
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  locs {
+    component_id: 7
+    incarnation_id: 36919775
+    operation_id: 1347085611
+  }
+  container_uuid: "b5480ff8-c8d6-4bef-882f-c3d298463ff7"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 30
+  epoch: 0
+}
+container_list {
+  container_name: "Nutanix_test_ctr"
+  container_id: 46733079
+  storage_pool_id: 10
+  params {
+    replication_factor: 2
+    random_io_tier_preference: "SSD-PCIe"
+    random_io_tier_preference: "SSD-SATA"
+    random_io_tier_preference: "DAS-SATA"
+    sequential_io_tier_preference: "SSD-PCIe"
+    sequential_io_tier_preference: "SSD-SATA"
+    sequential_io_tier_preference: "DAS-SATA"
+    max_capacity: 15271254640642
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    ilm_down_migrate_time_secs: 1800
+    oplog_params {
+      replication_factor: 2
+      num_stripes: 1
+      need_sync: false
+    }
+    data_contraction_policy {
+      on_disk_dedup_policy: kOff
+    }
+    fingerprint_on_write: false
+  }
+  container_uuid: "c7b53253-2a27-4585-ae6f-2cb6a2d1b1b0"
+  storage_pool_uuid: "3fcacff6-a9e8-4875-b20d-6eb41b6defbe"
+  fsid: 31
+  epoch: 0
+}
+management_server_list {
+  management_server_name: "10.136.105.133"
+  access_url: "https://10.136.105.133/sdk"
+  management_server_type: kVMware
+  management_server_id: 22
+  management_server_uuid: "1b3fdbef-54d8-4d68-9347-28570fa62a18"
+  management_server_version: "6.7.0-13006603"
+}
+management_server_list {
+  management_server_name: "10.136.105.131"
+  access_url: "https://10.136.105.131/sdk"
+  management_server_type: kVMware
+  management_server_id: 33
+  management_server_uuid: "2d36a579-b180-4cb9-b6a6-5612f5a5bc55"
+  management_server_version: "6.7.0-13006603"
+}
+management_server_list {
+  management_server_name: "10.136.105.132"
+  access_url: "https://10.136.105.132/sdk"
+  management_server_type: kVMware
+  management_server_id: 39
+  management_server_uuid: "88e02928-f8c6-4a98-8e2c-bac55dc00695"
+  management_server_version: "6.7.0-13006603"
+}
+management_server_list {
+  management_server_name: "10.136.105.134"
+  access_url: "https://10.136.105.134/sdk"
+  management_server_type: kVMware
+  management_server_id: 41
+  management_server_uuid: "f5245473-3f32-45c1-bf0a-9e1688868375"
+  management_server_version: "6.7.0-13006603"
+}
+remote_site_list {
+  remote_name: "Test_NB"
+  remote_cerebro_ip_list: "10.2.126.137"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "vmContainer1"
+  remote_vstore_name: "default-container-168890"
+  cluster_id: 168890
+  cluster_incarnation_id: 1584540947123781
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.2.124.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: false
+    supports_hyperv: false
+    supports_kvm: true
+    supports_vstore_stretching: false
+    supports_on_wire_sparse_extents: true
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 2226518015
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 4
+    minimum_supported_async_rpo_secs: 21600
+    minimum_supported_nearsync_rpo_secs: -1
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 16
+  }
+  remote_site_uuid: "0005a121-b049-0e45-0000-0000000293ba"
+  network_mapping_uuid: "fb9e7dc4-49af-4478-9795-8accec27c8ac"
+  stargate_version: 526
+  bandwidth_policy_uuid: "b765b672-c622-467c-9dae-065747a1c625"
+  rackable_unit_model_names: "NX-1175S-G6"
+  is_network_mapping_present_for_local_site: true
+  file_server_capabilities {
+    bitmap: 126
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: false
+}
+remote_site_list {
+  remote_name: "Tiger"
+  remote_cerebro_ip_list: "10.136.106.16"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "default-container-46992"
+  remote_vstore_name: "default-container-97262"
+  cluster_id: 97262
+  cluster_incarnation_id: 1587404179499177
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.136.104.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: false
+    supports_hyperv: false
+    supports_kvm: true
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 2226518015
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: -1
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 16
+  }
+  remote_site_uuid: "0005a3bc-563b-e8a9-0000-000000017bee"
+  stargate_version: 526
+  bandwidth_policy_uuid: "64539e49-394b-4723-b972-e9f58726800d"
+  rackable_unit_model_names: "NX-3060-G5"
+  is_network_mapping_present_for_local_site: false
+  cluster_external_data_services_ip: "10.136.104.20"
+  file_server_capabilities {
+    bitmap: 126
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: false
+}
+remote_site_list {
+  remote_name: "Chie"
+  remote_cerebro_ip_list: "10.2.126.210"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "default-container-46992"
+  remote_vstore_name: "default-container-165811"
+  cluster_id: 165811
+  cluster_incarnation_id: 1591010695359535
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.2.124.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: false
+    supports_hyperv: false
+    supports_kvm: true
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 146143231
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: -1
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 16
+  }
+  remote_site_uuid: "0005a704-0b54-ac2f-0000-0000000287b3"
+  network_mapping_uuid: "907044c8-e26d-44da-91d6-4c8dd95158b1"
+  stargate_version: 520
+  bandwidth_policy_uuid: "cedd7ad5-1307-4357-bebb-2670d35a61dc"
+  rackable_unit_model_names: "NX-3060-G6"
+  is_network_mapping_present_for_local_site: true
+  cluster_external_data_services_ip: "10.2.124.210"
+  file_server_capabilities {
+    bitmap: 62
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: false
+}
+remote_site_list {
+  remote_name: "rs"
+  remote_cerebro_ip_list: "10.10.5.1"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  capabilities {
+    backup: false
+    disaster_recovery: true
+  }
+  remote_site_type: kLegacy
+}
+remote_site_list {
+  remote_name: "Robert"
+  remote_cerebro_ip_list: "10.136.106.110"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "Banu-ctr"
+  remote_vstore_name: "default-container-103664"
+  cluster_id: 103664
+  cluster_incarnation_id: 1600548941644836
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.136.104.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: true
+    supports_hyperv: false
+    supports_kvm: false
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    max_virtual_hardware_version {
+      vsphere_max_virtual_hardware_version: 15
+    }
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 2226649087
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: 60
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 113
+  }
+  remote_site_uuid: "0005afb0-d71c-c424-0000-0000000194f0"
+  stargate_version: 528
+  bandwidth_policy_uuid: "20ed3ab3-c43d-45d5-913d-f2d75e82ee13"
+  rackable_unit_model_names: "NX-3060-G6"
+  is_network_mapping_present_for_local_site: false
+  cluster_external_data_services_ip: "10.136.104.110"
+  file_server_capabilities {
+    bitmap: 254
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: true
+}
+remote_site_list {
+  remote_name: "veerappan"
+  remote_cerebro_ip_list: "10.136.106.130"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "default-container-46992"
+  remote_vstore_name: "default-container-51892"
+  cluster_id: 51892
+  cluster_incarnation_id: 1600327441657026
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.136.104.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: false
+    supports_hyperv: false
+    supports_kvm: true
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 67997399039
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: -1
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 144
+  }
+  remote_site_uuid: "0005af7d-44af-2cc2-0000-00000000cab4"
+  network_mapping_uuid: "29c62774-05ba-4756-b5bc-fa9eaa623df4"
+  stargate_version: 561
+  bandwidth_policy_uuid: "fe7f9114-c55c-413f-8714-91110638855a"
+  rackable_unit_model_names: "NX-1065-G4"
+  is_network_mapping_present_for_local_site: true
+  cluster_external_data_services_ip: "10.136.104.130"
+  file_server_capabilities {
+    bitmap: 254
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: false
+}
+remote_site_list {
+  remote_name: "cast"
+  remote_cerebro_ip_list: "10.63.30.130"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  cluster_id: 69673
+  cluster_incarnation_id: 1604331484938535
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.63.28.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: true
+    supports_hyperv: false
+    supports_kvm: false
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    max_virtual_hardware_version {
+      vsphere_max_virtual_hardware_version: 1000
+    }
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 205436352511
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: -1
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 144
+  }
+  remote_site_uuid: "0005b321-8843-0127-0000-000000011029"
+  stargate_version: 650
+  bandwidth_policy_uuid: "ab90a46e-a1a0-4fe3-93b6-dc5093e785d1"
+  rackable_unit_model_names: "NX-3060-G5"
+  is_network_mapping_present_for_local_site: false
+  cluster_external_data_services_ip: "10.63.28.130"
+  file_server_capabilities {
+    bitmap: 254
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: true
+}
+remote_site_list {
+  remote_name: "Kesariya"
+  remote_cerebro_ip_list: "10.136.106.35"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "Guru-ctr"
+  remote_vstore_name: "default-container-97824"
+  cluster_id: 97824
+  cluster_incarnation_id: 1608101151141539
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.136.104.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: true
+    supports_hyperv: false
+    supports_kvm: false
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    max_virtual_hardware_version {
+      vsphere_max_virtual_hardware_version: 13
+    }
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 205436352511
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: -1
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 144
+  }
+  remote_site_uuid: "0005b68f-39e0-6ea3-0000-000000017e20"
+  stargate_version: 650
+  bandwidth_policy_uuid: "01b9eb37-5cc7-41a4-8449-1440a0efa761"
+  rackable_unit_model_names: "NX-1065-G5"
+  is_network_mapping_present_for_local_site: false
+  cluster_external_data_services_ip: "10.136.104.35"
+  file_server_capabilities {
+    bitmap: 254
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: true
+  node_info_list {
+    service_vm_id: 6
+    stargate_handle: "10.136.106.31:2009"
+  }
+  node_info_list {
+    service_vm_id: 7
+    stargate_handle: "10.136.106.32:2009"
+  }
+  node_info_list {
+    service_vm_id: 8
+    stargate_handle: "10.136.106.33:2009"
+  }
+  node_info_list {
+    service_vm_id: 9
+    stargate_handle: "10.136.106.34:2009"
+  }
+}
+remote_site_list {
+  remote_name: "gajen"
+  remote_cerebro_ip_list: "10.136.106.175"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "vmContainer1"
+  remote_vstore_name: "vmContainer1"
+  cluster_id: 150613
+  cluster_incarnation_id: 1608813951562472
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.136.104.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: true
+    supports_hyperv: false
+    supports_kvm: false
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    max_virtual_hardware_version {
+      vsphere_max_virtual_hardware_version: 13
+    }
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 2226518015
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: -1
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 16
+  }
+  remote_site_uuid: "0005b735-3017-b2e8-0000-000000024c55"
+  stargate_version: 526
+  bandwidth_policy_uuid: "ef233df7-cf8c-43a7-b178-a2169e8d72ad"
+  rackable_unit_model_names: "NX-1065-G6"
+  is_network_mapping_present_for_local_site: false
+  cluster_external_data_services_ip: "10.136.104.175"
+  file_server_capabilities {
+    bitmap: 126
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: true
+}
+remote_site_list {
+  remote_name: "gabbar"
+  remote_cerebro_ip_list: "10.136.106.25"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "Guru-ctr"
+  local_vstore_name: "default-container-46992"
+  remote_vstore_name: "gabbar-ctr"
+  remote_vstore_name: "default-container-38264"
+  cluster_id: 38264
+  cluster_incarnation_id: 1609941361091713
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.136.104.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: true
+    supports_hyperv: false
+    supports_kvm: false
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    max_virtual_hardware_version {
+      vsphere_max_virtual_hardware_version: 15
+    }
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 12162824191
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: -1
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 144
+  }
+  remote_site_uuid: "0005b83b-aeef-e481-0000-000000009578"
+  stargate_version: 561
+  bandwidth_policy_uuid: "0006c042-9add-491c-b12b-26d938325994"
+  rackable_unit_model_names: "NX-3060-G4"
+  is_network_mapping_present_for_local_site: false
+  cluster_external_data_services_ip: "10.136.104.25"
+  file_server_capabilities {
+    bitmap: 254
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: true
+}
+remote_site_list {
+  remote_name: "abc"
+  remote_cerebro_ip_list: "10.10.10.10"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  capabilities {
+    backup: false
+    disaster_recovery: true
+  }
+  remote_site_type: kLegacy
+}
+remote_site_list {
+  remote_name: "Soccer"
+  remote_cerebro_ip_list: "10.136.118.20"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "default-container-46992"
+  remote_vstore_name: "default-container-97510"
+  cluster_id: 97510
+  cluster_incarnation_id: 1616066750467667
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.136.116.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: false
+    supports_hyperv: false
+    supports_kvm: true
+    supports_vstore_stretching: false
+    supports_on_wire_sparse_extents: true
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 2226518015
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 4
+    minimum_supported_async_rpo_secs: 21600
+    minimum_supported_nearsync_rpo_secs: -1
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 16
+  }
+  remote_site_uuid: "0005bdcd-dc98-4e53-0000-000000017ce6"
+  network_mapping_uuid: "e5df964d-b26f-460a-b39f-6c0283ced448"
+  stargate_version: 526
+  bandwidth_policy_uuid: "6b3b85d8-6f8a-447d-aa5c-ca8a1477ddd9"
+  rackable_unit_model_names: "NX-1155-G5"
+  is_network_mapping_present_for_local_site: true
+  cluster_external_data_services_ip: "10.136.116.38"
+  file_server_capabilities {
+    bitmap: 254
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: false
+}
+remote_site_list {
+  remote_name: "Prem"
+  remote_cerebro_ip_list: "10.136.106.115"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  cluster_id: 108922
+  cluster_incarnation_id: 1618546963197083
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.136.104.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: true
+    supports_hyperv: false
+    supports_kvm: false
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    max_virtual_hardware_version {
+      vsphere_max_virtual_hardware_version: 15
+    }
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 2226649087
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: 60
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 113
+  }
+  remote_site_uuid: "0005c00f-54cb-2c9b-0000-00000001a97a"
+  stargate_version: 526
+  bandwidth_policy_uuid: "3dd4f061-c477-4b15-9fec-e65b189174d7"
+  rackable_unit_model_names: "NX-3060-G5"
+  is_network_mapping_present_for_local_site: false
+  cluster_external_data_services_ip: "10.136.104.115"
+  file_server_capabilities {
+    bitmap: 126
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: true
+  node_info_list {
+    service_vm_id: 6
+    stargate_handle: "10.136.106.111:2009"
+  }
+  node_info_list {
+    service_vm_id: 7
+    stargate_handle: "10.136.106.112:2009"
+  }
+  node_info_list {
+    service_vm_id: 8
+    stargate_handle: "10.136.106.113:2009"
+  }
+  node_info_list {
+    service_vm_id: 9
+    stargate_handle: "10.136.106.114:2009"
+  }
+}
+remote_site_list {
+  remote_name: "Duckhunt"
+  remote_cerebro_ip_list: "10.2.126.20"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "default-container-46992"
+  remote_vstore_name: "default-container-58061791130268"
+  cluster_id: 649653682007066316
+  cluster_incarnation_id: 1621529692551070
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.2.124.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: true
+    supports_hyperv: false
+    supports_kvm: false
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    max_virtual_hardware_version {
+      vsphere_max_virtual_hardware_version: 14
+    }
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980227
+    cerebro_features_bitmap: 2226518015
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: -1
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 16
+  }
+  remote_site_uuid: "0005c2c5-cd51-379e-0904-0894ef0e46cc"
+  stargate_version: 529
+  bandwidth_policy_uuid: "1d6ca296-c852-41f3-9652-657451909901"
+  rackable_unit_model_names: "HX7510"
+  rackable_unit_model_names: "HX3310"
+  rackable_unit_model_names: "HX5510"
+  is_network_mapping_present_for_local_site: false
+  cluster_external_data_services_ip: "10.2.124.20"
+  file_server_capabilities {
+    bitmap: 254
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: true
+}
+remote_site_list {
+  remote_name: "contra"
+  remote_cerebro_ip_list: "10.2.126.145"
+  remote_cerebro_port_list: 2020
+  enable_proxy: false
+  local_vstore_name: "default-container-46992"
+  remote_vstore_name: "vmContainer1"
+  cluster_id: 169429
+  cluster_incarnation_id: 1623087982956285
+  compression_algorithm: kSnappy
+  compression_type: kLow
+  external_subnet: "10.2.124.0/255.255.252.0"
+  capabilities {
+    backup: false
+    disaster_recovery: true
+    supports_deduped_extents: true
+    supports_vsphere: true
+    supports_hyperv: false
+    supports_kvm: false
+    supports_vstore_stretching: true
+    supports_on_wire_sparse_extents: true
+    max_virtual_hardware_version {
+      vsphere_max_virtual_hardware_version: 14
+    }
+    supports_vstore_resolution: true
+    supports_diff_vblocks: true
+    cross_hypervisor_dr_capabilities_bitmap: 1152974281164980731
+    cerebro_features_bitmap: 59029308569599
+    file_level_restore_capabilities_bitmap: 4194311
+    cluster_operation_mode: kNormal
+    cerebro_receive_rpc_timeout_msecs: -1
+    cluster_properties_bitmap: 0
+    minimum_supported_async_rpo_secs: 3600
+    minimum_supported_nearsync_rpo_secs: 60
+    cluster_arch: kX86_64
+    mesos_features_bitmap: 249
+  }
+  remote_site_uuid: "0005c430-9ea9-cefd-0000-0000000295d5"
+  stargate_version: 674
+  bandwidth_policy_uuid: "3d034de4-03b2-4eeb-a195-9630698e445e"
+  rackable_unit_model_names: "NX-1065-G6"
+  is_network_mapping_present_for_local_site: false
+  cluster_external_data_services_ip: "10.2.124.145"
+  file_server_capabilities {
+    bitmap: 254
+  }
+  lws_store_status: kAbsent
+  remote_site_type: kLegacy
+  is_registered_to_management_server: true
+}
+cluster_incarnation_id: 1582784913460210
+cluster_id: 46992
+cluster_name: "Jageera"
+nfs_subnet_whitelist: "10.136.103.252/255.255.255.0,10.136.105.147/255.255.252.0,192.168.30.1/255.255.255.255,192.168.5.253/255.255.255.0"
+aegis {
+  remote_support {
+    value: true
+    until_time_usecs: 1618907821718000
+  }
+  email_alerts {
+    value: true
+    until_time_usecs: 0
+  }
+  smtp_server_type: kPlain
+  verbosity: kBasicPlusCoreDump
+  auto_support_config {
+    email_asups {
+      value: true
+      until_time_usecs: 0
+    }
+    send_email_asups_externally: true
+    aos_version: "euphrates-5.16.1-stable"
+    last_login_workflow_time_msecs: 1597818649340
+    remind_later: false
+    pii_scrubbing_level: kPartial
+  }
+  send_email_alerts_externally: true
+  send_alert_email_digest: true
+  skip_empty_alert_email_digest: true
+}
+vdisk_list_in_pithos: true
+default_gateway_ip: "10.136.104.1"
+ntp_server_list: "10.136.100.20"
+name_server_ip_list: "10.136.100.10"
+rackable_unit_list {
+  rackable_unit_id: 24
+  rackable_unit_serial: "16SM65110106"
+  rackable_unit_model: kUseLayout
+  rackable_unit_model_name: "NX-1065-G4"
+  rackable_unit_uuid: "3bc77051-a8fb-4df6-bc48-a24d38de914b"
+}
+snmp_info {
+  enabled: true
+  transport_list {
+    protocol: kUDP
+    port: 161
+  }
+}
+cassandra_schema_version: "el7.3-release-euphrates-5.16.1-stable-d0ca35e3b5a339dbd733142d8cc154028e6b3f73"
+auth_config {
+  auth_type_list: kLOCAL
+  auth_type_list: kDIRECTORY_SERVICE
+  directory_list {
+    directory_type: kACTIVE_DIRECTORY
+    connection_type: kLDAP
+    directory_url {
+      id_str: "Corp"
+      access_url: "ldaps://blritcorpdcprd3.corp.nutanix.com:636"
+    }
+    domain: "corp.nutanix.com"
+    group_search_type: kNON_RECURSIVE
+    uuid: "46359a79-5164-4dc7-bd66-15d6d9bc0c04"
+    service_account {
+      username: "svc.sre.lab_auth@nutanix.com"
+      encrypted_password: "7sFlHu2cJsTpgCxRGxc4U0dw3nBViLE99WzXScmXRvykJ1hS5x27N9sEnhLyuQWV"
+    }
+    domain_non_display: "corp.nutanix.com"
+  }
+  directory_list {
+    directory_type: kACTIVE_DIRECTORY
+    connection_type: kLDAP
+    directory_url {
+      id_str: "blr"
+      access_url: "ldap://10.136.100.40:389"
+    }
+    domain: "blr.sre-labs.nutanix.com"
+    group_search_type: kNON_RECURSIVE
+    uuid: "1d01fb09-997d-4208-b676-c7aa3feaddce"
+    service_account {
+      username: "himanshu"
+      encrypted_password: "BsxIkeJ2fw5POjeRtgv4CFki6JuY7W08KTjO4cxDqJ8="
+    }
+    domain_non_display: "blr.sre-labs.nutanix.com"
+  }
+}
+vstore_list {
+  vstore_id: 11
+  vstore_name: "default-container-46992"
+  container_id: 11
+  vstore_uuid: "2187d7c8-8a92-44d3-8326-1ce5a98d0c02"
+  container_uuid: "2187d7c8-8a92-44d3-8326-1ce5a98d0c02"
+}
+vstore_list {
+  vstore_id: 12
+  vstore_name: "NutanixManagementShare"
+  container_id: 12
+  vstore_uuid: "4fdf18e9-0c3a-4c3c-9595-d92654bc3fdb"
+  container_uuid: "4fdf18e9-0c3a-4c3c-9595-d92654bc3fdb"
+}
+vstore_list {
+  vstore_id: 616
+  vstore_name: "SelfServiceContainer"
+  container_id: 616
+  vstore_uuid: "aa57526f-a5cd-4258-b4c4-cea983dea0ea"
+  container_uuid: "aa57526f-a5cd-4258-b4c4-cea983dea0ea"
+}
+vstore_list {
+  vstore_id: 1589
+  vstore_name: "vmContainer1"
+  container_id: 1589
+  vstore_uuid: "3a2bac75-c257-4042-b945-18458a0a302f"
+  container_uuid: "3a2bac75-c257-4042-b945-18458a0a302f"
+}
+vstore_list {
+  vstore_id: 1591
+  vstore_name: "vmContainer2"
+  container_id: 1591
+  vstore_uuid: "aab30e72-553c-47f3-8c1a-3d1478653e3e"
+  container_uuid: "aab30e72-553c-47f3-8c1a-3d1478653e3e"
+}
+vstore_list {
+  vstore_id: 11714
+  vstore_name: "Guru-ctr"
+  container_id: 11714
+  vstore_uuid: "d4f4cd54-a736-4a78-a8f3-a1a9959d6d3d"
+  container_uuid: "d4f4cd54-a736-4a78-a8f3-a1a9959d6d3d"
+}
+vstore_list {
+  vstore_id: 287642
+  vstore_name: "Nutanix_Files_ctr"
+  container_id: 287642
+  vstore_uuid: "e65692d8-4a03-4e3a-8cf2-8d0d276eee27"
+  container_uuid: "e65692d8-4a03-4e3a-8cf2-8d0d276eee27"
+}
+vstore_list {
+  vstore_id: 934183
+  vstore_name: "vmtestcontaner"
+  container_id: 934183
+  vstore_uuid: "61e5c361-c9f3-4160-a9eb-e90e0aeb0926"
+  container_uuid: "61e5c361-c9f3-4160-a9eb-e90e0aeb0926"
+}
+vstore_list {
+  vstore_id: 938232
+  vstore_name: "vmtestcontainerde"
+  container_id: 938232
+  vstore_uuid: "8cbd5252-1c25-4a18-a729-5df32bd6873c"
+  container_uuid: "8cbd5252-1c25-4a18-a729-5df32bd6873c"
+}
+vstore_list {
+  vstore_id: 4437879
+  vstore_name: "Banu-ctr"
+  container_id: 4437879
+  vstore_uuid: "28c7a323-08f7-4d36-a8c2-b40868920f46"
+  container_uuid: "28c7a323-08f7-4d36-a8c2-b40868920f46"
+}
+vstore_list {
+  vstore_id: 8263182
+  vstore_name: "prachi"
+  container_id: 8263182
+  vstore_uuid: "50c8c43f-5570-4912-a0df-be9b80e77da8"
+  container_uuid: "50c8c43f-5570-4912-a0df-be9b80e77da8"
+}
+vstore_list {
+  vstore_id: 9714237
+  vstore_name: "metro-pd"
+  container_id: 9714237
+  vstore_uuid: "2cc4e043-080c-4c77-8bbd-78d303a660d4"
+  container_uuid: "2cc4e043-080c-4c77-8bbd-78d303a660d4"
+}
+vstore_list {
+  vstore_id: 13029325
+  vstore_name: "TR"
+  container_id: 13029325
+  vstore_uuid: "d6dfea20-09c4-4da9-b305-8a0fcd13b6f8"
+  container_uuid: "d6dfea20-09c4-4da9-b305-8a0fcd13b6f8"
+}
+vstore_list {
+  vstore_id: 13029336
+  vstore_name: "test"
+  container_id: 13029336
+  vstore_uuid: "cd1b3e67-f6e5-43ff-a29b-94642525cff8"
+  container_uuid: "cd1b3e67-f6e5-43ff-a29b-94642525cff8"
+}
+vstore_list {
+  vstore_id: 21298275
+  vstore_name: "me-tro"
+  container_id: 21298275
+  vstore_uuid: "4539ac74-1d08-4414-b64b-7c6da33cca43"
+  container_uuid: "4539ac74-1d08-4414-b64b-7c6da33cca43"
+}
+vstore_list {
+  vstore_id: 23710191
+  vstore_name: "Nutanix_abc_ctr"
+  container_id: 23710191
+  vstore_uuid: "97bb8697-0903-4235-be85-9f8c38c52dcb"
+  container_uuid: "97bb8697-0903-4235-be85-9f8c38c52dcb"
+}
+vstore_list {
+  vstore_id: 23762782
+  vstore_name: "test-esxi"
+  container_id: 23762782
+  vstore_uuid: "7f4e2a95-1087-4f02-9b85-5f1f1cc1c1eb"
+  container_uuid: "7f4e2a95-1087-4f02-9b85-5f1f1cc1c1eb"
+}
+vstore_list {
+  vstore_id: 27329024
+  vstore_name: "ctr1"
+  container_id: 27329024
+  vstore_uuid: "ea79db3e-f651-40f9-968c-a868bef8fe16"
+  container_uuid: "ea79db3e-f651-40f9-968c-a868bef8fe16"
+}
+vstore_list {
+  vstore_id: 28262256
+  vstore_name: "prad-rf2"
+  container_id: 28262256
+  vstore_uuid: "1bb29c58-b694-4c70-9ab2-925948b5a894"
+  container_uuid: "1bb29c58-b694-4c70-9ab2-925948b5a894"
+}
+vstore_list {
+  vstore_id: 28262822
+  vstore_name: "prad-nfs1"
+  container_id: 28262822
+  vstore_uuid: "2f007fea-ee1f-411a-8308-feddb2644af5"
+  container_uuid: "2f007fea-ee1f-411a-8308-feddb2644af5"
+}
+vstore_list {
+  vstore_id: 33645197
+  vstore_name: "labtest"
+  container_id: 33645197
+  vstore_uuid: "f646b5ca-005c-4ebc-9e8d-57e20cf367a2"
+  container_uuid: "f646b5ca-005c-4ebc-9e8d-57e20cf367a2"
+}
+vstore_list {
+  vstore_id: 36949578
+  vstore_name: "Site-A"
+  container_id: 36949578
+  protect_action_component_ids: 36949578
+  vstore_uuid: "78ae77eb-d9ed-4df0-9e1f-0709587fa84f"
+  container_uuid: "78ae77eb-d9ed-4df0-9e1f-0709587fa84f"
+}
+vstore_list {
+  vstore_id: 36949580
+  vstore_name: "Site-B"
+  container_id: 36949580
+  protect_action_component_ids: 36949580
+  vstore_uuid: "9268ce3c-1240-461c-a656-b51c458b2101"
+  container_uuid: "9268ce3c-1240-461c-a656-b51c458b2101"
+}
+vstore_list {
+  vstore_id: 37681512
+  vstore_name: "AK-ctr"
+  container_id: 37681512
+  vstore_uuid: "017c0478-3b51-4dd4-9729-22e662584dad"
+  container_uuid: "017c0478-3b51-4dd4-9729-22e662584dad"
+}
+vstore_list {
+  vstore_id: 37681514
+  vstore_name: "AK-Ctr"
+  container_id: 37681514
+  vstore_uuid: "347a3ecc-bd81-4557-bfd2-9be44989ddc1"
+  container_uuid: "347a3ecc-bd81-4557-bfd2-9be44989ddc1"
+}
+vstore_list {
+  vstore_id: 44678347
+  vstore_name: "Dr_Nutanix_VM"
+  container_id: 44678347
+  vstore_uuid: "cbed413a-0ace-4c92-84ab-d6b6b0f405be"
+  container_uuid: "cbed413a-0ace-4c92-84ab-d6b6b0f405be"
+}
+vstore_list {
+  vstore_id: 46489677
+  vstore_name: "NTNX-NFS-DEFAULT-0"
+  container_id: 46489677
+  vstore_uuid: "b5480ff8-c8d6-4bef-882f-c3d298463ff7"
+  container_uuid: "b5480ff8-c8d6-4bef-882f-c3d298463ff7"
+}
+vstore_list {
+  vstore_id: 46733079
+  vstore_name: "Nutanix_test_ctr"
+  container_id: 46733079
+  vstore_uuid: "c7b53253-2a27-4585-ae6f-2cb6a2d1b1b0"
+  container_uuid: "c7b53253-2a27-4585-ae6f-2cb6a2d1b1b0"
+}
+release_version: "el7.3-release-euphrates-5.16.1-stable-d0ca35e3b5a339dbd733142d8cc154028e6b3f73"
+ssh_key_list {
+  key_id: "99f1f99b-21ec-4621-9bce-3a06d2979f41"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCg9OpQxNkxuPtsgbv2eXFPRPNrKKUPLJM/U2wxq/RJ12PqYXawJ59eVW+eJCFkDzHOO5Ht5/A+/nZf/RIdhaAQEPhnB9QXENQzKBG3UvOQSjhwhg6KG7Ow+TuDvO9Qm4cIktWsimIQ36LM3nwOjQ1yzWFPb1VGb8QosPfmPzWnh1F1vUi4ss/Wj4gNfnqBAz2k3bIxKQjT0Ja6tuoVUE691GZpz6okkLfEJUG0mhlEwz1RLyR/VbpgO1fM038qVYRzd6Q48ubEBT+87vKk9SHqCInO+J2bOJPBLdQtYQzd+naokWJS7uEENWBkT8JmKu93Um86J3HCjrYaNDdikYb/ nutanix@ntnx-16sm65110106-c-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJAKNH6IugsQnvMA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMDAyMjcwNjI4NTFaFw0zMDAyMjQwNjI4NTFaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKD06lDE2TG4\n+2yBu/Z5cU9E82sopQ8skz9TbDGr9EnXY+phdrAnn15Vb54kIWQPMc47ke3n8D7+\ndl/9Eh2FoBAQ+GcH1BcQ1DMoEbdS85BKOHCGDoobs7D5O4O871CbhwiS1ayKYhDf\noszefA6NDXLNYU9vVUZvxCiw9+Y/NaeHUXW9SLiyz9aPiA1+eoEDPaTdsjEpCNPQ\nlrq26hVQTr3UZmnPqiSQt8QlQbSaGUTDPVEvJH9VumA7V8zTfypVhHN3pDjy5sQF\nP7zu8qT1IeoIic74nZs4k8Et1C1hDN36dqiRYlLu4QQ1YGRPwmYq73dSbzonccKO\ntho0N2KRhv8CAwEAAaNQME4wHQYDVR0OBBYEFLTwj5GmKH7FObqDfgTMo+2R+OJl\nMB8GA1UdIwQYMBaAFLTwj5GmKH7FObqDfgTMo+2R+OJlMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAFgftyaa6bhFSgc2m/bfkpMBSjzXpT/TM47YCCCK\nvl/obADHsj+chehrIEh/FvBcvZFnFk/exk/TK3OpzMoaS0DBAaI/naCxmPTnCL11\n+gM2e99K4JSEG+6OF7aUsuWMj0UmX6PexqzdeYvLFpk57r3mmP8JmShzuLmWyFtr\nx0L4fjmpg0Z0U+d/UqmvNRI/Azoshs2i3XImguNRwXZMByH1eJ4PJhv2ZnJhWpdo\nb37+5gcUwT9/cBiIK/ZAWd/4SYtzDk9u9hImaF5tasPiHkdXiF0kJkCVjX3Tn2y6\nM4OpyfG0ERwLklptv2Lsw4FYvzHxC9U2SXXIZD0qrObOhWE=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "de2b520f-bcd6-4adf-bc79-32abc1787af6"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCnfEoDXhDEn+RN4Dy9zYvB7QO9L8viYkEBYBiY6lpKA3bFRj0BjzitX6rVDwjZusLPoXvJprn9vIlGrXFCWD4YD08UAJkcitKLxD4C5jwYYsn7QBqmMk7clDZrrtUGAqz2RWJrKqzOnWoayEUTpbGNalyz6VP6ra/O2EZ4UzTaioye7t/3rHsJEP38wlsgCEZQmNtTY+E2uf1dYjf/jTMUAYOLgkX4BNp1CagWU5Um9/LpnPd0UTWlwl7+d2JVef9FPCF1Pxx85WXZ6wow9kX2YpK4vciIhKawn6P63aGvVQs3n5H7GQ9cIyDYqF77ShtWN4L/pHSIcrJ3tTemnCI1 nutanix@ntnx-16sm65110106-a-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJAM7vhs1Te5n6MA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMDAyMjcwNjMwMzZaFw0zMDAyMjQwNjMwMzZaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKd8SgNeEMSf\n5E3gPL3Ni8HtA70vy+JiQQFgGJjqWkoDdsVGPQGPOK1fqtUPCNm6ws+he8mmuf28\niUatcUJYPhgPTxQAmRyK0ovEPgLmPBhiyftAGqYyTtyUNmuu1QYCrPZFYmsqrM6d\nahrIRROlsY1qXLPpU/qtr87YRnhTNNqKjJ7u3/esewkQ/fzCWyAIRlCY21Nj4Ta5\n/V1iN/+NMxQBg4uCRfgE2nUJqBZTlSb38umc93RRNaXCXv53YlV5/0U8IXU/HHzl\nZdnrCjD2RfZikri9yIiEprCfo/rdoa9VCzefkfsZD1wjINioXvtKG1Y3gv+kdIhy\nsne1N6acIjUCAwEAAaNQME4wHQYDVR0OBBYEFLY0o4JnooHQW2VwTE7nHnoAX/4e\nMB8GA1UdIwQYMBaAFLY0o4JnooHQW2VwTE7nHnoAX/4eMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAGxp3w1Mpo0M6inBFBaOAArVDz0b8Dr1IxpQT5+O\nJg/On2/RDbSPXwlNOEIc2dTXs4B4ZekgOd74VxC64gUxyaBE5L+jL/fEE+1MUOd/\n0N91OFfk0hA7I9xUcL1HmcUNNX9DGsDcVkPPMTy2PnAn9x/Sh1eQ7mnzzG6nOPCv\n3DoYQIFYXryKh1R9Q5/54bAFzUdzfADeQTbCW5pVumkWjxl7SlOqP4/Fd5hFnZBd\njqAqzM783dE2CYraMXrJsWRjyw68iSd/IwWs4fbvH60xM303HxQWUmKZLfkBK5Jy\ndUtjJqGOXu3ik2X6AIs9bw2yZKWYrY9gtte5rY9W0VzqpZ0=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "8bcc6d93-b2d8-4a3b-8f8d-7567b5f5dc06"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4KIh2xNcXU7xDWSFo2WihNs2MWNFdcyLXMjbXLWKKvBvEVQjECTdWHSmd4XcpKXcXcxXCIdIDT5lfR/N0YX/MysVn4bSkqQJz3NG5bubFd26Xb7+J42/H1ul1x0/ZUfe7PB8wyvQhNGdN3cYGPHkwOcx2UXNR+2Rvkohi491CRsMy4yxj32zd5WhqeOROaY0xN2UE0zs12PPMT1yD/gpF2gZ1NGarojlZFAuwtOMlRnBhb5gAGVpJy7mOXEi0Z0krWRIYW/L5VEriFciVYIdxFLqAp+81sTQR0EkvpPfrEjN4frnfyYQwtn1iUBjmT5OoWS+amUSAON8q/MZ1dnK/ nutanix@ntnx-16sm65110106-b-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJAPFuxFU46AdBMA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMDAyMjcwNjI5MDBaFw0zMDAyMjQwNjI5MDBaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALgoiHbE1xdT\nvENZIWjZaKE2zYxY0V1zItcyNtctYoq8G8RVCMQJN1YdKZ3hdykpdxdzFcIh0gNP\nmV9H83Rhf8zKxWfhtKSpAnPc0blu5sV3bpdvv4njb8fW6XXHT9lR97s8HzDK9CE0\nZ03dxgY8eTA5zHZRc1H7ZG+SiGLj3UJGwzLjLGPfbN3laGp45E5pjTE3ZQTTOzXY\n88xPXIP+CkXaBnU0ZquiOVkUC7C04yVGcGFvmAAZWknLuY5cSLRnSStZEhhb8vlU\nSuIVyJVgh3EUuoCn7zWxNBHQSS+k9+sSM3h+ud/JhDC2fWJQGOZPk6hZL5qZRIA4\n3yr8xnV2cr8CAwEAAaNQME4wHQYDVR0OBBYEFCP5Ql4ONUcmbBwLK5uGJE20OXVl\nMB8GA1UdIwQYMBaAFCP5Ql4ONUcmbBwLK5uGJE20OXVlMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAJD/Ml+2q7a/6kl/apUoyDS7wDdwPvW/DqtHCQ+R\nqJr5ByeX38slQEMav798WOyjYg1P11ttHGcOal/Wqo017k/MnXrk0EwDfbg1WU9u\nT9YZmJt7DklgtY8Ox+CYX/PzlHqrh86jhpHWfWS7iN5pVERhCq1rAGQ8CMNa8XX6\n64nL8cNEad9NyG7V+1G+MHPE3NYciHl1f+TY5Wkg/R8MfI0z2l9EBgY4aWoqSrmp\nbirzOA6iLZ55wDDUKzlLwEXBZrE4FL1LSOGxQmnWWONpuL0R5kIkYK/cxvCgFMRp\nywfSMBQ2AnvLtq2EzeoxMyANDBUYJRPXJJAbj6d2/9Y9qDw=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "6ec1b3d7-d88a-48f0-8365-a259c0c8766b"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhbJ3a6iX/89s8Z1Bjtswp4Ngi1pIsGxZjxRqCipvYWX8VCawHXdIeXLBFh7rAhQJoau0Wqi6tYj4RSluJXb1tC4zAViQTLmbvv5tcFyTRTFCnVvE4HqxAEkyu4thiW9sfKCs1F8DcKi+yA8VDBzt/bcPBwYt0KHQU6d1ing+VnUrnU6o9xJe0qJYNbDE5OlB3f9daSsJlYin75hHmmQ6N/DZf6ohNXkafadEgnQ/mZcYG7E40L2gNB3rbI+3E42gQjb29VneGcKYDRmx5n2YZlygbdoLrSsBzDq0ARhq6AZG75+vjik899nD1rA6yO00dzia3y6AdSrL1RwagOAqh nutanix@ntnx-16sm65110106-d-cvm"
+  key_type: kNodeKey
+  ssl_cert: "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIJAN1jsU0sbRx0MA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDAeFw0yMDAyMjcwNjMwMDJaFw0zMDAyMjQwNjMwMDJaMG4xCzAJBgNV\nBAYTAlVTMQswCQYDVQQIDAJDQTERMA8GA1UEBwwIU2FuIEpvc2UxFTATBgNVBAoM\nDE51dGFuaXggSW5jLjEWMBQGA1UECwwNTWFuYWdlYWJpbGl0eTEQMA4GA1UEAwwH\nbnV0YW5peDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOFsndrqJf/z\n2zxnUGO2zCng2CLWkiwbFmPFGoKKm9hZfxUJrAdd0h5csEWHusCFAmhq7RaqLq1i\nPhFKW4ldvW0LjMBWJBMuZu+/m1wXJNFMUKdW8TgerEASTK7i2GJb2x8oKzUXwNwq\nL7IDxUMHO39tw8HBi3QodBTp3WKeD5WdSudTqj3El7Solg1sMTk6UHd/11pKwmVi\nKfvmEeaZDo38Nl/qiE1eRp9p0SCdD+ZlxgbsTjQvaA0Hetsj7cTjaBCNvb1Wd4Zw\npgNGbHmfZhmXKBt2gutKwHMOrQBGGroBkbvn6+OKTz32cPWsDrI7TR3OJrfLoB1K\nsvVHBqA4CqECAwEAAaNQME4wHQYDVR0OBBYEFNF2FWNNMJaPwMos4SHPPR5GofoU\nMB8GA1UdIwQYMBaAFNF2FWNNMJaPwMos4SHPPR5GofoUMAwGA1UdEwQFMAMBAf8w\nDQYJKoZIhvcNAQELBQADggEBAAIAfmhZoEfgGkfPQUnevgM9WEGU+HFrBqLJ1m7F\n9WXd+uGeUe7x1mukCJ1cA9Tr5cXWblkFydwDFxo0yyOVVt2pDwjL0Ifvvdfn1GM9\n6mVUCU6UNx4aKG/YyxWZqORXzEzN8f2jWItG51GvlGhIRVIbqM0NkncV80ocMA+Q\nAEbu2pfU2mWKaGhM+VBNUvo8ZItGQMjl/T6AYnfCdAXEKes4sdR3fVrwmUpqBMQE\nXnCgZuvAYZBQZVzeMq2IyASxc5bEIunWL7na+DVTP2yqdcoAnMBgeycRmAVznhLu\nvaNUHKlnZcZoebwrgRWzmoD2XFwF/0BhmNoy5Bgwr3OTE1M=\n-----END CERTIFICATE-----"
+}
+ssh_key_list {
+  key_id: "rajith-key"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwIusCrJym8reF01N3fm8B+qJTTffqUBWBp3mDiubexIhe3/o6wk/lb4yqBimGYvl1UTbQKs1aZHkj5tiuZuVLZ86ip5+1DtaYXRI86iDa11cQXIPM0JOph3AWveCr9prqxXxZ/hu+4TFdjIxtDkVCJ6F1FPRHZzvKtwS5sITtWagr37kXUglpmTc1tw+I06fFnip2sj/8GIzuXtG5lTeeJTt5Tp3L1RLYOQqVHZSZVE2icAn+bO/TX80/1yq7Sx/M21gPg0MZjMHZWLS5W2rM1+Pcui15kAWKCiR7sLY79QPxibTpRZxDyWNzis8iY3JvfiH+oNumGv3SnRpMJvI7 rajith.m@C02XT4NNJHD3"
+  key_type: kExternalKey
+}
+ssh_key_list {
+  key_id: "pkey"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCy3W81tarYT/ccsMosHx39XN43i3iV5NqbfQyBbKpphR7bQWKtNRCZZ37oAuztaApXkS9iu0AkSm4s3KJPSW5aomMFDXqdLFDnUFQ55fHyCVlglXBQTVzZepMx3KCLvalKLbgeoUvHRxWXDQd0LuPAZ5f7jPQJtF0LI5k8XL/FFvhEF65pWn4vFxnCPzkkwowYyI70803cP3E3ZhOtTWetxkB0TIFo5HHBHvrc17qrwqYnmi9gMOi4HBMOsSGItosDoQMBvJa5RO3si+B2wp0gKHouGbiKraKvfTIHTtwC7+72cMQgDJwff2hOWzpA5pP3CM6fVlW/cKlHg19DpkLKYY1mb4te1+/3TL+AwwPSljJZVWqUPvGZlr4bi/sic/q/Q7SV/h8qEGSakE5sIwg4OWetbUVf0My8Y/TCuqjANsxJuhphUIPLrfK/L78tMTNEkx8Zn6WYK4gwqZ6g6APK2u6bVj9Tncl7QlGG7H58ylG11XLNp1rnJxnAfDW5vxU="
+  key_type: kExternalKey
+}
+ssh_key_list {
+  key_id: "Jon-New"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAvUAVK/9bNOqqx5HZ99MOakPM5dW5s5TuyaK7kr0SmV0LU8ahQPqlXYmnfbk6bjEBDUUF/DNEWhnpanQJXHFHoKff8tMGpJsfVGMgYNX1jsOFU/EXWTdDEAy24RMB4ZUrWvnD+ggyD2noCO//HDE+zNQfQu9M2QeU/sz8x3vuzpB2NAFZlmWvfgMLILqypqX6f4Dwx8yA2ZkQLX18UweAMFTyUij/+Z4KBsKBebx6vAENrY+wl3qnCZOToftTGNU4RROwTYxUrgF2V0xNBlUjRRV8SXt4G5Ja0l+qQMXkfpVLcKk4tElah3S93SjdrGeykXANGSXOLokD/vPXLgZyXQ== JonHuffNoPW"
+  key_type: kExternalKey
+}
+ssh_key_list {
+  key_id: "Ankush"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC5Tj6qhQ/tEhkcY3liu1D42+PfM3Mcv6PDabYYtTj0O2NVNx9I+jZwxCbFKRonX7R3FEF1/mAF4ww+RDsQ1FUR2GIotAg0loNYFfAnXwPsy0vbHxY5hYlNr5k3ZNhcMDcXlRojuvI7BCA/s7ZqmRJaoMIBlbHcC2xx98KXjXuI8DF/S34VJYPwXk9lg3dSLpD+aahQEu5+NZhu1oDmdV/OIG39uip7n6g+J/4jGNCF5HLe7+24wUwlMXcpc/LGrd2BVWhKBiZYemTbh6RF9G+QW9ihYpR5zcHSco8tuPKgUj5TDXEWCV2np4RGg4G/cPtOS125U/CVURfyz0Uo6pcqKn05xtlIpGAAzg7iMWLEZ1QjazC3U11YTBqOZ2wUo0daebvUQhdHXhmaYSKpKBPzhoc9A78BwrSiE8gMWEMUgLiSjW+JLN1X4yPFtghu6accHffAbiuoOL2pq3pCCBNJ4O3cZ53Qt9Ay9MLNZwHqIxjIXugyTtvpYLZhjvhS4qs= ankush.gera@agera-blr-mbp\n"
+  key_type: kExternalKey
+}
+ssh_key_list {
+  key_id: "bk-automic-1"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2U/7jgL2RJgan1DqfAM1WWj2Clwti6rn/v7VBguJ0wjlwq2j16NIgFCVkjsqb2xpAAgduGprWth0oKaTuucl5paAjFVgWshNtibeJURuMwmSb7FdoW/h1pMZ04a9FcuV6s5weha6mFQdajmSW5uA02wHzZZFnj3BqX7LKnUkZnwboQ8ZYWu6iuvsV26julIY0hqlXUepVeYSUKob9anNH/mrjdjFIhkv0TWoR3UUlh00eEiE7hVPJaD2A8B/2CKJiNjBAkIVZHTrAOZ3YTcJc9wIdfQYJLpotbc5OCINvWlW4QEuOmYKBFs8gHjVffoGaLNyjS9zWPnzxy74f6qDz bbarnes@bb-automic-1"
+  key_type: kExternalKey
+}
+ssh_key_list {
+  key_id: "jin-key"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3k/7NGN7HVUXolviuzTtLEjcPiNxImVTRVBb/WWvqr1hMI6HUSCdlftQRYFoOp8YnM3ZQoYIUw3vT6R9jV9WtUf00cNeEPvwylVwFwhoKxFy2j4YFTb6TRSSU38MqPmC4G3cItkMuEUr2feMCLfnSTNmAU7uFInJYjHuZq2rzuw/kix3plz7UtymvPGIPIda/huDct3sLV2ywdeMbUleg2TirYs9f5LjK7LUPhTrYsWePzu6XG7dppQXjsn+j8lGVcj/MgZ/+7mEGRN5DLlAxSPaI3x5+PWoH6+NSO6AaKIGfE8FsDydJgJHdxIA9JD2DFfEG72Vnk9omYivhTK3v yuantao.jin@C02XD6HMJHD2"
+  key_type: kExternalKey
+}
+ssh_key_list {
+  key_id: "Vipin"
+  pub_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDE/NuygUaYErVohreQTogMbTzbEb+yMaBHkMF7FN2cW4tJRQjHkKjhjYbczvaoRSsdux+VFN45slcbun7ym16OV0Ji4A/wRt3g/Ldvl+08g726PlJBWLbJGt99x/mcRizy2jgT+bwrs3vIvaLC4BKH8R8mi22c+NGGiKj2sX8hcaE4rZBKiOZ93eDvQ/7tUZovLRjEo5tshLGg/0PQaZ9H7ReULgKR+TkTenm7AJ39JEglAlDGrGLCgy4raHmbjGfP8pnik6jBSIoD07u5CWZZ0ZyX6I1uAMKC38Ngna9ndIB5S2t22Kfly1MO/l0TKD5kv5k7p0iSepZqxqM0qr83 rsa-key-20210619"
+  key_type: kExternalKey
+}
+cluster_content_cache_fingerprint_pct: 100
+cluster_external_ip: "10.136.106.135"
+cluster_fault_tolerance_state {
+  current_max_fault_tolerance: 1
+  desired_max_fault_tolerance: 1
+  desired_fault_tolerance_level: kNode
+}
+domain_fault_tolerance_state {
+  domains {
+    domain_type: kNode
+    components {
+      component_type: kZookeeperInstances
+      max_faults_tolerated: 1
+      last_update_secs: 1622723727
+      tolerance_details_message {
+        message_id: "Zookeeper can tolerate 1 node failure(s)"
+      }
+    }
+    components {
+      component_type: kStaticConfig
+      max_faults_tolerated: 1
+      last_update_secs: 1582785224
+      tolerance_details_message {
+        message_id: "Cluster configuration supports node (host) fault tolerance"
+      }
+    }
+    components {
+      component_type: kCassandraRing
+      max_faults_tolerated: 1
+      last_update_secs: 1622807641
+      tolerance_details_message {
+        message_id: "All metadata ring partitions are fault tolerant"
+      }
+    }
+    components {
+      component_type: kStargateHealth
+      max_faults_tolerated: 1
+      last_update_secs: 1625844613
+      tolerance_details_message {
+        message_id: "Based on stargate health the cluster can tolerate a maximum of 1 node failure(s)"
+      }
+    }
+    components {
+      component_type: kFreeSpace
+      max_faults_tolerated: 1
+      last_update_secs: 1625844606
+      tolerance_details_message {
+        message_id: "Cluster has enough capacity (15271254640642) for usage (4552703883264) to tolerate at least 1 node failure(s)"
+      }
+    }
+    components {
+      component_type: kExtentGroupReplicas
+      max_faults_tolerated: 1
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "Based on placement of extent group replicas the cluster can tolerate a maximum of 1 node failure(s)"
+      }
+      under_computation: false
+    }
+    components {
+      component_type: kOplogEpisodes
+      max_faults_tolerated: 1
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "Based on placement of oplog episodes the cluster can tolerate a maximum of 1 node failure(s)"
+      }
+    }
+    components {
+      component_type: kErasureCodeStripSize
+      max_faults_tolerated: 1
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "Based on erasure code strip size the cluster can tolerate a maximum of 1 node failure(s)"
+      }
+    }
+  }
+  domains {
+    domain_type: kRackableUnit
+    components {
+      component_type: kZookeeperInstances
+      max_faults_tolerated: 0
+      last_update_secs: 1582785022
+      tolerance_details_message {
+        message_id: "Rackable unit (block) aware Zookeeper placement is disabled - Not enough rackable units (blocks) in the cluster"
+      }
+    }
+    components {
+      component_type: kOplogEpisodes
+      max_faults_tolerated: 0
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "kRackableUnit aware data placement is disabled - Not enough rackable units (blocks) in the cluster."
+      }
+    }
+    components {
+      component_type: kStaticConfig
+      max_faults_tolerated: 0
+      last_update_secs: 1582785223
+      tolerance_details_message {
+        message_id: "Not enough rackable units (blocks) in the cluster."
+      }
+    }
+    components {
+      component_type: kExtentGroupReplicas
+      max_faults_tolerated: 0
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "kRackableUnit aware data placement is disabled - Not enough rackable units (blocks) in the cluster."
+      }
+      under_computation: false
+    }
+    components {
+      component_type: kCassandraRing
+      max_faults_tolerated: 0
+      last_update_secs: 1610705544
+      tolerance_details_message {
+        message_id: "Metadata ring partitions with nodes: {non_fault_tolerant_nodes} are not fault tolerant."
+        attribute_list {
+          attribute: "non_fault_tolerant_nodes"
+          value: "10.136.106.134, 10.136.106.131, 10.136.106.132"
+        }
+      }
+    }
+    components {
+      component_type: kStargateHealth
+      max_faults_tolerated: 0
+      last_update_secs: 1625844613
+      tolerance_details_message {
+        message_id: "kRackableUnit aware data placement is disabled - Not enough rackable units (blocks) in the cluster."
+      }
+    }
+    components {
+      component_type: kFreeSpace
+      max_faults_tolerated: 0
+      last_update_secs: 1625844606
+      tolerance_details_message {
+        message_id: "kRackableUnit aware data placement is disabled - Not enough rackable units (blocks) in the cluster."
+      }
+    }
+    components {
+      component_type: kErasureCodeStripSize
+      max_faults_tolerated: 0
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "kRackableUnit aware data placement is disabled - Not enough rackable units (blocks) in the cluster."
+      }
+    }
+  }
+  domains {
+    domain_type: kRack
+    components {
+      component_type: kZookeeperInstances
+      max_faults_tolerated: 0
+      last_update_secs: 1582785219
+      tolerance_details_message {
+        message_id: "Rack aware Zookeeper placement is disabled - Not enough racks in the cluster"
+      }
+    }
+    components {
+      component_type: kOplogEpisodes
+      max_faults_tolerated: 0
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "kRack awareness is disabled."
+      }
+    }
+    components {
+      component_type: kStaticConfig
+      max_faults_tolerated: 0
+      last_update_secs: 1582785222
+      tolerance_details_message {
+        message_id: "Rack aware placement is not enabled."
+      }
+    }
+    components {
+      component_type: kExtentGroupReplicas
+      max_faults_tolerated: 0
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "kRack awareness is disabled."
+      }
+      under_computation: false
+    }
+    components {
+      component_type: kStargateHealth
+      max_faults_tolerated: 0
+      last_update_secs: 1625844613
+      tolerance_details_message {
+        message_id: "kRack awareness is disabled."
+      }
+    }
+    components {
+      component_type: kFreeSpace
+      max_faults_tolerated: 0
+      last_update_secs: 1625844606
+      tolerance_details_message {
+        message_id: "kRack awareness is disabled."
+      }
+    }
+    components {
+      component_type: kErasureCodeStripSize
+      max_faults_tolerated: 0
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "kRack awareness is disabled."
+      }
+    }
+  }
+  domains {
+    domain_type: kDisk
+    components {
+      component_type: kCassandraRing
+      max_faults_tolerated: 1
+      last_update_secs: 1622807641
+      tolerance_details_message {
+        message_id: "All metadata ring partitions are fault tolerant"
+      }
+    }
+    components {
+      component_type: kFreeSpace
+      max_faults_tolerated: 1
+      last_update_secs: 1625844606
+      tolerance_details_message {
+        message_id: "Cluster has enough capacity (15271254640642) for usage (4552703883264) to tolerate at least 1 disk failure(s)"
+      }
+    }
+    components {
+      component_type: kExtentGroupReplicas
+      max_faults_tolerated: 1
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "Based on placement of extent group replicas the cluster can tolerate a maximum of 1 disk failure(s)"
+      }
+    }
+    components {
+      component_type: kOplogEpisodes
+      max_faults_tolerated: 1
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "Based on placement of oplog episodes the cluster can tolerate a maximum of 1 disk failure(s)"
+      }
+    }
+    components {
+      component_type: kErasureCodeStripSize
+      max_faults_tolerated: 1
+      last_update_secs: 1625841678
+      tolerance_details_message {
+        message_id: "Based on erasure code strip size the cluster can tolerate a maximum of 1 disk failure(s)"
+      }
+    }
+  }
+}
+shadow_clones_enabled: true
+password_remote_login_enabled: true
+stargate_version: 526
+cluster_functions: 1
+cluster_uuid: "00059f88-d485-cbf2-0000-00000000b790"
+timezone: "America/Los_Angeles"
+disable_on_disk_dedup: true
+extended_nfs_fhandle_enabled: true
+curator_scan_info {
+  partial_scan_execution_id: 34293
+  full_scan_execution_id: 34288
+  selective_scan_execution_id: 31549
+}
+acropolis_ha_config {
+  removed_node_locality_cleared: true
+}
+cvm_security_compliance_config {
+  schedule: kDaily
+  aide: false
+  core: false
+  high_strength_password: false
+  banner: false
+  snmp_v3_only: false
+}
+hypervisor_security_compliance_config {
+  schedule: kDaily
+  aide: false
+  core: false
+  high_strength_password: false
+  banner: false
+}
+cluster_external_data_services_ip: "10.136.104.135"
+disable_degraded_node_monitoring: false
+cluster_operation_mode: kNormal
+common_criteria_mode: false
+iscsi_config {
+  external_clients_enabled: true
+  iscsi_client_uuid_fix_done: true
+  scsi_pr_endian_state: kBigEndian
+}
+curator_stargate_protocol_config {
+  current_version: 1
+  desired_version: 1
+  enable_dedup_extents_two_phase_deletion: true
+}
+initialized_dedup_extents_two_phase_deletion: true
+management_share_container_id: 12
+default_ssp_container_id: 616
+cluster_arch: kX86_64
+image_conversion_complete_obelix: true
+catalog_pe_registered: false
+acropolis_scheduler_cleanup_done: true
+hypervisor_lldp_config {
+  lldpd_tx: true
+}
+cerebro_features_bitmap: 2226518015
+catalog_subset_migration_enabled: true
+acropolis_scheduler_hot_add_cleanup_done: true
+acropolis_ha_priority_cleanup_done: true
+is_lts: false
+aes_supported_version_logical_timestamp: 0

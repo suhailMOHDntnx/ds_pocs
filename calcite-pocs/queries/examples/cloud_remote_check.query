@@ -1,0 +1,11 @@
+SELECT remoteSite.remoteName, CASE
+  WHEN remoteSite.compressionAlgorithm IS NULL THEN 'FAIL'
+  WHEN remoteSite.capabilities.backup IS NULL
+    OR remoteSite.capabilities.backup = FALSE THEN 'FAIL'
+  WHEN remoteSite.capabilities.disasterRecovery IS NOT NULL
+    AND remoteSite.capabilities.disasterRecovery = True THEN 'FAIL'
+  ELSE 'PASS'
+END
+FROM zeusConfig.remoteSiteList remoteSite
+WHERE
+  remoteSite.cloudSiteInfo.cloudType IS NOT NULL

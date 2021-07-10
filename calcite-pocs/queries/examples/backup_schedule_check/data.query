@@ -1,0 +1,10 @@
+SELECT
+  pd.pdName pdName,
+  pd.hasPeriodicSchedules hasSchedule,
+  pd.vstoreId IS NOT NULL AND pd.vstoreId >= 0 isVstorePd,
+  pd.fileCount = 0 isEmpty
+FROM cerebro.protectionDomainList pd
+WHERE
+  pd.stretchParams.stretchParamsId.clusterId IS NULL
+  AND pd.isActive = True
+  AND 'CREATED_BY=ERA' NOT IN (SELECT * FROM UNNEST(pd.annotationVec))
