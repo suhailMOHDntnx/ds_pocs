@@ -1,1 +1,4 @@
 calcite-pocs/target/*
+calcite-pocs/repo/*
+logs/*
+data/*

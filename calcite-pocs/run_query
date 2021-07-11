@@ -1,0 +1,1 @@
+java -Dlog4j.configuration=file:///home/nutanix/ds_pocs/calcite-pocs/log4j.xml suhailmohd.App "$@" 2>${POC_ROOT}/logs/run_query.log

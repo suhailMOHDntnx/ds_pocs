@@ -1,1 +1,1 @@
-java  sqlline.SqlLine  2>$POC_ROOT/calcite-pocs/sqlline.log
+java -Dlog4j.configuration=file:/$POC_ROOT/calcite-pocs/log4j.xml sqlline.SqlLine  2>$POC_ROOT/calcite-pocs/sqlline.log

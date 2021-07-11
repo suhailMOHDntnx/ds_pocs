@@ -14,9 +14,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import suhailmohd.idf.IDFSchema;
+import suhailmohd.tartarus.TartarusSchema;
 
 public class App
 {
@@ -28,31 +27,25 @@ public class App
         System.out.println( Runtime.getRuntime().freeMemory());
     }
 
-    public static void main( String[] args ) throws Exception
+    public static void main(String[] args) throws Exception
     {
         Class.forName("org.apache.calcite.jdbc.Driver");
         Properties info = new Properties();
         info.setProperty("lex", "JAVA");
         Connection connection =
-            DriverManager.getConnection("jdbc:calcite:", info);
+            DriverManager.getConnection("jdbc:calcite:model=" + args[0], info);
         CalciteConnection calciteConnection =
             connection.unwrap(CalciteConnection.class);
 
 
         SchemaPlus rootSchema = calciteConnection.getRootSchema();
-        Schema tSchema = new TartarusSchema();
-        Schema idfSchema = new IDFSchema();
-        rootSchema.add("tartarus", tSchema);
-        rootSchema.add("idf", idfSchema);
+        // Schema tSchema = new TartarusSchema();
+        // Schema idfSchema = new IDFSchema();
+        // rootSchema.add("tartarus", tSchema);
+        // rootSchema.add("idf", idfSchema);
 
-        GsonBuilder builder = new GsonBuilder();
-        Gson gson = builder.create();
-        String s = new String(Files.readAllBytes(Paths.get("/home/nutanix/ncc/bin/zeus_config.dat")));
-        GenZeusConfig z = gson.fromJson(s, GenZeusConfig.class);
-        // System.out.println(gson.toJson(z));
-        rootSchema.add("zeusConfig", new ReflectiveSchema(z));
 
-        String[] queries = getQuery(args[0]);
+        String[] queries = getQuery(args[2]);
         Statement statement = calciteConnection.createStatement();
 
         for (String query : queries) {

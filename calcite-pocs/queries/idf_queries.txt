@@ -1,1 +1,1 @@
-select * from idf.ALERT_CHECK_SCHEMA
+select * from IDF.ALERT WHERE ACKNOWLEDGED = False

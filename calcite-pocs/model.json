@@ -1,12 +1,19 @@
 {
-  version: '1.0',
-  defaultSchema: 'SALES',
-  schemas: [
+  "version": "1.0",
+  "defaultSchema": "SALES",
+  "schemas": [
     {
-      name: 'IDF',
-      type: 'custom',
-      factory: 'suhailmohd.idf.IDFSchemaFactory',
-      operand: {
+      "name": "IDF",
+      "type": "custom",
+      "factory": "suhailmohd.idf.IDFSchemaFactory",
+      "operand": {
+      }
+    },
+    {
+      "name": "TARTARUS",
+      "type": "custom",
+      "factory": "suhailmohd.tartarus.TartarusSchemaFactory",
+      "operand": {
       }
     }
   ]
