@@ -15,6 +15,14 @@
       "factory": "suhailmohd.tartarus.TartarusSchemaFactory",
       "operand": {
       }
+    },
+    {
+      "name": "ZEUSCONFIG",
+      "type": "custom",
+      "factory": "suhailmohd.zeusconfig.ZeusConfigSchemaFactory",
+      "operand": {
+        "zeus_config_file": "${POC_ROOT}/data/zeus_config.json"
+      }
     }
   ]
 }
