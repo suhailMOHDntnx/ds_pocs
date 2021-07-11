@@ -17,11 +17,19 @@
       }
     },
     {
-      "name": "ZEUSCONFIG",
+      "name": "zeusConfig",
       "type": "custom",
       "factory": "suhailmohd.zeusconfig.ZeusConfigSchemaFactory",
       "operand": {
         "zeus_config_file": "${POC_ROOT}/data/zeus_config.json"
+      }
+    },
+    {
+      "name": "cerebro",
+      "type": "custom",
+      "factory": "suhailmohd.cerebro.CerebroSchemaFactory",
+      "operand": {
+        "rpc_script": "${POC_ROOT}/proto_pojo/print_protection_domains.py"
       }
     }
   ]

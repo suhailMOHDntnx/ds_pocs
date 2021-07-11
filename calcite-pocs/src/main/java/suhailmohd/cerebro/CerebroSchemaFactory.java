@@ -44,12 +44,7 @@ public class CerebroSchemaFactory implements SchemaFactory {
             String finalFilePath = sub.replace(filePath);
 
             String s;
-            try {
-                s = getProtectionDomains(finalFilePath);
-            } catch (IOException e) {
-                System.err.println("Failed to load zeus config file");
-                return null;
-            }
+            s = getProtectionDomains(finalFilePath);
             GenProtectionDomainList z = gson.fromJson(s, GenProtectionDomainList.class);
             // System.out.println(gson.toJson(z));
             return new ReflectiveSchema(z);

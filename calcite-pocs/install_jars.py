@@ -13,9 +13,10 @@ def parse_by_eclipse_standard(path):
   if match != None:
     (name, version) = match.group(1, 2)
 
-    name = name.split("-")
-    source = name[-1] == "source"
-    (group, name) = ("-".join(name[:-2]), name[-2]) if source else (".".join(name[:-1]), name[-1])
+    # name = name.split("-")
+    # source = name[-1] == "source"
+    # (group, name) = ("-".join(name[:-2]), name[-2]) if source else (".".join(name[:-1]), name[-1])
+    source = False
 
     # Hack cause we don't really care about group name
     group = "abcd.efgh"
@@ -36,7 +37,7 @@ def parse_by_eclipse_standard(path):
 def maven_dependencies(parsing_results):
   def artifact(parsing):
     return {
-      "groupId": parsing["group"], 
+      "groupId": parsing["group"],
       "artifactId": parsing["name"],
       "version": parsing["version"] + ("-SNAPSHOT" if parsing["snapshot"] else "")
     }
@@ -76,7 +77,7 @@ def install(path, parsing):
 def splits(str, splitter):
   parts = str.split(splitter)
   def split(i):
-    (l, r) = splitAt(parts, i) 
+    (l, r) = splitAt(parts, i)
     return (splitter.join(l), splitter.join(r))
 
   return map(split, range(1, len(parts)))
@@ -91,7 +92,7 @@ def splitAt(list, i):
 
 def name_to_version_alternatives(filename):
   return [
-    (n, v) 
+    (n, v)
     for (n, v) in splits(filename, "-") + splits(filename, "_")
     if v.lower() not in ["sources", "src", "snapshot"]
   ]
@@ -125,7 +126,7 @@ def name_parsing(name):
   else:
     return name, False
 
-def unzip(l): 
+def unzip(l):
   return tuple(zip(*l))
 
 def input_choice(labels, values):
@@ -160,7 +161,7 @@ def parse_interactively(path):
     (name, version) = input_choice(labels, alternatives)
   else:
     (name, version) = alternatives[0]
-  
+
   alternatives = list(reversed(group_to_name_alternatives(name)))
   if not alternatives:
     print "Incorrect name format: `%s`. Skipping" % filename
@@ -189,14 +190,14 @@ def parse_interactively(path):
 from optparse import OptionParser
 
 parser = OptionParser()
-parser.add_option("-i", "--interactive", 
+parser.add_option("-i", "--interactive",
                   dest="interactive", action="store_true", default=False,
                   help="Interactively resolve ambiguous names. Use this option to install libraries of different naming standards")
-parser.add_option("-d", "--delete", 
-                  dest="delete", action="store_true", default=False, 
+parser.add_option("-d", "--delete",
+                  dest="delete", action="store_true", default=False,
                   help="Delete successfully installed libs in source location")
-parser.add_option("-p", "--path", 
-                  dest="path", action="store", default="./lib", 
+parser.add_option("-p", "--path",
+                  dest="path", action="store", default="./lib",
                   help="Path to lib")
 (options, args) = parser.parse_args()
 

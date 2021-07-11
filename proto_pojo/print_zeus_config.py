@@ -53,13 +53,15 @@ def get_real_zeus_config():
   proto.ParseFromString(zk_client.get("/appliance/physical/configuration"))
   return proto
 
-def get_big_zeus_config():
+def get_zeus_config_from_file(filepath):
   proto = ConfigurationProto()
-  with open("/home/nutanix/ds_pocs/proto_pojo/big_zeus_config.dat") as f:
+  with open(os.path.join(os.getcwd(), filepath)) as f:
     text_format.Merge(f.read(), proto)
   return proto
 
 if __name__ == "__main__":
-  #proto = get_real_zeus_config()
-  proto = get_big_zeus_config()
+  if sys.argv[1]:
+    proto = get_zeus_config_from_file(sys.argv[1])
+  else:
+    proto = get_real_zeus_config()
   print get_json_for_proto(proto)
