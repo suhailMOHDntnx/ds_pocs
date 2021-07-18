@@ -20,8 +20,13 @@ import suhailmohd.zeusconfig.generated.GenZeusConfig;
 import java.io.IOException;
 import org.apache.commons.lang3.text.StrSubstitutor;
 import java.util.HashMap;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ZeusConfigSchemaFactory implements SchemaFactory {
+
+    private static final Logger logger = LoggerFactory.getLogger(ZeusConfigSchemaFactory.class);
+
     /** Public singleton, per factory contract. */
     public static final ZeusConfigSchemaFactory INSTANCE = new ZeusConfigSchemaFactory();
   
@@ -42,7 +47,7 @@ public class ZeusConfigSchemaFactory implements SchemaFactory {
             try {
                 s = new String(Files.readAllBytes(Paths.get(finalFilePath)));
             } catch (IOException e) {
-                System.err.println("Failed to load zeus config file");
+                logger.error("Failed to load zeus config file");
                 return null;
             }
             GenZeusConfig z = gson.fromJson(s, GenZeusConfig.class);

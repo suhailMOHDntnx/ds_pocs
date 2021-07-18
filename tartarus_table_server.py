@@ -26,6 +26,136 @@ from tartarus.base.exportable import export
 from tartarus.base.functional import typemethod
 from tartarus.base.primitive import PCIDevice
 
+# entity.hardware##hba_lsi.HBA_LSI-1.0.0 = tartarus.entity.hba_lsi:HBA_LSI
+# capability##.HBA_LSICAP-1.0.0 = tartarus.entity.hba_lsi:Cap_HBA_LSI
+#    "entity.hardware##hba_lsi.HBA_LSI-1.0.0": {
+#     "consumes": [
+#         "HFCL",
+#         "HBAINFO_UTIL"
+#     ],
+#     "ident": {
+#         "_t_ser_cls": "Ident",
+#         "kwargs": {
+#             "genus": {
+#                 "_t_ser_cls": "Genus",
+#                 "kwargs": {
+#                     "primitive": "entity.hardware",
+#                     "semantic": "",
+#                     "specialization": "hba_lsi"
+#                 }
+#             },
+#             "name": "HBA_LSI",
+#             "version": {
+#                 "_t_ser_cls": "Version",
+#                 "kwargs": {
+#                     "major": 1,
+#                     "minor": 0,
+#                     "revision": 0
+#                 }
+#             }
+#         }
+#     },
+#     "provides": [
+#         "VERSION",
+#         "LOCATION",
+#         "ID",
+#         "TYPE",
+#         "QUALIFIED",
+#         "LIST",
+#         "FIRMWARE",
+#         "MODEL",
+#         "HBA_LSICAP"
+#     ]
+# },
+    # "capability##.HBA_LSICAP-1.0.0": {
+    #     "consumes": [
+    #     ],
+    #     "ident": {
+    #         "_t_ser_cls": "Ident",
+    #         "kwargs": {
+    #             "genus": {
+    #                 "_t_ser_cls": "Genus",
+    #                 "kwargs": {
+    #                     "primitive": "capability",
+    #                     "semantic": "",
+    #                     "specialization": ""
+    #                 }
+    #             },
+    #             "name": "HBA_LSICAP",
+    #             "version": {
+    #                 "_t_ser_cls": "Version",
+    #                 "kwargs": {
+    #                     "major": 1,
+    #                     "minor": 0,
+    #                     "revision": 0
+    #                 }
+    #             }
+    #         }
+    #     },
+    #     "provides": [
+    #     ],
+    #     "requires": []
+    # },
+
+################################################
+# HBA_LSI
+################################################
+# from tartarus.base.capability import Capability
+# from tartarus.base.exportable import export
+# from tartarus.base.exportable import interface
+# from tartarus.base.exportable import typemethod
+# from tartarus.base.primitive import HardwareEntity
+
+# @export("HBA_LSICAP", "1.0.0")
+# class Cap_HBA_LSI(Capability):
+#   @interface(str)
+#   def firmware(self):
+#     return self._info_obj.get("firmware")
+#   @interface(str)
+#   def ppn(self):
+#     return self._info_obj.get("ppn")
+#   @interface(str)
+#   def port_name(self):
+#     return self._info_obj.get("port_names")
+#   @interface(str)
+#   def bios_version(self):
+#     return self._info_obj.get("bios_version")
+
+# @export("HBA_LSI", version="1.0.0")
+# class HBA_LSI(HardwareEntity):
+
+#   __SPECIALIZATION__ = "hba_lsi"
+
+#   def __init__(self, info_obj):
+#     self._info_obj = info_obj
+
+#   @typemethod
+#   def consumes(cls):
+#     return super(HBA_LSI, cls).consumes() | frozenset(['HBAINFO_UTIL'])
+
+#   @typemethod
+#   def provides(cls):
+#     return super(HBA_LSI, cls).provides() | frozenset(["HBA_LSICAP"])
+
+#   @typemethod
+#   def list(cls):
+#     hbas  = cls.capabilities.hbainfo_util.dump()
+#     return [cls(hba) for hba in hbas]
+
+#   def location(self):
+#     return self._info_obj.get("host")
+
+#   def firmware(self):
+#     return self._info_obj.get("firmware")
+
+#   def ppn(self):
+#     return self._info_obj.get("ppn")
+
+#   def port_name(self):
+#     return self._info_obj.get("port_names")
+
+#   def bios_version(self):
+#     return self._info_obj.get("bios_version")
 
 #################################################
 # Table server
@@ -221,8 +351,9 @@ def setup_entity_to_method_descs():
     methods = dict()
     for cap in caps:
       cap_int = api._cap_reg.get_interface(cap)
+      print cap_int._value
       for method, intfc in cap_int._value.iteritems():
-        print "fonud method", method
+        print "found method", method
         asp = intfc.arg_spec
         if method == "list":
           continue

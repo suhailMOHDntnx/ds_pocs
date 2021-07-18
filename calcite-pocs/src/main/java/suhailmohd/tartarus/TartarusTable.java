@@ -14,8 +14,13 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public abstract class TartarusTable extends AbstractTable {
+
+  private static final Logger logger = LoggerFactory.getLogger(TartarusTable.class);
+
   TartarusTableDescription tableDesc;
   private @Nullable List<RelDataType> fieldTypes;
   private @Nullable RelDataType rowType;
@@ -48,7 +53,7 @@ public abstract class TartarusTable extends AbstractTable {
         String typeString = string.substring(colon + 1);
         fieldType = TartarusFieldType.of(typeString);
         if (fieldType == null) {
-          System.err.println("WARNING: Found unknown type: "
+          logger.error("Found unknown type: "
               + typeString
               + " for column: " + name
               + ". Will assume the type of column is string");

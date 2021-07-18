@@ -25,7 +25,7 @@ WITH
        POSITION(node_model IN (select model from node_config)) = 0
      ),
 
-     hbas as (select * from tartarus.HBA_LSI)
+     hbas as (select * from TARTARUS.HBA_LSI)
      
   SELECT
 
@@ -35,6 +35,7 @@ WITH
     THEN map['score', '100', 'message', 'The current HBA model' || ppn || 'not supported for this check']
 
     /* failure case */
+    /* NOTE: we do not have version comparison functions yet, resoring to strng comparison for now */
     WHEN firmware < (select min_supported_fw from hba_firmware_config)
     THEN map['score', '24', 'message', 'LSI firmware revision 0x' || firmware || 'is less than minimum .....']
 

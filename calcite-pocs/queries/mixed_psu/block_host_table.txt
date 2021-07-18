@@ -1,0 +1,27 @@
+with 
+  block_host_address as 
+    (
+      (
+         select
+           node.rackableUnitId,
+           CASE
+             WHEN node.hypervisor is not NULL and CARDINALITY(node.hypervisor.addressList) = 1
+               THEN node.hypervisor.addressList[1]
+             ELSE node.managementServerName
+           END as address
+         from ZEUSCONFIG.nodeList as node
+      )
+      UNION
+      (
+         select
+           node.rackableUnitId,
+           CASE
+             WHEN node.hypervisor is not NULL and CARDINALITY(node.hypervisor.addressList) = 1
+               THEN node.hypervisor.addressList[1]
+             ELSE node.managementServerName
+           END as address
+         from ZEUSCONFIG.computeNodeList as node
+      )
+    )
+   select A.rackableUnitId, ANY_VALUE(rackableUnitSerial), COLLECT(address), SOME(rackableUnitSerial like 'NX-*') from block_host_address as A JOIN ZEUSCONFIG.rackableUnitList as B on A.rackableUnitId = B.rackableUnitId  GROUP BY A.rackableUnitId
+

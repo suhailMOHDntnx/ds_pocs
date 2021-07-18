@@ -29,6 +29,9 @@ import java.io.File;
 import java.util.Map;
 import java.util.ArrayList;
 import java.io.IOException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 /**
  * Schema mapped onto a directory of CSV files. Each table in the schema
@@ -36,12 +39,14 @@ import java.io.IOException;
  */
 public class TartarusSchema extends AbstractSchema {
 
+  private static final Logger logger = LoggerFactory.getLogger(TartarusSchema.class);
+
   private Map<String, Table> tableMap;
   TartarusHTTPClient client;
 
-  public TartarusSchema() {
+  public TartarusSchema(String ip, String port) {
     super();
-    this.client = new TartarusHTTPClient("127.0.0.1", "8001");
+    this.client = new TartarusHTTPClient(ip, port);
   }
 
   @Override protected Map<String, Table> getTableMap() {
@@ -49,7 +54,7 @@ public class TartarusSchema extends AbstractSchema {
       try {
         tableMap = createTableMap();
       } catch(IOException e) {
-        System.err.println(e);
+        logger.error("Exception hit while reading from file: {}", e);
       }
     }
     return tableMap;

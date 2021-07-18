@@ -4,8 +4,12 @@ import com.nutanix.insights.ifc.InsightsInterfaceProto.MetricType;
 import java.util.ArrayList;
 import org.json.JSONObject;
 import java.lang.System;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class IDFTableDesc {
+
+    private static final Logger logger = LoggerFactory.getLogger(IDFTableDesc.class);
 
     public static class FieldDesc {
         public String name;
@@ -30,11 +34,11 @@ public class IDFTableDesc {
 
         for (MetricType t: metricTypes) {
             String metadataString = t.getUserMetadata();
-            System.err.println(t.getMetricName());
-            System.err.println(metadataString);
+            logger.debug(t.getMetricName());
+            logger.debug(metadataString);
 
             if (metadataString == "") {
-                System.err.println("Ignoring metric: " + t.getMetricName());
+                logger.error("Ignoring metric: {}", t.getMetricName());
                 continue;
             }
             JSONObject metadata = new JSONObject(metadataString);

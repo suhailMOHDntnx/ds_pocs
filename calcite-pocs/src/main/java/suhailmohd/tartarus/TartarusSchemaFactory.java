@@ -19,6 +19,17 @@ public class TartarusSchemaFactory implements SchemaFactory {
   
     @Override public Schema create(SchemaPlus parentSchema, String name,
         Map<String, Object> operand) {
-      return new TartarusSchema();
+
+        String ip = (String)operand.get("ip");
+        if (ip == null) {
+          ip = "127.0.0.1";
+        }
+
+        String port = (String)operand.get("port");
+        if (port == null) {
+          port = "8001";
+        }
+
+        return new TartarusSchema(ip, port);
     }
   }

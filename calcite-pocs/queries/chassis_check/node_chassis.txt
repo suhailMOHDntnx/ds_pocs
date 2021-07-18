@@ -1,0 +1,12 @@
+select * from (
+   select node.rackableUnitId, address
+   from
+      ZEUSCONFIG.nodeList as node,
+      UNNEST(node.hypervisor.addressList) as T(address)
+ ) UNION (
+   select node.rackableUnitId, address
+   from
+      ZEUSCONFIG.computeNodeList as node,
+      UNNEST(node.hypervisor.addressList) as T(address)
+ );
+

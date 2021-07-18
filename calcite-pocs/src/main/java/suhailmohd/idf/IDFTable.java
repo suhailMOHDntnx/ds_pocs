@@ -43,8 +43,12 @@ import com.nutanix.insights.ifc.InsightsInterfaceProto.QueryGroupResult;
 import com.nutanix.insights.exception.InsightsInterfaceException;
 import com.google.protobuf.TextFormat.ParseException;
 import com.google.protobuf.TextFormat;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 
 public class IDFTable extends AbstractQueryableTable implements TranslatableTable {
+
+    private static final Logger logger = LoggerFactory.getLogger(IDFTable.class);
 
     IDF idf;
     IDFTableDesc desc;
@@ -61,16 +65,16 @@ public class IDFTable extends AbstractQueryableTable implements TranslatableTabl
 
     @Override public RelDataType getRowType(RelDataTypeFactory typeFactory) {
         if (rowType == null) {
-            fieldNames = new ArrayList<String>();
-            fieldTypes = new ArrayList<IDFFieldType>();
+            fieldNames = new ArrayList<String>(desc.fieldDescs.size());
+            fieldTypes = new ArrayList<IDFFieldType>(desc.fieldDescs.size());
             rowType = buildRowType(typeFactory, fieldNames, fieldTypes);
         }
         return rowType;
     }
     
     RelDataType buildRowType(RelDataTypeFactory typeFactory, ArrayList<String> fieldNames, ArrayList<IDFFieldType> fieldTypes) {
-        final List<RelDataType> types = new ArrayList<>();
-        final List<String> names = new ArrayList<>();
+        final List<RelDataType> types = new ArrayList<>(desc.fieldDescs.size());
+        final List<String> names = new ArrayList<>(desc.fieldDescs.size());
     
         names.add("ENTITY_ID");
         types.add(IDFFieldType.of("string").toType((JavaTypeFactory) typeFactory));
@@ -81,7 +85,7 @@ public class IDFTable extends AbstractQueryableTable implements TranslatableTabl
             IDFFieldType fieldType = IDFFieldType.of(fieldDesc.type);
 
             if (fieldType == null) {
-                System.err.println("WARNING: Found unknown type: "
+                logger.info("WARNING: Found unknown type: "
                     + fieldDesc.type
                     + " for column: " + fieldDesc.name
                     + ". Ignoring it");
@@ -116,7 +120,6 @@ public class IDFTable extends AbstractQueryableTable implements TranslatableTabl
 
     public Enumerable<@Nullable Object[]> query(String whereString) throws InsightsInterfaceException {
 
-        ArrayList<Object[]> rows = new ArrayList<Object[]>();
 
         GetEntitiesWithMetricsArg.Builder builder = GetEntitiesWithMetricsArg.newBuilder();
 
@@ -130,11 +133,11 @@ public class IDFTable extends AbstractQueryableTable implements TranslatableTabl
         // Set where clause
         if (whereString != "") {
             BooleanExpression expr = null;
-            System.err.println("Where: " + whereString.toString());
+            logger.info("Where: " + whereString.toString());
             try {
                 expr = TextFormat.parse(whereString, BooleanExpression.class);
             } catch (ParseException e) {
-                System.err.println("Invalid where clause: " + whereString);
+                logger.info("Invalid where clause: " + whereString);
             }
             if (expr != null) {
                 queryBuilder.setWhereClause(expr);
@@ -152,6 +155,12 @@ public class IDFTable extends AbstractQueryableTable implements TranslatableTabl
         // Make query
         GetEntitiesWithMetricsRet res = idf.QueryTable(builder.build());
 
+        int numRows = 0;
+        for (QueryGroupResult singleGroup: res.getGroupResultsListList()) {
+            numRows += singleGroup.getRawResultsList().size();
+        }
+        ArrayList<Object[]> rows = new ArrayList<Object[]>(numRows);
+
         // Convert query to rows
         for (QueryGroupResult singleGroup: res.getGroupResultsListList()) {
             for (EntityWithMetric e: singleGroup.getRawResultsList()) {
@@ -160,10 +169,8 @@ public class IDFTable extends AbstractQueryableTable implements TranslatableTabl
 
                 int idx = 0;
                 for (MetricData metric: metrics) {
-                    System.err.println("metrics" + metric.getName());
                     List<TimeValuePair> timeValuePairList = metric.getValueListList();
                     if (timeValuePairList.size() > 0) {
-                        System.err.println("herere");
                         DataValue value = timeValuePairList.get(0).getValue();
                         row[idx] = this.getValue(value);
                     } else {
@@ -227,7 +234,7 @@ public class IDFTable extends AbstractQueryableTable implements TranslatableTabl
             try {
                 return getTable().query(whereString);
             } catch (InsightsInterfaceException e) {
-                System.err.println("Error executing query");
+                logger.info("Error executing query");
                 return null;
             }
         }

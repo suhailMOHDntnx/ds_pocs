@@ -29,6 +29,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+
 
 /**
  * Rule to convert a {@link org.apache.calcite.rel.logical.LogicalFilter} to a
@@ -38,13 +41,16 @@ import java.util.Set;
  */
 public class IDFFilterRule
     extends RelRule<IDFFilterRule.Config> {
+
+    private static final Logger logger = LoggerFactory.getLogger(IDFFilterRule.class);
+
     /** Creates a IDFFilterRule. */
     protected IDFFilterRule(Config config) {
         super(config);
     }
 
     @Override public boolean matches(RelOptRuleCall call) {
-        System.err.println("IDFFilterRule matches");
+        logger.info("IDFFilterRule matching..");
         // Get the condition from the filter operation
         LogicalFilter filter = call.rel(0);
         RexNode condition = filter.getCondition();
@@ -61,13 +67,13 @@ public class IDFFilterRule
             condition = disjunctions.get(0);
             for (RexNode predicate : RelOptUtil.conjunctions(condition)) {
                 if (!doesPredicateWork(predicate, fieldNames)) {
-                    System.err.println("IDFFilterRule doesn't matche " + call.toString());
+                    logger.info("IDFFilterRule doesn't match {}", call.toString());
                     return false;
                 }
             }
         }
 
-        System.err.println("IDFFilterRule matches " + call.toString());
+        logger.info("IDFFilterRule matches {}", call.toString());
         return true;
     }
 
@@ -85,8 +91,6 @@ public class IDFFilterRule
     }
 
     private static boolean doesComparisonWork(RexNode node, List<String> fieldNames) {
-        
-
         RexCall call = (RexCall) node;
         final RexNode left = call.operands.get(0);
         final RexNode right = call.operands.get(1);
@@ -98,8 +102,6 @@ public class IDFFilterRule
     }
 
     private static boolean doesNotWork(RexNode node) {
-        
-
         RexCall call = (RexCall) node;
         final RexNode input = call.operands.get(0);
         if (input.getKind() == SqlKind.INPUT_REF) {
@@ -107,7 +109,6 @@ public class IDFFilterRule
         }
         return false;
     }
-
 
     /** Check if an equality operation is comparing a field with a literal.
      *

@@ -9,6 +9,7 @@ import java.io.File;
 import java.util.Locale;
 import java.util.Map;
 
+
 public class IDFSchemaFactory implements SchemaFactory {
     /** Public singleton, per factory contract. */
     public static final IDFSchemaFactory INSTANCE = new IDFSchemaFactory();
@@ -18,6 +19,17 @@ public class IDFSchemaFactory implements SchemaFactory {
   
     @Override public Schema create(SchemaPlus parentSchema, String name,
         Map<String, Object> operand) {
-      return new IDFSchema();
+
+        String ip = (String)operand.get("ip");
+        if (ip == null) {
+          ip = "127.0.0.1";
+        }
+
+        Integer port = (Integer)operand.get("port");
+        if (port == null) {
+          port = 2027;
+        }
+
+        return new IDFSchema(ip, port);
     }
   }

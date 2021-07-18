@@ -27,8 +27,8 @@ import java.util.HashMap;
 public class IDF {
     InsightsInterface ifc;
 
-    public IDF() {
-        this.ifc = new InsightsInterface();
+    public IDF(String ip, Integer port) {
+        this.ifc = new InsightsInterface(ip, port);
     }
 
     public ArrayList<IDFTableDesc> ListTables() throws InsightsInterfaceException {

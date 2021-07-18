@@ -1,0 +1,7 @@
+select VM_NAME,
+       CASE
+       WHEN "NGT.INSTALLED_VERSION" is NULL OR  "NGT.CLUSTER_VERSION" is NULL THEN 'Pass'
+       WHEN "NGT.INSTALLED_VERSION" < "NGT.CLUSTER_VERSION" THEN 'Pass'
+       ELSE 'Fail'
+       END
+from IDF.VM as vm

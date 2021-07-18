@@ -33,6 +33,8 @@ import java.io.IOException;
 import suhailmohd.idf.nutanixdb.IDF;
 import suhailmohd.idf.nutanixdb.IDFTableDesc;
 import com.nutanix.insights.exception.InsightsInterfaceException;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 
 
 /**
@@ -41,12 +43,14 @@ import com.nutanix.insights.exception.InsightsInterfaceException;
  */
 public class IDFSchema extends AbstractSchema {
 
+  private static final Logger logger = LoggerFactory.getLogger(IDFSchema.class);
+
   private Map<String, Table> tableMap;
   private IDF idf;
 
-  public IDFSchema() {
+  public IDFSchema(String ip, Integer port) {
     super();
-    this.idf = new IDF();
+    this.idf = new IDF(ip, (int)port);
   }
 
   @Override protected Map<String, Table> getTableMap() {
@@ -54,7 +58,7 @@ public class IDFSchema extends AbstractSchema {
       try {
         tableMap = createTableMap();
       } catch(InsightsInterfaceException e) {
-        System.err.println(e);
+        logger.info("Failed to retrieve tables from IDF: {}", e);
       }
     }
     return tableMap;
@@ -64,7 +68,7 @@ public class IDFSchema extends AbstractSchema {
     final ImmutableMap.Builder<String, Table> builder = ImmutableMap.builder();
 
     for(IDFTableDesc desc: idf.ListTables()) {
-      System.err.println("Creating table: " + desc.tableName);
+      logger.info("Creating table: {}", desc.tableName);
       builder.put(desc.tableName.toUpperCase(), new IDFTable(idf, desc));
     }
     return builder.build();

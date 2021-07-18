@@ -57,7 +57,7 @@ public class IDFEnumerableConverter extends ConverterImpl implements EnumerableR
                 "whereString",
                 Expressions.constant(idfImplementor.whereClauseString)
         );
-        
+
         Expression enumerable = list.append(
                 "enumerable",
                 Expressions.call(

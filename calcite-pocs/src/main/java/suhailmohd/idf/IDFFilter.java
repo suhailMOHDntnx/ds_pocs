@@ -57,33 +57,37 @@ import com.nutanix.insights.ifc.InsightsInterfaceProto.ComparisonExpression;
 import com.nutanix.insights.ifc.InsightsInterfaceProto.DataValue;
 import com.nutanix.insights.ifc.InsightsInterfaceProto.Expression;
 import com.google.protobuf.ByteString;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 
 /**
  * Implementation of a {@link org.apache.calcite.rel.core.Filter}
  * relational expression in IDF.
  */
 public class IDFFilter extends Filter implements IDFRel {
-  private BooleanExpression expr;
-  private List<String> fieldNames;
-  private List<IDFFieldType> fieldTypes;
+    private BooleanExpression expr;
+    private List<String> fieldNames;
+    private List<IDFFieldType> fieldTypes;
 
-  public IDFFilter(
-      RelOptCluster cluster,
-      RelTraitSet traitSet,
-      RelNode child,
-      RexNode condition,
-      List<String> fieldNames,
-      List<IDFFieldType> fieldTypes) {
-    super(cluster, traitSet, child, condition);
+    private static final Logger logger = LoggerFactory.getLogger(IDFFilter.class);
 
-    Translator translator =
-        new Translator(fieldNames, fieldTypes);
-    this.expr = translator.translateMatch(condition);
-    this.fieldNames = fieldNames;
-    this.fieldTypes = fieldTypes;
-    assert getConvention() == IDFRel.CONVENTION;
-    assert getConvention() == child.getConvention();
-  }
+    public IDFFilter(
+        RelOptCluster cluster,
+        RelTraitSet traitSet,
+        RelNode child,
+        RexNode condition,
+        List<String> fieldNames,
+        List<IDFFieldType> fieldTypes) {
+        super(cluster, traitSet, child, condition);
+
+        Translator translator =
+            new Translator(fieldNames, fieldTypes);
+        this.expr = translator.translateMatch(condition);
+        this.fieldNames = fieldNames;
+        this.fieldTypes = fieldTypes;
+        assert getConvention() == IDFRel.CONVENTION;
+        assert getConvention() == child.getConvention();
+    }
 
   @Override public @Nullable RelOptCost computeSelfCost(RelOptPlanner planner,
       RelMetadataQuery mq) {
@@ -116,7 +120,7 @@ public class IDFFilter extends Filter implements IDFRel {
      * @return CQL predicate string
      */
     private BooleanExpression translateMatch(RexNode condition) {
-        System.err.println("Translating " + condition.toString());
+        logger.info("Translating {}", condition.toString());
         // CQL does not support disjunctions
         List<RexNode> disjunctions = RelOptUtil.disjunctions(condition);
         if (disjunctions.size() == 1) {
@@ -135,7 +139,7 @@ public class IDFFilter extends Filter implements IDFRel {
         SqlTypeName typeName = literal.getTypeName();
         LeafExpression.Builder builder = LeafExpression.newBuilder();
         DataValue.Builder valBuilder = builder.getValueBuilder();
-        System.out.println("Converting literal" + typeName.toString());
+        logger.info("Converting literal {}", typeName.toString());
         Class clazz = type.getJavaClass();
         switch (typeName) {
             case BOOLEAN:
@@ -164,7 +168,7 @@ public class IDFFilter extends Filter implements IDFRel {
                         valBuilder.setDoubleValue(literal.getValueAs(Double.class));
                         break;
                     default:
-                        System.err.println("WARNING: invalid type used. Expected: " + type.toString() + " . Got: " + typeName.toString());
+                        logger.error("WARNING: invalid type used. Expected: {} Got: {}", type.toString(), typeName.toString());
                 }
                 break;
 
@@ -223,13 +227,13 @@ public class IDFFilter extends Filter implements IDFRel {
 
     private BooleanExpression translateAnd(RexNode condition) {
 
-        System.out.println("Translating and");
+        logger.info("Translating and");
         List<RexNode> conjunctions = RelOptUtil.conjunctions(condition);
         BooleanExpression.Builder rootBuilder = BooleanExpression.newBuilder();
         ComparisonExpression firstExpr = translateMatch2(conjunctions.get(0));
 
         if (conjunctions.size() == 1) {
-            System.out.println("Only one expression found. Converting directly");
+            logger.info("Only one expression found. Converting directly");
             rootBuilder.setComparisonExpr(firstExpr);
             return rootBuilder.build();
         }
@@ -255,7 +259,7 @@ public class IDFFilter extends Filter implements IDFRel {
     private ComparisonExpression translateMatch2(RexNode node) {
         // We currently only use equality, but inequalities on clustering keys
         // should be possible in the future
-        System.out.println("Converting " + node.toString() + " to a comparison expression");
+        logger.info("Converting {}  to a comparison expression", node.toString());
         switch (node.getKind()) {
         case EQUALS:
             return translateBinary(ComparisonExpression.Operator.kEQ, ComparisonExpression.Operator.kEQ, (RexCall) node);
@@ -301,11 +305,11 @@ public class IDFFilter extends Filter implements IDFRel {
                 return null;
         }
 
-        System.out.println("Translating binary op");
+        logger.info("Translating binary op");
         final RexLiteral rightLiteral = (RexLiteral) right;
         switch (left.getKind()) {
         case INPUT_REF:
-            System.out.println("Left is input ref");
+            logger.info("Left is input ref");
             final RexInputRef left1 = (RexInputRef) left;
             String name = fieldNames.get(left1.getIndex());
             IDFFieldType type = fieldTypes.get(left1.getIndex());
@@ -320,7 +324,7 @@ public class IDFFilter extends Filter implements IDFRel {
 
     /** Combines a field name, operator, and literal to produce a predicate string. */
     private ComparisonExpression translateOp2(ComparisonExpression.Operator op, String name, RexLiteral right, IDFFieldType type) {
-        System.out.println("Translating op");
+        logger.info("Translating op");
         Expression rhs = Expression.newBuilder().setLeaf(literalValue(right, type)).build();
         Expression lhs = Expression.newBuilder().setLeaf(columnValue(name)).build();
 
