@@ -20,10 +20,12 @@
   </repositories>
 
   <dependencies>
+
+
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>1.8.0-beta4</version>
+      <version>1.6.0</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -80,1563 +82,1417 @@
       <version>2.8.7</version>
     </dependency>
 
-    <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>apache-log4j-extras</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>java-property-utils</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>okio</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jaeger-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>stax2-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-codec</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-boot-starter</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>xml-apis</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-security-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>ergon-client-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>catalog-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>perfmon-api-controller</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>rngom</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-logging</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>asm</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-datatype-jdk8</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-jaxrs</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-context-support</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>threetenbp</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>json-simple</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>xmltooling</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>openapi-diff</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>tomcat-embed-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-aspects</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>common-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>network-controller-jaxrs-interfaces</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>storage-springmvc-interfaces</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>neethi</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>iam-http-client</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-data-commons</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>catalog-api-controller</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>swagger-annotations</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>aiops-jaxrs-interfaces</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-boot-starter-hateoas</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-fileupload</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>error_prone_annotations</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-jaxrs-base</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cors-filter</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>opencensus-contrib-grpc-metrics</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>wss4j-policy</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>guice</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>httpclient</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>txw2</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>apacheds-i18n</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-rs-client</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jetty-util</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>not-yet-commons-ssl</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>javax.mail-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>protobuf-java</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>pc-recovery-java-client-sdk</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>json-rpc-client</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-transports-http</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jboss-logging</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jaxb-xjc</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>ipaddress</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jetty-security</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>validation-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-frontend-jaxrs</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-jaxrs-json-provider</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>pc-recovery-controllers</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>hibernate-validator</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jaxb-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-module-parameter-names</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>wss4j-bindings</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>aopalliance</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jakarta.activation-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-context</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>network-controller-api-controller</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>api-util</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>dom4j</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>network-controller-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>iam-client-dto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jaeger-client</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>kotlin-stdlib-common</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>opentracing-util</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-tx</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>rbac-method-annotator</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-httpclient</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>handlebars</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-boot</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>ehcache</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-databinding-jaxb</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>xmlsec</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>openws</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>prism-stats-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>opentracing-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cdp-client-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>pcdr-common-util</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jaeger-tracerresolver</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>auto-value-annotations</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>dev-platform-java-models</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>ant-launcher</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>catalog-jaxrs-interfaces</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>grpc-protobuf-lite</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-webmvc</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>httpmime</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-lang3</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>javax.servlet-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>swagger-jaxrs</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>prism-stats-springmvc-interfaces</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-module-jaxb-annotations</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-messaging</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>prism-commands</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-security</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-web</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>insights_interface</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>java-jwt</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jasypt</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>geronimo-javamail_1.4_mail</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>animal-sniffer-annotations</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>wsdl4j</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jstl</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>proto-google-common-protos</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>fastjson</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-mapper-asl</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-frontend-simple</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-core-asl</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-ws-policy</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>stax-ex</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>servlet-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>antlr</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-aop</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-validator</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-hateoas</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>storage-api-controller</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-cli</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>wss4j-ws-security-common</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-collections</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-data-commons-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>proto-rpc-client-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>api-asn1-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>encryption-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-annotations</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>pc-recovery-springmvc-interfaces</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>pc-protection-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>antlr4-annotations</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>okhttp</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-frontend-jaxws</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>dvs-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>tomcat-annotations-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>swagger-models</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cglib</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>opentracing-tracerresolver</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-datatype-threetenbp</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>caffeine</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>velocity-engine-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>relaxng-datatype</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>curator-recipes</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-retry</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>tomcat-embed-el</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-ws-security</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>prism-common</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>dtd-parser</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-collections4</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>serviceability-client-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>guava</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-security-web</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>mail</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>pcdr-protos</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-databinding-aegis</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>iam-common</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>dev-platform-deserializers</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>stax-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-datatype-jsr310</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-dataformat-yaml</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jetty-io</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>ctrl-plane-client-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>apacheds-kerberos-codec</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jakarta.xml.bind-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>woodstox-core-asl</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>storage-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-expression</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>classmate</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>atlas-common</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>aiops-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>slf4j-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-boot-starter-web</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-security-config</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-integration-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>perfmon-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jline</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>reflections</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>activation</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>aiops-api-controller</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-rs-extension-search</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>listenablefuture</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>kotlin-stdlib</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-boot-autoconfigure</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>netty</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-beans</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>grpc-context</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jaxb-impl</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>stats-gateway-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>infra-client-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>checker-qual</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>xsom</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>failureaccess</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jsr305</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>httpcore</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>dvs-api-controllers</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>log4j</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>FastInfoset</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>gettext-commons</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>j2objc-annotations</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-integration-ip</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>vijava</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>json-smart</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jopt-simple</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-datatype-joda</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>gson</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>antlr4-runtime</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jetty-continuation</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>curator-client</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>woodstox-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>httpcore-nio</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>protos</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jetty-server</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jaxb-runtime</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>ntnxdb-client-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>j2html</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>protobuf-java-format</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>util</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>opentracing-noop</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-bindings-soap</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>grpc-protobuf</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>atlas-client-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>api-asn1-ber</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-net</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>prismgw-client-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>insights_uploader_interface</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>json-path</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-ws-addr</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>minerva-client-protos</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>tomcat-embed-websocket</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>opencensus-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>velocity</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>ehcache-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-bindings-xml</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>mina-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>perfmon-jaxrs-interfaces</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>dp-client-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-beanutils</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jakarta.ws.rs-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>curator-framework</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>xmlschema-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>ant</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-tools-common</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>libthrift</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>athena-interface</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>aspectjweaver</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>wss4j-ws-security-stax</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jjwt</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>javax.annotation-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-boot-starter-tomcat</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-transports-http-hc</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>javassist</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>org.abego.treelayout.core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>esapi</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-rs-service-description</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>bcprov-jdk15on</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-exec</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>wss4j-ws-security-dom</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>pc-recovery-java-dto-definitions</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>encryption-api-controller</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>annotations</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-io</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-lang</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>api-i18n</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>nutanix-tools-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>opensaml</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>alerts</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-wsdl</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>grpc-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>xml-resolver</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>mapstruct</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>commons-digester</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>dvs-jaxrs-interfaces</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>cxf-rt-transports-http-jetty</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>codemodel</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>flow-client-proto</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>istack-commons-runtime</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-boot-starter-json</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>joda-time</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>wss4j-ws-security-policy-stax</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>spring-plugin-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jcommander</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>zookeeper</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>istack-commons-tools</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>UserAgentUtils</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>javax.ws.rs-api</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>slf4j-log4j12</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>prism-stats-api-controller</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jackson-databind</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>httpasyncclient</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>prism-adapter</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>encryption-jaxrs-interfaces</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>snakeyaml</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jettison</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jcl-over-slf4j</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>proto-rpc-client-impl</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>pc-protection-java-client-sdk</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>api-ldap-model</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>swagger-core</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jetty-http</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>jaeger-thrift</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-  <dependency>
-    <groupId>abcd.efgh</groupId>
-    <artifactId>accessors-smart</artifactId>
-    <version>1.0.0</version>
-  </dependency>
-
   <dependency>
     <groupId>sqlline</groupId>
     <artifactId>sqlline</artifactId>
     <version>1.11.0</version>
   </dependency>
 
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>perfmon-jaxrs-interfaces</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>java-property-utils</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-annotations</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jakarta.ws.rs-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-module-jaxb-annotations</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-datatype-threetenbp</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>servlet-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jaxb-impl</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>mail</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>guice</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>json-path</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>catalog-api-controller</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jetty-util</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>wss4j-ws-security-policy-stax</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>classmate</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-datatype-joda</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-exec</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jline</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-boot-starter-hateoas</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>iam-common</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-databind</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>infra-client-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>neethi</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>guava</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>iam-http-client</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-cli</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>j2html</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>wss4j-policy</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>j2objc-annotations</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>perfmon-api-controller</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-data-commons-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jsr305</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>dom4j</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>dvs-java-dto-definitions</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>dvs-jaxrs-interfaces</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-web</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>not-yet-commons-ssl</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>ntnxdb-client-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>gson</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>wsdl4j</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>xmltooling</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>bcprov-jdk15on</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>iam-client-dto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>ant</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>ehcache</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>joda-time</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-wsdl</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>api-asn1-ber</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>xmlsec</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-expression</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-security-config</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jcommander</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>openws</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>stats-gateway-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>log4j</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>encryption-api-controller</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>istack-commons-runtime</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>httpclient</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>mapstruct</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>slf4j-log4j12</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>catalog-jaxrs-interfaces</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>apacheds-kerberos-codec</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-lang</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>grpc-protobuf-lite</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>relaxng-datatype</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>xml-apis</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>validation-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jopt-simple</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>apache-log4j-extras</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>dvs-api-controllers</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>network-controller-jaxrs-interfaces</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>prism-common</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>wss4j-bindings</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-ws-addr</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>api-i18n</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>opensaml</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-transports-http</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>storage-springmvc-interfaces</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-plugin-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-io</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>javax.ws.rs-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>dp-client-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>httpcore</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cors-filter</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>javax.mail-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>network-controller-java-dto-definitions</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-module-parameter-names</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-datatype-jdk8</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-bindings-soap</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jettison</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>xsom</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>UserAgentUtils</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jetty-io</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>xmlschema-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>aopalliance</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>istack-commons-tools</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-boot-starter</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>curator-framework</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jaxb-xjc</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-ws-security</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-hateoas</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>woodstox-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>stax-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>slf4j-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>encryption-jaxrs-interfaces</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>auto-value-annotations</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-codec</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>serviceability-client-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>reflections</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jetty-continuation</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>storage-java-dto-definitions</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>velocity-engine-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>api-util</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-databinding-jaxb</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-integration-ip</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>tomcat-embed-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>prism-adapter</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>stax-ex</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>hibernate-validator</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-security-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>athena-interface</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>opencensus-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-boot-starter-json</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jetty-server</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>tomcat-embed-websocket</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>swagger-annotations</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>protobuf-java</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>netty</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-tx</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>checker-qual</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>mina-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>antlr4-runtime</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-security-web</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-context-support</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>zookeeper</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>insights_interface</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-frontend-simple</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>curator-recipes</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>util</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>snakeyaml</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-logging</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-rs-extension-search</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jasypt</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-validator</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-aop</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>lombok</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>protos</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jaxb-runtime</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>prismgw-client-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>wss4j-ws-security-dom</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-lang3</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>api-asn1-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-databinding-aegis</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>ctrl-plane-client-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>httpasyncclient</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-fileupload</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>aiops-java-dto-definitions</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-tools-common</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cdp-client-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>java-jwt</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>error_prone_annotations</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>json-rpc-client</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-beanutils</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>proto-google-common-protos</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>nutanix-tools-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>libthrift</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>animal-sniffer-annotations</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>httpcore-nio</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-boot-starter-tomcat</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jaxb-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>opencensus-contrib-grpc-metrics</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-frontend-jaxws</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-rs-client</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>accessors-smart</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-mapper-asl</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>antlr4-annotations</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jstl</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-jaxrs</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jetty-security</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jjwt</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>failureaccess</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>wss4j-ws-security-stax</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-transports-http-hc</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-datatype-jsr310</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-bindings-xml</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-data-commons</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>httpmime</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>dev-platform-deserializers</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>json-simple</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>activation</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-beans</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-core-asl</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-messaging</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>xml-resolver</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>tomcat-embed-el</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>openapi-diff</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>grpc-protobuf</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-dataformat-yaml</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>tomcat-annotations-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>ipaddress</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-httpclient</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>dtd-parser</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>org.abego.treelayout.core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>rbac-method-annotator</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>rngom</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>swagger-jaxrs</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-boot-autoconfigure</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>minerva-client-protos</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>velocity</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>txw2</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>network-controller-api-controller</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-security</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-webmvc</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-jaxrs-json-provider</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>prism-stats-api-controller</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jakarta.xml.bind-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>aiops-jaxrs-interfaces</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-ws-policy</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>threetenbp</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>encryption-java-dto-definitions</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>codemodel</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-boot</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>proto-rpc-client-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-context</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-collections4</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>prism-stats-java-dto-definitions</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>aiops-api-controller</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jetty-http</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>perfmon-java-dto-definitions</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>common-java-dto-definitions</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>prism-stats-springmvc-interfaces</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>ehcache-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>flow-client-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-net</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>alerts</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-rs-service-description</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>apacheds-i18n</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>vijava</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>asm</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>FastInfoset</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>swagger-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>woodstox-core-asl</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cglib</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>fastjson</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>javassist</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>dev-platform-java-models</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>gettext-commons</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jcl-over-slf4j</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>geronimo-javamail_1.4_mail</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>ant-launcher</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>proto-rpc-client-impl</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jboss-logging</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>json-smart</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>javax.annotation-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>antlr</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>swagger-models</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>grpc-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>listenablefuture</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-digester</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>commons-collections</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-jaxrs-base</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>javax.servlet-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>api-ldap-model</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>grpc-context</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>esapi</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>storage-api-controller</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-retry</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>cxf-rt-transports-http-jetty</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>wss4j-ws-security-common</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jackson-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>stax2-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>catalog-java-dto-definitions</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>protobuf-java-format</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>spring-integration-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>atlas-client-proto</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>jakarta.activation-api</artifactId>
+  <version>1.0.0</version>
+</dependency>
+<dependency>
+  <groupId>abcd.efgh</groupId>
+  <artifactId>curator-client</artifactId>
+  <version>1.0.0</version>
+</dependency>
 </dependencies>
   <build>
   <plugins>

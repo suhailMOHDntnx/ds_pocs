@@ -44,6 +44,7 @@ public interface IDFRel extends RelNode {
     IDFTable idfTable;
     RelOptTable table;
 
+
     public void visitChild(int ordinal, RelNode input) {
       assert ordinal == 0;
       ((IDFRel) input).implement(this);

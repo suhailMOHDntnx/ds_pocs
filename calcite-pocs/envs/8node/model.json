@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "defaultSchema": "SALES",
+  "schemas": [
+    {
+      "name": "IDF",
+      "type": "custom",
+      "factory": "suhailmohd.idf.IDFSchemaFactory",
+      "operand": {
+         "ip": "10.48.192.119"
+      }
+    },
+    {
+      "name": "TARTARUS",
+      "type": "custom",
+      "factory": "suhailmohd.tartarus.TartarusSchemaFactory",
+      "operand": {
+         "ip": "10.48.192.119"
+      }
+    },
+    {
+      "name": "ZEUSCONFIG",
+      "type": "custom",
+      "factory": "suhailmohd.zeusconfig.ZeusConfigSchemaFactory",
+      "operand": {
+        "zeus_config_file": "${POC_ROOT}/data/8_node_config.json"
+      }
+    }
+  ]
+}
+

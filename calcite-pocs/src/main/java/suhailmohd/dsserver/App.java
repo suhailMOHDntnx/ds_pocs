@@ -38,26 +38,28 @@ public class App
         Properties info = new Properties();
         info.setProperty("unquotedCasing", "UNCHANGED");
         Connection connection =
-            DriverManager.getConnection("jdbc:calcite:model=" + args[0], info);
+            DriverManager.getConnection("jdbc:calcite:model=" + args[0] + "/model.json", info);
         CalciteConnection calciteConnection =
             connection.unwrap(CalciteConnection.class);
 
         printRSS("Connection established");
         SchemaPlus rootSchema = calciteConnection.getRootSchema();
 
-        ArrayList<Query> queries = new ArrayList<Query>();
+        Queries queries = Queries.fromConfig(args[0]);
 
 
         HashMap<String, PreparedStatement> queryMap = new HashMap<>();
-        for (Query q: queries) {
-            PreparedStatement statement = calciteConnection.prepareStatement(q.getSQL());
+        for (Query q: queries.queries) {
+            String s = q.getSQL();
+            System.out.println(s);
+            PreparedStatement statement = calciteConnection.prepareStatement(s);
             queryMap.put(q.getName(), statement);
         }
 
 
 
         while(true) {
-            for (Query query: queries) {
+            for (Query query: queries.queries) {
                 System.out.println("========================== Executing query");
                 System.out.println("Query: " + query.getSQL());
 

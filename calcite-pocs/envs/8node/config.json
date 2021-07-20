@@ -1,0 +1,9 @@
+{
+  "queries": [
+    {
+      "interval": 60,
+      "name": "sadsad",
+      "sqlFileName": "select_all_vms.sql"
+    }
+  ]
+}
